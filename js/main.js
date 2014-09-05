@@ -29,28 +29,24 @@ function scrollNav()
 	}
 }
 
-
-var scrollHeight = 0;
-var scrolld = 0;
-
 function scrollAnim()
 {
 	var browserTop = document.body.scrollTop || document.documentElement.scrollTop;
 	var global = document.getElementById('global');
 	var page1 = document.getElementById('page1');
 	var page2 = document.getElementById('page2');
+	var scrollheight = document.getElementById('header').scrollHeight - 80;
+	var scrolld = document.getElementById('page1').clientHeight + 280;
 
-	if(browserTop>=scrollHeight)
+	if(browserTop>=scrollheight)
 	{
 		global.className = 'fixed';
 		page1.className = "service fixed";
-		page2.style.marginTop = scrolld + 50 + "px";
-		browserTop += page1.scrollHeight - 100;
-		var top = page2.offsetTop;
-		if (top <= browserTop)
+		page2.style.marginTop = scrolld + "px";
+		if (browserTop>=scrollheight + 280)
 		{
 			page1.className = "service";
-			page1.style.marginTop = scrolld - document.getElementById('page1').clientHeight + 50 + "px";
+			page1.style.marginTop = "280px";
 			page1.style.marginBottom = "0px";
 			page2.style.marginTop = "0px";
 		}
@@ -58,8 +54,8 @@ function scrollAnim()
 		{
 			page1.className = "service fixed";
 			page1.style.marginTop = "0px";
-			page1.style.marginBottom = "250px";
-			page2.style.marginTop = scrolld + 50 + "px";
+			page1.style.marginBottom = "280px";
+			page2.style.marginTop = scrolld + "px";
 		}
 	}
 	else

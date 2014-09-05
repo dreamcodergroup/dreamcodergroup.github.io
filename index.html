@@ -24,8 +24,6 @@
 		<script type="text/javascript">
 	    window.onload = function()
 	    {
-			scrollHeight = document.getElementById('header').clientHeight - 25;
-			scrolld = window.screen.availHeight - 120;
 			modifyHeight();
 			scrollAnim();
 			scrollNav();
@@ -36,7 +34,6 @@
 			};
 			window.onresize = function()
 			{
-				scrolld = window.screen.availHeight - 100;
 				scrollNav();
 			};
 	    }
