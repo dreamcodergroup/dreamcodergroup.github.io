@@ -36,17 +36,18 @@ function scrollAnim()
 	var page1 = document.getElementById('page1');
 	var page2 = document.getElementById('page2');
 	var scrollheight = document.getElementById('header').scrollHeight - 80;
-	var scrolld = document.getElementById('page1').clientHeight + 280;
+	var scrolld = window.screen.availHeight - 140;
 
 	if(browserTop>=scrollheight)
 	{
 		global.className = 'fixed';
 		page1.className = "service fixed";
 		page2.style.marginTop = scrolld + "px";
-		if (browserTop>=scrollheight + 280)
+		scrollheight += scrolld - page1.clientHeight;
+		if (browserTop>=scrollheight)
 		{
 			page1.className = "service";
-			page1.style.marginTop = "280px";
+			page1.style.marginTop = scrolld - page1.clientHeight + "px";
 			page1.style.marginBottom = "0px";
 			page2.style.marginTop = "0px";
 		}
