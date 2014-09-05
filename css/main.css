@@ -20,13 +20,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	background-attachment: fixed;
 }
 
-#header  {
-	min-width: 950px;
-	width: 100%;
-	min-height: 650px;
-	position: relative;
-}
-
 #global  {
 	height: 80px;
 	z-index: 999;
@@ -188,16 +181,22 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	text-shadow: 0px 0px 1px #ffffff;
 }
 
-#slogan  {
-	position: absolute;
-	top: 15%;
+#header  {	
+	min-height: 700px;
+}
+
+.slogan  {	
+	min-width: 950px;
+	width: 100%;
+	position: relative;
+	padding-top: 130px;
 	text-align: center;
-	font-family: FuturaNDBook, YouYuan, Microsoft Yahei Light, Microsoft Yahei,sans-serif;
+	font-family: FuturaNDBook, YouYuan, Microsoft Yahei Light, Microsoft Yahei, sans-serif;
 	color: #ffffff;
 }
 
 
-#slogan h1  {
+.slogan h1  {
 	font-family: FuturaND-Bold, YouYuan, Microsoft Yahei Light, Microsoft Yahei,sans-serif;
 	font-size: 70px;	
 	letter-spacing:5px;
@@ -206,7 +205,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	margin-bottom: 0;
 }
 
-#slogan p  {
+.slogan p  {
 	font-size: 30px;
 	margin-top: 1.5%;
 	margin-bottom: 3.5%;
@@ -214,14 +213,14 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 }
 
 
-#header .arrow  {
+.slogan .arrow  {
 	position: absolute;
-	cursor:pointer;
-	width:60px;
+	cursor: pointer;
+	height: 60px;
     display: block;
     left: 0;
     right: 0;
-    bottom: 15%;
+    bottom: -60px;
     margin: auto;
 	user-select:none;
 	-webkit-user-select:none;
