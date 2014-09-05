@@ -190,13 +190,13 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 #slogan  {
 	padding-top: 120px;
 	text-align: center;
-	font-family: FuturaNDBook;
+	font-family: FuturaNDBook, YouYuan, Microsoft Yahei Light, Microsoft Yahei,sans-serif;
 	color: #ffffff;
 }
 
 
 #slogan h1  {
-	font-family: FuturaND-Bold;
+	font-family: FuturaND-Bold, YouYuan, Microsoft Yahei Light, Microsoft Yahei,sans-serif;
 	font-size: 70px;	
 	letter-spacing:5px;
 	text-transform: uppercase;
