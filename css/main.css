@@ -189,7 +189,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	min-width: 950px;
 	width: 100%;
 	position: relative;
-	padding-top: 130px;
+	padding-top: 120px;
 	text-align: center;
 	font-family: FuturaNDBook, YouYuan, Microsoft Yahei Light, Microsoft Yahei, sans-serif;
 	color: #ffffff;
@@ -201,15 +201,15 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	font-size: 70px;	
 	letter-spacing:5px;
 	text-transform: uppercase;
-	margin-top: 5%;
+	margin-top: 40px;
 	margin-bottom: 0;
 }
 
 .slogan p  {
 	font-size: 30px;
-	margin-top: 1.5%;
-	margin-bottom: 3.5%;
-	line-height: 50px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	line-height: 60px;
 }
 
 
@@ -220,7 +220,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
     display: block;
     left: 0;
     right: 0;
-    bottom: -60px;
+    bottom: -80px;
     margin: auto;
 	user-select:none;
 	-webkit-user-select:none;
