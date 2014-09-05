@@ -214,7 +214,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 
 .slogan .arrow  {
-	position: absolute;
+	position: static;
 	cursor: pointer;
 	height: 60px;
     display: block;
