@@ -24,19 +24,14 @@
 	    <script src="js/price.js" type="text/javascript"></script>
 		<script type="text/javascript">
 		window.onload = function()
-		{
+	    {
 			modifyHeight();
 			scrollNav();
-			window.onresize = function()
+			window.onscroll = function() 
 			{
 				scrollNav();
 			};
-			window.onscroll = function()
-			{
-				scrollNav();
-			};
-		}
-		
+	    };
 	    </script>
 	</head>
 

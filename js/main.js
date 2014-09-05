@@ -1,3 +1,28 @@
+/*var Method = function(func, delay, mustrun)
+{
+	var timer = null;
+	var start;
+	return function()
+	{
+		var curr = +new Date();
+		clearTimeout(timer);
+		if (!start)
+		{
+			start = curr;
+		}
+		if (curr - start >= mustrun)
+		{
+			func.call(this);
+			start = curr;
+		}
+		else
+		{
+			timer = setTimeout(function()
+				{func.call(this);}, delay);
+		}
+	};
+};*/
+
 function scrollNav()
 {
 	var obj = document.getElementById('global');	
@@ -63,8 +88,8 @@ function scrollAnim()
 	{
 		global.className = '';
 		page1.className = "service";
-		return;
 	}
+	scrollNav();
 }
 
 function modifyHeight()
