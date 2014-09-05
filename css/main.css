@@ -7,7 +7,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	font-family: FuturaNDBook, YouYuan, Microsoft Yahei Light, Microsoft Yahei,sans-serif;
 	text-align: center;
 	min-width: 950px;
-	position: relative;
 	margin: 0;
 	padding: 0;
 }
@@ -50,7 +49,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 .mlogo  {
 	cursor:pointer;
-	position: relative;
 	float: left;
 	padding: 0;
 	height: 80px;
@@ -188,7 +186,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 .slogan  {	
 	min-width: 950px;
 	width: 100%;
-	position: relative;
 	padding-top: 120px;
 	text-align: center;
 	font-family: FuturaNDBook, YouYuan, Microsoft Yahei Light, Microsoft Yahei, sans-serif;
@@ -390,10 +387,10 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 }
 
 .wrapper  {
-	position: relative;
 	margin: 0 auto;
 	min-width: 900px;
 	width: 80%;
+	position: relative;
 }
 
 .circle  {
@@ -537,7 +534,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	margin-left: 6%;
 	display: inline-table;
 	text-shadow: none;
-	position: relative;
 }
 
 .item img  {
@@ -567,7 +563,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	width: 28%;
 	margin-top: 130px;
 	margin-left: 6%;
-	/*border: 1px solid #333333;*/
 }
 
 .uni .introd  {
@@ -663,7 +658,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 }
 
 #footer .parts  {
-	position: relative;
 	display: inline-table;
 	width: 22%;
 	margin: 0;

@@ -316,12 +316,10 @@
 	text-shadow: none;
 	line-height: 40px;
 	font-size: 18px;
-	position: relative;
 }
 
 .head_bg  {
 	background-color: #ED7C34;
-	position: relative;
 }
 
 .head_bg p  {
@@ -879,7 +877,6 @@
 	border-spacing: 0;
 	opacity: 0.8;
 	filter: Alpha(opacity=80);
-	position: relative;
 }
 
 .table .yes  {
