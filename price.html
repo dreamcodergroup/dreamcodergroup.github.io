@@ -20,6 +20,7 @@
 		<script src="js/html5.js" type="text/javascript"></script>
 		<![endif]-->
 	    <script src="js/main.js" type="text/javascript"></script>
+	    <script src="js/newtab.js" type="text/javascript"></script>
 		<script type="text/javascript">
 		window.onload = function()
 		{
@@ -100,6 +101,39 @@
 							</tr>
 						</thead>
 						<tbody>
+							<tr class="pri">
+								<td class="lead">文书类型</td>
+								<td colspan="2" class="select triple show">
+									<div><p class="focus" id="writetcv" onclick="showScale('write','cv',this);">简历</p></div>
+									<div><p id="writetps" onclick="showScale('write','ps',this);">个人陈述</p></div>
+									<div><p id="writetrl" onclick="showScale('write','rl',this);">推荐信</p></div>
+								</td>
+							</tr>
+							<tr class="pri">
+								<td class="lead">文书规模</td>
+								<td id="write-cv" colspan="2" class="select quadre show">
+									<div><p id="writecv0" class="focus" onclick="showPrice('write',0,this);">1页</p></div>
+									<div><p id="writecv1" onclick="showPrice('write',1,this);">2页</p></div>
+									<div><p id="writecv2" onclick="showPrice('write',2,this);">3页</p></div>
+									<div><p id="writecv3" onclick="showPrice('write',3,this);">4页</p></div>
+								</td>
+								<td id="write-ps" colspan="2" class="select quadre">
+									<div><p id="writeps0" class="focus" onclick="showPrice('write',0,this);">0-600字</p></div>
+									<div><p id="writeps1" onclick="showPrice('write',1,this);">601-900字</p></div>
+									<div><p id="writeps2" onclick="showPrice('write',2,this);">901-1300字</p></div>
+									<div><p id="writeps3" onclick="showPrice('write',3,this);">1301-1500字</p></div>
+								</td>
+								<td id="write-rl" colspan="2" class="select triple">
+									<div><p id="writerl0" class="focus" onclick="showPrice('write',0,this);">0-300字</p></div>
+									<div><p id="writerl1" onclick="showPrice('write',1,this);">301-600字</p></div>
+									<div><p id="writerl2" onclick="showPrice('write',2,this);">601-900字</p></div>
+								</td>
+							</tr>
+							<tr class="pri">
+								<td id="write-name" class="lead">简历</td>
+								<td id="write-modify" class="show">￥497 RMB</td>
+								<td id="write-write" class="show">￥897 RMB</td>
+							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
 								<td>外籍编辑的修改与建议，七轮的往返修改，呈现完美稿件</td>
@@ -155,13 +189,28 @@
 								<td></td>
 								<td></td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td class="lead">加急服务</td>
 								<td></td>
 								<td></td>
-							</tr>
+							</tr> -->
 						</tbody>
 					</table>
+					<h3>说明</h3>
+					<ol>
+						<li><p>
+							<b>关于简历</b>：简历决定了招生委员会对申请者的第一印象。一份好的简历需要清晰、专业的排版，更需要干练地道的语言。认真对待简历的制作、内容选择及美化，赢得申请第一步。申请简历并不同于找工作与实习的简历，需要列出你在大学期间的每一项成就（比赛获奖、发表论文、参加会议、进入实验室等等）。也正因为如此，申请简历的页数一般都会超过一页。
+						</p></li>
+						<li><p>
+							<b>关于个人陈述</b>：不必多说，作为留学申请的核心材料，也是打动招生委员会的重要材料，个人陈述的修改不可懈怠。。
+						</p></li>
+						<li><p>
+							<b>关于推荐信</b>：推荐信是少数能从第三方客观评价申请者的材料。绝大多数的申请者因不重视推荐信的制作，而错失良机。推荐信应从小事入手，从细微处体现个人潜力与科研兴趣，让推荐信发挥推荐信应有的作用。值得注意的是，荐信是由北美的文科博士进行修改，外编并不能修改推荐信。希望您能理解。另外，推荐信不宜过长，900已经是上限。
+						</p></li>
+						<li><p>
+							<b>关于服务时间</b>：无论是文书修改还是写作辅导，都需要您的参与与协助（提供补充材料，服务中期，提出修改意见），因此，我们并不能很好的测算确切的服务时间。根据往常的经验，文书修改的时间在4天左右，而写作辅导的时间在一周到两周左右。
+						</p></li>
+					</ol>
 				</div>
 			</div>
 
@@ -181,6 +230,41 @@
 							</tr>
 						</thead>
 						<tbody>
+							<tr class="pri">
+								<td class="lead">文书类型</td>
+								<td colspan="4" class="select triple show">
+									<div><p class="focus" id="latextcv" onclick="showScale('latex','cv',this);">简历</p></div>
+									<div><p id="latextps" onclick="showScale('latex','ps',this);">个人陈述</p></div>
+									<div><p id="latextrl" onclick="showScale('latex','rl',this);">推荐信</p></div>
+								</td>
+							</tr>
+							<tr class="pri">
+								<td class="lead">文书规模</td>
+								<td id="latex-cv" colspan="4" class="select quadre show">
+									<div><p id="latexcv0" class="focus" onclick="showPrice('latex',0,this);">1页</p></div>
+									<div><p id="latexcv1" onclick="showPrice('latex',1,this);">2页</p></div>
+									<div><p id="latexcv2" onclick="showPrice('latex',2,this);">3页</p></div>
+									<div><p id="latexcv3" onclick="showPrice('latex',3,this);">4页</p></div>
+								</td>
+								<td id="latex-ps" colspan="4" class="select quadre">
+									<div><p id="latexps0" class="focus" onclick="showPrice('latex',0,this);">1页</p></div>
+									<div><p id="latexps1" onclick="showPrice('latex',1,this);">2页</p></div>
+									<div><p id="latexps2" onclick="showPrice('latex',2,this);">3页</p></div>
+									<div><p id="latexps3" onclick="showPrice('latex',3,this);">4页</p></div>
+								</td>
+								<td id="latex-rl" colspan="4" class="select quadre">
+									<div><p id="latexrl0" class="focus" onclick="showPrice('latex',0,this);">1页</p></div>
+									<div><p id="latexrl1" onclick="showPrice('latex',1,this);">2页</p></div>
+									<div><p id="latexrl2" onclick="showPrice('latex',2,this);">3页</p></div>
+									<div><p id="latexrl3" onclick="showPrice('latex',3,this);">4页</p></div>
+							</tr>
+							<tr class="pri">
+								<td id="latex-name" class="lead">简历</td>
+								<td id="latex-service0" class="show">￥399 RMB</td>
+								<td id="latex-service1" class="show">￥599 RMB</td>
+								<td id="latex-service2" class="show">￥799 RMB</td>
+								<td id="latex-service3" class="show">￥999 RMB</td>
+							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
 								<td>了解基本的LaTeX的使用技巧，熟悉如何调整代码参数；对自己的代码水平充满自信</td>
@@ -272,13 +356,13 @@
 								<td></td>
 								<td></td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td class="lead">加急服务</td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
-							</tr>
+							</tr> -->
 						</tbody>
 					</table>
 					<h3>说明</h3>
@@ -377,12 +461,12 @@
 								<td></td>
 								<td></td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td class="lead">加急服务</td>
 								<td></td>
 								<td></td>
 								<td></td>
-							</tr>
+							</tr> -->
 						</tbody>
 					</table>
 				</div>

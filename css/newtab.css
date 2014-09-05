@@ -847,6 +847,30 @@
     }
 }
 
+.select div  {
+	float: left;
+	margin: 0;
+}
+
+.select p  {
+	display: inline-block;	
+	cursor: pointer;
+	color: #ffffff;
+	text-align: center;
+}
+
+.select p:hover, .select .focus  {
+	color: #eb6e1e;
+}
+
+.triple div {
+	width: 33.333%;
+}
+
+.quadre div  {
+	width: 25%;
+}
+
 .table  {
 	text-shadow: none;
 	margin: 40px auto;
@@ -858,11 +882,31 @@
 	position: relative;
 }
 
+.table .yes  {
+	display: block;
+	margin: auto;
+	height: 20px;
+}
+
+.table .pri .show, .table .pri .lead  {
+	display: table-cell;
+}
+
+.table .pri td  {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 90px;
+	background-color: #333333;
+	color: #ffffff;
+	padding: 0;
+	display: none;
+}
+
 .table thead  {
 	background-color: #000000;
 	color: #ffffff;
-	font-size: 18px;
-	line-height: 60px;
+	font-size: 20px;
+	line-height: 90px;
 }
 
 .table tbody  {
@@ -872,25 +916,20 @@
 	line-height: 30px;
 }
 
-.table td  {
-	width: 300px;
-	padding: 10px 15px;
-}
-
 .table th, .table td  {
 	border-left: 1px solid #888888;
-	width: 250px;
 }
 
 .table td  {
+	width: 280px;
+	padding: 10px 15px;
 	border-top: 1px solid #888888;
 }
 
 .table .lead  {
 	border-left: none;
-	font-size: 18px;
 	font-weight: bold;
-	width: 150px;
+	width: 180px;
 }
 
 .price ol, .price ol p  {
@@ -1316,12 +1355,6 @@
 	line-height: 15px;
 	margin: 0;
 	padding: 0;
-}
-
-.table .yes  {
-	display: block;
-	margin: auto;
-	height: 20px;
 }
 
 
