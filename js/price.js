@@ -1,4 +1,4 @@
-var last_type = "cv";
+var last_type = {write:"cv", latex:"cv"};
 var names = {cv:"简历", ps:"个人陈述", rl:"推荐信"};
 
 function showScale(base, type, obj)
@@ -8,15 +8,15 @@ function showScale(base, type, obj)
 	if (type == "")
 		return;
 
-	if (last_type)
+	if (last_type[base])
 	{
 		document.getElementById(base + "-name").innerHTML = names[type];
-		var otmp = document.getElementById(base + "t" + last_type);
+		var otmp = document.getElementById(base + "t" + last_type[base]);
 		if (otmp)
 		{
 			otmp.className = "";
 		}
-		otmp = document.getElementById(base + "-" + last_type);
+		otmp = document.getElementById(base + "-" + last_type[base]);
 		if (otmp)
 		{
 			var tmp = otmp.className;
@@ -26,34 +26,33 @@ function showScale(base, type, obj)
 		otmp = document.getElementById(base + "-" + type);
 		if (otmp)
 			otmp.className += " show";
-		last_type = type;
-		last_count = 0;
-		showPrice(base, last_count, document.getElementById(base+last_type+0));
+		last_type[base] = type;
+		showPrice(base, last_count[base][type], document.getElementById(base+last_type[base]+last_count[base][type]));
 	}
 }
 
 var prices = {write:{cv:[497,897,200,300], ps:[997,3588,300,0], rl:[497,1397,200,0]},
 				latex:{cv:[399,599,799,999,100], ps:[299,399,499,599,100], rl:[199,299,399,499,100]}};
-var last_count = 0;
+var last_count = {write:{cv:0, ps:0, rl:0}, latex:{cv:0, ps:0, rl:0}};
 
 function showPrice(base, count, obj)
 {
-	document.getElementById(base+last_type+last_count).className = "";
+	document.getElementById(base+last_type[base]+last_count[base][last_type[base]]).className = "";
 	obj.className = "focus";
 
-	last_count = count;
+	last_count[base][last_type[base]] = count;
 	var id = null;
 	if (base == "write")
 	{
 		id = document.getElementById(base+"-modify");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][0] + count * prices[base][last_type][2]);
+			id.innerHTML = "￥" + (prices[base][last_type[base]][0] + count * prices[base][last_type[base]][2]) + " RMB";
 		}
 		id = document.getElementById(base+"-write");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][1] + count * prices[base][last_type][3]);
+			id.innerHTML = "￥" + (prices[base][last_type[base]][1] + count * prices[base][last_type[base]][3]) + " RMB";
 		}
 		return;
 	}
@@ -62,22 +61,22 @@ function showPrice(base, count, obj)
 		id = document.getElementById(base+"-service0");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][0] + count * prices[base][last_type][4]);
+			id.innerHTML = "￥" + (prices[base][last_type[base]][0] + count * prices[base][last_type[base]][4]) + " RMB";
 		}
 		id = document.getElementById(base+"-service1");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][1] + count * prices[base][last_type][4]);
+			id.innerHTML = "￥" + (prices[base][last_type[base]][1] + count * prices[base][last_type[base]][4]) + " RMB";
 		}
 		id = document.getElementById(base+"-service2");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][2] + count * prices[base][last_type][4]);
+			id.innerHTML = "￥" + (prices[base][last_type[base]][2] + count * prices[base][last_type[base]][4]) + " RMB";
 		}
 		id = document.getElementById(base+"-service3");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][3] + count * prices[base][last_type][4]);
+			id.innerHTML = "￥" + (prices[base][last_type[base]][3] + count * prices[base][last_type[base]][4]) + " RMB";
 		}
 		return;
 	}
