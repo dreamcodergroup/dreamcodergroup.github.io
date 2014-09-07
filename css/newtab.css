@@ -892,7 +892,7 @@
 .table .pri td  {
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 90px;
+	line-height: 50px;
 	background-color: #333333;
 	color: #ffffff;
 	padding: 0;
@@ -903,7 +903,7 @@
 	background-color: #000000;
 	color: #ffffff;
 	font-size: 20px;
-	line-height: 90px;
+	line-height: 70px;
 }
 
 .table tbody  {
@@ -927,6 +927,14 @@
 	border-left: none;
 	font-weight: bold;
 	width: 180px;
+}
+
+.table .pric  {
+	color: #ffffff !important;
+	font-size: 40px !important;
+	line-height: 70px !important;
+	margin-top: 20px !important;
+	display: inline-block !important;
 }
 
 .price ol, .price ol p  {
@@ -1208,7 +1216,7 @@
 	padding-left: 30px;
 }
 
-.addcart  {
+/*.addcart  {
 	cursor: pointer;
 	background-color: #ED7C34;
 	height: 50px;
@@ -1352,6 +1360,39 @@
 	margin: 0;
 	padding: 0;
 }
+
+.addcart  {
+	background-color: #000000;
+	color: #ffffff;
+}*/
+
+.addchart  {
+	cursor: pointer;
+	background-color: #000000;
+	color: #ffffff;
+	width: 150px;
+	line-height: 50px;
+	font-size: 20px;
+	margin: auto;
+	margin-bottom: 30px;
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+.addchart:hover  {
+	background-color: #ffffff;
+	color: #000000;
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+
+
+
 
 
 

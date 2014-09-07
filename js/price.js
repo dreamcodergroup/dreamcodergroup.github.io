@@ -16,7 +16,6 @@ function showScale(base, type, obj)
 		{
 			otmp.className = "";
 		}
-		this.className = "focus";
 		otmp = document.getElementById(base + "-" + last_type);
 		if (otmp)
 		{
@@ -29,7 +28,7 @@ function showScale(base, type, obj)
 			otmp.className += " show";
 		last_type = type;
 		last_count = 0;
-		showPrice(base, 0, document.getElementById(base+last_type+0));
+		showPrice(base, last_count, document.getElementById(base+last_type+0));
 	}
 }
 
@@ -49,12 +48,12 @@ function showPrice(base, count, obj)
 		id = document.getElementById(base+"-modify");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][0] + count * prices[base][last_type][2]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type][0] + count * prices[base][last_type][2]);
 		}
 		id = document.getElementById(base+"-write");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][1] + count * prices[base][last_type][3]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type][1] + count * prices[base][last_type][3]);
 		}
 		return;
 	}
@@ -63,22 +62,22 @@ function showPrice(base, count, obj)
 		id = document.getElementById(base+"-service0");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][0] + count * prices[base][last_type][4]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type][0] + count * prices[base][last_type][4]);
 		}
 		id = document.getElementById(base+"-service1");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][1] + count * prices[base][last_type][4]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type][1] + count * prices[base][last_type][4]);
 		}
 		id = document.getElementById(base+"-service2");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][2] + count * prices[base][last_type][4]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type][2] + count * prices[base][last_type][4]);
 		}
 		id = document.getElementById(base+"-service3");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type][3] + count * prices[base][last_type][4]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type][3] + count * prices[base][last_type][4]);
 		}
 		return;
 	}
