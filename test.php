@@ -1,3 +1,7 @@
+<html>
+<body>
 <?php
-	phpinfo();
+	echo phpinfo();
 ?>
+</body>
+</html>
