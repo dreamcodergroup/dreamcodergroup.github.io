@@ -1,4 +1,4 @@
-var last_type = {write:"cv", latex:"cv"};
+var last_type = {write:"cv", latex:"cv", web:"cv"};
 var names = {cv:"简历", ps:"个人陈述", rl:"推荐信"};
 
 function showScale(base, type, obj)
@@ -32,8 +32,9 @@ function showScale(base, type, obj)
 }
 
 var prices = {write:{cv:[497,897,200,300], ps:[997,3588,300,0], rl:[497,1397,200,0]},
-				latex:{cv:[399,599,799,999,100], ps:[299,399,499,599,100], rl:[199,299,399,499,100]}};
-var last_count = {write:{cv:0, ps:0, rl:0}, latex:{cv:0, ps:0, rl:0}};
+				latex:{cv:[399,599,799,999,100], ps:[299,399,499,599,100], rl:[199,299,399,499,100]},
+				web:{cv:[797,1497,3497,1397,2297,4497,2197,3397,5997]}};
+var last_count = {write:{cv:0, ps:0, rl:0}, latex:{cv:0, ps:0, rl:0}, web:{cv:0}};
 
 function showPrice(base, count, obj)
 {
@@ -47,12 +48,12 @@ function showPrice(base, count, obj)
 		id = document.getElementById(base+"-modify");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type[base]][0] + count * prices[base][last_type[base]][2]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type[base]][0] + count * prices[base][last_type[base]][2]);
 		}
 		id = document.getElementById(base+"-write");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type[base]][1] + count * prices[base][last_type[base]][3]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type[base]][1] + count * prices[base][last_type[base]][3]);
 		}
 		return;
 	}
@@ -61,23 +62,65 @@ function showPrice(base, count, obj)
 		id = document.getElementById(base+"-service0");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type[base]][0] + count * prices[base][last_type[base]][4]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type[base]][0] + count * prices[base][last_type[base]][4]);
 		}
 		id = document.getElementById(base+"-service1");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type[base]][1] + count * prices[base][last_type[base]][4]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type[base]][1] + count * prices[base][last_type[base]][4]);
 		}
 		id = document.getElementById(base+"-service2");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type[base]][2] + count * prices[base][last_type[base]][4]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type[base]][2] + count * prices[base][last_type[base]][4]);
 		}
 		id = document.getElementById(base+"-service3");
 		if (id)
 		{
-			id.innerHTML = "￥" + (prices[base][last_type[base]][3] + count * prices[base][last_type[base]][4]) + " RMB";
+			id.innerHTML = "￥" + (prices[base][last_type[base]][3] + count * prices[base][last_type[base]][4]);
+		}
+		return;
+	}
+	if (base == "web")
+	{
+		id = document.getElementById(base+"-service0");
+		if (id)
+		{
+			id.innerHTML = "￥" + prices[base][last_type[base]][0 + count*3];
+		}
+		id = document.getElementById(base+"-service1");
+		if (id)
+		{
+			id.innerHTML = "￥" + prices[base][last_type[base]][1 + count*3];
+		}
+		id = document.getElementById(base+"-service2");
+		if (id)
+		{
+			id.innerHTML = "￥" + prices[base][last_type[base]][2 + count*3];
 		}
 		return;
 	}
 }
+
+function addtoChart(base, service)
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
