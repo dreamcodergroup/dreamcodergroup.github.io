@@ -2,7 +2,7 @@
 <html>
 <body>
 <?php
-	echo php;
+	echo "php";
 ?>
 </body>
 </html>
