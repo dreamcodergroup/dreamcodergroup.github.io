@@ -84,11 +84,18 @@
 			</div>
 		</div>
 
-		<div id="cart">
-			<div class="cart" onclick="Switch(this);">
+		<div class="cart">
+			<div id="clogo" class="clogo" onclick="Switch(this);">
 				<img src="img/cart-full.png">
 			</div>
 			<p class="head">已购项目</p>
+			<div id="cart">
+
+			</div>
+			<div class="shop" style="margin-top:10px;">合计：
+				<div class="right">&nbsp;元</div>
+				<div id="price" class="right">0</div>
+			</div>
 		</div>
 			<div id="pwrite" class="tmp"></div>
 			<div class="contents ind" style="padding-top:0;">
@@ -123,8 +130,8 @@
 								<td id="write-ps" colspan="2" class="select quadre">
 									<div><p id="writeps0" class="focus" onclick="showPrice('write',0,this);">0-600字</p></div>
 									<div><p id="writeps1" onclick="showPrice('write',1,this);">601-900字</p></div>
-									<div><p id="writeps2" onclick="showPrice('write',2,this);">901-1300字</p></div>
-									<div><p id="writeps3" onclick="showPrice('write',3,this);">1301-1500字</p></div>
+									<div><p id="writeps2" onclick="showPrice('write',2,this);">901-1200字</p></div>
+									<div><p id="writeps3" onclick="showPrice('write',3,this);">1201-1500字</p></div>
 								</td>
 								<td id="write-rl" colspan="2" class="select triple">
 									<div><p id="writerl0" class="focus" onclick="showPrice('write',0,this);">0-300字</p></div>
@@ -421,12 +428,12 @@
 							<tr class="pri">
 								<td id="web-name" class="lead">个人网页</td>
 								<td class="show"><p id="web0" class="pric">￥797</p> RMB
-									<div class="addcart">购买</div>
+									<div class="addcart" onclick="addtoCart('web', 0)">购买</div>
 								</td>
 								<td class="show"><p id="web1" class="pric">￥1497</p> RMB
-									<div class="addcart">购买</td>
+									<div class="addcart" onclick="addtoCart('web', 1)">购买</td>
 								<td class="show"><p id="web2" class="pric">￥3497</p> RMB
-									<div class="addcart">购买</td>
+									<div class="addcart" onclick="addtoCart('web', 2)">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
@@ -526,12 +533,12 @@
 							<tr class="pri">
 								<td id="cotton-name" class="lead">服务价格</td>
 								<td class="show"><p id="cotton0" class="pric">￥797</p> RMB
-									<div class="addcart">购买</div>
+									<div class="addcart" onclick="addtoCart('cotton', 0)">购买</div>
 								</td>
 								<td class="show"><p id="cotton1" class="pric">￥2997</p> RMB
-									<div class="addcart">购买</td>
+									<div class="addcart" onclick="addtoCart('cotton', 1)">购买</td>
 								<td class="show"><p id="cotton2" class="pric">￥13997</p> RMB
-									<div class="addcart">购买</td>
+									<div class="addcart" onclick="addtoCart('cotton', 2)">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>

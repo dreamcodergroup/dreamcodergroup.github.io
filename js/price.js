@@ -31,7 +31,7 @@ function showScale(base, type, obj)
 	}
 }
 
-var prices = {write:{cv:[497,897,200,300], ps:[997,3588,300,0], rl:[497,1397,200,0]},
+var prices = {write:{cv:[497,897,200,300], ps:[1197,3588,200,0], rl:[497,1397,200,0]},
 				latex:{cv:[399,599,799,999,200], ps:[299,399,499,599,100], rl:[199,299,399,499,100]},
 				web:{cv:[797,1497,3497,1397,2297,4497,2197,3397,5997]},
 				cotton:{cv:[797,2997,13997]}};
@@ -135,6 +135,8 @@ function addtoCart(base, service)
 	storage.setItem(name, 1);
 	if (document.getElementById(name))
 		return;
+	document.getElementById("clogo").className = "clogo add";
+	setTimeout(function(){document.getElementById("clogo").className="clogo";}, 300);
 	var obj = document.createElement("div");
 	obj.setAttribute("id", name);
 	obj.className = "shop";
@@ -146,6 +148,11 @@ function addtoCart(base, service)
 	obj.appendChild(po);
 
 	document.getElementById("cart").appendChild(obj);
+
+	var pri = document.getElementById("price");
+	var tmp = parseInt(pri.innerHTML);
+	tmp += price(base, last_count[base][last_type[base]], service);
+	pri.innerHTML = tmp;
 }
 
 function rmfromCart(base, type, count, service, obj)
@@ -158,7 +165,7 @@ function rmfromCart(base, type, count, service, obj)
 
 var bases = {latex:"LATEX排版", web:"个人网页制作", cotton:"套磁服务"};
 var scales = {write:{cv:["1页","2页","3页","4页"],
-					ps:["0-600字","601-900字","901-1300字","1301-1500字"],
+					ps:["0-600字","601-900字","901-1200字","1201-1500字"],
 					rl:["0-300字","301-600字","601-900字"]},
 			latex:["1页","2页","3页及以上"],
 			web:["1-5页","6-10页","11-20页"]};
@@ -203,10 +210,12 @@ function info(base, service)
 				break;
 			}
 		}
-		if (base != "cotton")
+		if (base == "latex")
 		{
 			tmp += names[last_type[base]] + "  ";
-			if (base)
+		}
+		if (base != "cotton")
+		{
 			tmp += scales[base][last_count[base][last_type[base]]];
 		}
 	}
@@ -216,10 +225,10 @@ function info(base, service)
 function Switch(obj)
 {
 	var parent = obj.parentNode;
-	if (parent.className=="")
-		parent.className="visit";
+	if (parent.className=="cart")
+		parent.className="cart visit";
 	else
-		parent.className="";
+		parent.className="cart";
 }
 
 
