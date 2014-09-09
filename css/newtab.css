@@ -1365,7 +1365,7 @@
 	color: #ffffff;
 }*/
 
-.addchart  {
+.addcart  {
 	cursor: pointer;
 	background-color: #000000;
 	color: #ffffff;
@@ -1380,13 +1380,94 @@
 	-o-transition: all 0.3s ease-in-out 0s;
 }
 
-.addchart:hover  {
+.addcart:hover  {
 	background-color: #ffffff;
 	color: #000000;
 	transition: all 0.3s ease-in-out 0s;
 	-moz-transition: all 0.3s ease-in-out 0s;
 	-webkit-transition: all 0.3s ease-in-out 0s;
 	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+#cart  {
+	position: fixed;
+	top:150px;
+	width: 300px;
+	right: -300px;
+	background-color: #ffffff;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+	z-index: 9999;
+	transition: all 0.6s ease-in-out 0s;
+	-moz-transition: all 0.6s ease-in-out 0s;
+	-webkit-transition: all 0.6s ease-in-out 0s;
+	-o-transition: all 0.6s ease-in-out 0s;
+}
+
+#cart.visit  {
+	right: 0;
+	transition: all 0.6s ease-in-out 0s;
+	-moz-transition: all 0.6s ease-in-out 0s;
+	-webkit-transition: all 0.6s ease-in-out 0s;
+	-o-transition: all 0.6s ease-in-out 0s;
+}
+
+#cart .cart  {
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	background-color: #111111;
+	margin-left: -50px;
+	position: relative;
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+#cart:hover .cart  {
+	background-color: #000000;
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+#cart .cart img  {
+	position: absolute;
+	height: 30px;
+	display: block;
+	line-height: 50px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#cart .head  {
+	font-size: 18px;
+	line-height: 50px;
+	font-weight: bold;
+	display: block;
+	border-bottom: 1px solid #ED7C34;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: -50px auto;
+}
+
+.shop  {
+	font-size: 12px;
+	line-height: 30px;
+	color: #000000;
+	text-align: left;
+	margin: 0 20px;
+}
+
+.shop .right  {
+	float: right;
+	margin: 0;
 }
 
 

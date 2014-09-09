@@ -83,6 +83,13 @@
 				</p>
 			</div>
 		</div>
+
+		<div id="cart">
+			<div class="cart" onclick="Switch(this);">
+				<img src="img/cart-full.png">
+			</div>
+			<p class="head">已购项目</p>
+		</div>
 			<div id="pwrite" class="tmp"></div>
 			<div class="contents ind" style="padding-top:0;">
 				<div class="back"></div>
@@ -127,11 +134,11 @@
 							</tr>
 							<tr class="pri">
 								<td id="write-name" class="lead">简历</td>
-								<td class="show"><p id="write-modify" class="pric">￥497</p> RMB
-									<div class="addchart">购买</td>
+								<td class="show"><p id="write0" class="pric">￥497</p> RMB
+									<div class="addcart" onclick="addtoCart('write', 0)">购买</td>
 								<td class="show">
-									<p id="write-write" class="pric">￥897</p> RMB
-									<div class="addchart">购买</td>
+									<p id="write1" class="pric">￥897</p> RMB
+									<div class="addcart" onclick="addtoCart('write', 1)">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
@@ -239,36 +246,33 @@
 							</tr>
 							<tr class="pri">
 								<td class="lead">文书规模</td>
-								<td id="latex-cv" colspan="4" class="select quadre show">
+								<td id="latex-cv" colspan="4" class="select triple show">
 									<div><p id="latexcv0" class="focus" onclick="showPrice('latex',0,this);">1页</p></div>
 									<div><p id="latexcv1" onclick="showPrice('latex',1,this);">2页</p></div>
-									<div><p id="latexcv2" onclick="showPrice('latex',2,this);">3页</p></div>
-									<div><p id="latexcv3" onclick="showPrice('latex',3,this);">4页</p></div>
+									<div><p id="latexcv2" onclick="showPrice('latex',2,this);">3页及以上</p></div>
 								</td>
-								<td id="latex-ps" colspan="4" class="select quadre">
+								<td id="latex-ps" colspan="4" class="select triple">
 									<div><p id="latexps0" class="focus" onclick="showPrice('latex',0,this);">1页</p></div>
 									<div><p id="latexps1" onclick="showPrice('latex',1,this);">2页</p></div>
-									<div><p id="latexps2" onclick="showPrice('latex',2,this);">3页</p></div>
-									<div><p id="latexps3" onclick="showPrice('latex',3,this);">4页</p></div>
+									<div><p id="latexps2" onclick="showPrice('latex',2,this);">3页及以上</p></div>
 								</td>
-								<td id="latex-rl" colspan="4" class="select quadre">
+								<td id="latex-rl" colspan="4" class="select triple">
 									<div><p id="latexrl0" class="focus" onclick="showPrice('latex',0,this);">1页</p></div>
 									<div><p id="latexrl1" onclick="showPrice('latex',1,this);">2页</p></div>
-									<div><p id="latexrl2" onclick="showPrice('latex',2,this);">3页</p></div>
-									<div><p id="latexrl3" onclick="showPrice('latex',3,this);">4页</p></div>
+									<div><p id="latexrl2" onclick="showPrice('latex',2,this);">3页及以上</p></div>
 								</td>
 							</tr>
 							<tr class="pri">
 								<td id="latex-name" class="lead">简历</td>
-								<td class="show"><p id="latex-service0" class="pric">￥399</p> RMB
-									<div class="addchart">购买</div>
+								<td class="show"><p id="latex0" class="pric">￥399</p> RMB
+									<div class="addcart" onclick="addtoCart('latex', 0)">购买</div>
 								</td>
-								<td class="show"><p id="latex-service1" class="pric">￥599</p> RMB
-									<div class="addchart">购买</td>
-								<td class="show"><p id="latex-service2" class="pric">￥799</p> RMB
-									<div class="addchart">购买</td>
-								<td class="show"><p id="latex-service3" class="pric">￥999</p> RMB
-									<div class="addchart">购买</td>
+								<td class="show"><p id="latex1" class="pric">￥599</p> RMB
+									<div class="addcart" onclick="addtoCart('latex', 1)">购买</td>
+								<td class="show"><p id="latex2" class="pric">￥799</p> RMB
+									<div class="addcart" onclick="addtoCart('latex', 2)">购买</td>
+								<td class="show"><p id="latex3" class="pric">￥999</p> RMB
+									<div class="addcart" onclick="addtoCart('latex', 3)">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
@@ -416,13 +420,13 @@
 							</tr>
 							<tr class="pri">
 								<td id="web-name" class="lead">个人网页</td>
-								<td class="show"><p id="web-service0" class="pric">￥797</p> RMB
-									<div class="addchart">购买</div>
+								<td class="show"><p id="web0" class="pric">￥797</p> RMB
+									<div class="addcart">购买</div>
 								</td>
-								<td class="show"><p id="web-service1" class="pric">￥1497</p> RMB
-									<div class="addchart">购买</td>
-								<td class="show"><p id="web-service2" class="pric">￥3497</p> RMB
-									<div class="addchart">购买</td>
+								<td class="show"><p id="web1" class="pric">￥1497</p> RMB
+									<div class="addcart">购买</td>
+								<td class="show"><p id="web2" class="pric">￥3497</p> RMB
+									<div class="addcart">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
@@ -467,16 +471,16 @@
 								<td><img class="yes" src="img/ok.png"></td>
 							</tr>
 							<tr>
+								<td class="lead">完稿时间</td>
+								<td>24小时</td>
+								<td>48小时</td>
+								<td>72小时</td>
+							</tr>
+							<tr>
 								<td class="lead">修改次数</td>
 								<td>2</td>
 								<td>3</td>
 								<td>5</td>
-							</tr>
-							<tr>
-								<td class="lead">完稿时间</td>
-								<td></td>
-								<td></td>
-								<td></td>
 							</tr>
 							<tr>
 								<td class="lead">价格</td>
@@ -520,14 +524,14 @@
 						</thead>
 						<tbody>
 							<tr class="pri">
-								<td id="web-name" class="lead">服务价格</td>
-								<td class="show"><p id="web-service0" class="pric">￥797</p> RMB
-									<div class="addchart">购买</div>
+								<td id="cotton-name" class="lead">服务价格</td>
+								<td class="show"><p id="cotton0" class="pric">￥797</p> RMB
+									<div class="addcart">购买</div>
 								</td>
-								<td class="show"><p id="web-service1" class="pric">￥2997</p> RMB
-									<div class="addchart">购买</td>
-								<td class="show"><p id="web-service2" class="pric">￥13997</p> RMB
-									<div class="addchart">购买</td>
+								<td class="show"><p id="cotton1" class="pric">￥2997</p> RMB
+									<div class="addcart">购买</td>
+								<td class="show"><p id="cotton2" class="pric">￥13997</p> RMB
+									<div class="addcart">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
