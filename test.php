@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-	echo phpinfo();
+	echo php;
 ?>
 </body>
 </html>

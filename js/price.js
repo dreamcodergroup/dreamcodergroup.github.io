@@ -128,6 +128,7 @@ var storage = window.localStorage;
 
 
 var services = {write:{cv:0,ps:0,rl:0},latex:{cv:0,ps:0,rl:0},web:{cv:0},cotton:{cv:0}};
+var data = "";
 
 function addtoCart(base, service)
 {
