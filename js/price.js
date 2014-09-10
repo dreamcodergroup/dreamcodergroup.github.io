@@ -128,12 +128,10 @@ var storage = window.localStorage;
 
 
 var services = {write:{cv:0,ps:0,rl:0},latex:{cv:0,ps:0,rl:0},web:{cv:0},cotton:{cv:0}};
-var data = "";
 
 function addtoCart(base, service)
 {
 	var name = base+service+last_type[base]+last_count[base][last_type[base]];
-	storage.setItem(name, 1);
 	if (document.getElementById(name))
 		return;
 	document.getElementById("clogo").className = "clogo add";
@@ -154,13 +152,18 @@ function addtoCart(base, service)
 	var tmp = parseInt(pri.innerHTML);
 	tmp += price(base, last_count[base][last_type[base]], service);
 	pri.innerHTML = tmp;
+	storage.setItem("data", document.getElementById("cart").innerHTML);
+	storage.setItem("price", tmp);
+	storage.setItem("status", "1");
 }
 
 function rmfromCart(base, type, count, service, obj)
 {
 	var name = base+service+type+count;
-	storage.removeItem(name);
 	obj.parentNode.parentNode.removeChild(obj.parentNode);
+	storage.setItem("data", document.getElementById("cart").innerHTML);
+	if (document.getElementById("cart").innerHTML == "")
+		storage.removeItem("status");
 }
 
 
@@ -230,6 +233,15 @@ function Switch(obj)
 		parent.className="cart visit";
 	else
 		parent.className="cart";
+}
+
+function restoreItem()
+{
+	if (storage.getItem("status") == "1")
+	{
+		document.getElementById("cart").innerHTML = storage.getItem("data");
+		document.getElementById("price").innerHTML = storage.getItem("price");
+	}
 }
 
 
