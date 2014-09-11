@@ -145,7 +145,7 @@ function addtoCart(base, service)
 
 	var po = document.createElement("div");
 	po.className = "right";
-	po.innerHTML = '<img src="img/xx.png" onclick="rmfromCart(\''+base+'\','+service +',this);">';
+	po.innerHTML = '<img class="del" src="img/xx.png" onclick="rmfromCart(\''+base+'\','+service +',this);">';
 	obj.appendChild(po);
 
 	po = document.createElement("p");
@@ -272,7 +272,7 @@ function insertFormItem(data, id, price)
 	obj.setAttribute("id", id+"data");
 	obj.setAttribute("value", data);
 	obj.setAttribute("type", "hidden");
-	document.getElementById("form").insertBefore(obj, document.getElementById("submit"));
+	document.getElementById("form").appendChild(obj);
 	
 	obj = document.createElement("input");
 	obj.setAttribute("name", count+"price");
@@ -280,7 +280,7 @@ function insertFormItem(data, id, price)
 	obj.setAttribute("id", id+"price");
 	obj.setAttribute("value", price);
 	obj.setAttribute("type", "hidden");
-	document.getElementById("form").insertBefore(obj, document.getElementById("submit"));
+	document.getElementById("form").appendChild(obj);
 	storage.setItem("form", document.getElementById("form").innerHTML);
 }
 
@@ -310,20 +310,41 @@ function sub()
 	if (result == false)
 		return false;
 
+	var res = document.getElementById("result");
+	res.className = "show";
+
 	var sub = document.getElementById("submit");
 	sub.disabled = "disabled";
 	sub.className = "disablesub";
 
-	$("#form").ajaxSubmit(function(message) { 
+	var status = 0;
+	setTimeout(function()
+	{
+		if (status == 0)
+		{
+			status = 2;
+			res.innerHTML = "订购失败！<br />请重新点击发送。";
+			sub.disabled = "";
+			sub.className = "submit";
+		}
+	}, 60000);
+	$("#formdata").ajaxSubmit(function(message) { 
 		if (message == "OK")
 		{
-			alert("订购成功！");
+			status = 1;
+			res.innerHTML = "订购成功！";
 			clear();
-			document.getElementById("shop").className = "cart";
+			setTimeout(function(){
+				document.getElementById("shop").className = "cart";
+				res.className = "";
+				res.innerHTML = "邮件发送中，请稍后……";
+			}, 500);
 		}
 		else
-			alert("订购失败！\n"+message);
-
+		{
+			status = 2;
+			res.innerHTML = "订购失败！<br />"+message;
+		}
 		sub.disabled = "";
 		sub.className = "submit";
 	});
@@ -333,7 +354,7 @@ function sub()
 function clear()
 {
 	document.getElementById("cart").innerHTML = "";
-	document.getElementById("form").innerHTML = 'Email:&nbsp;<input id="mail" name="mail" type="text" maxlength="50"><input id="submit" type="submit" class="submit" value="确认购买">';
+	document.getElementById("form").innerHTML = "";
 	document.getElementById("price").innerHTML = 0;
 	storage.removeItem("data");
 	storage.removeItem("form");

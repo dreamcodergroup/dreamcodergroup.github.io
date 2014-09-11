@@ -96,8 +96,16 @@
 			<div class="shop" style="margin-top:10px;">合计：
 				<div class="right">&nbsp;元</div>
 				<div id="price" class="right">0</div>
-				<form id="form" action="http://niejingru.tk/mail.php" method="post" onsubmit="return sub()">
-					请输入您的邮箱:&nbsp;<input id="mail" name="mail" type="text" maxlength="50">
+				<form id="formdata" class="form" action="http://niejingru.tk/mail.php" method="post" onsubmit="return sub()">
+					Email:
+					<div class="infor">
+						<img class="infor" src="img/info.png">
+						<div class="exp">为保证服务质量，我们将发送一封确认邮件给您，随后将会有工作人员和您邮件联系具体的服务和支付事宜</div>
+					</div>
+
+					&nbsp;<input id="mail" name="mail" type="text" maxlength="50">
+					<div id="form"></div>
+					<div id="result">邮件发送中，请稍后……</div>
 					<input id="submit" type="submit" class="submit" value="确认购买">
 				</form>
 			</div>
