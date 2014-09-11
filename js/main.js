@@ -134,9 +134,11 @@ function scroll(id, delta)
 function scrollOn(x, speed)
 {
 	speed = speed - 15;
-	if (speed <= 10)
-		speed = 1;
 	var browserTop = document.body.scrollTop || document.documentElement.scrollTop;
+	if (speed <= 5)
+	{
+		speed = 5;
+	}
 	var dest = Math.ceil(Math.abs(x - browserTop) / speed);
 	if (x < browserTop)
 		dest = browserTop - dest;
