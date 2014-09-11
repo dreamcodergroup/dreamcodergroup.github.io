@@ -145,7 +145,7 @@ function addtoCart(base, service)
 
 	var po = document.createElement("div");
 	po.className = "right";
-	po.innerHTML = '<img src="img/xx.png" style="display:block;height:20px;cursor:pointer;" onclick="rmfromCart(\''+base+'\','+service +',this);">';
+	po.innerHTML = '<img src="img/xx.png" onclick="rmfromCart(\''+base+'\','+service +',this);">';
 	obj.appendChild(po);
 
 	po = document.createElement("p");

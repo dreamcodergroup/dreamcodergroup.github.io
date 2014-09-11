@@ -135,7 +135,7 @@ function scrollOn(x, speed)
 {
 	speed = speed - 15;
 	if (speed <= 10)
-		speed = 3;
+		speed = 1;
 	var browserTop = document.body.scrollTop || document.documentElement.scrollTop;
 	var dest = Math.ceil(Math.abs(x - browserTop) / speed);
 	if (x < browserTop)
@@ -151,10 +151,6 @@ function scrollOn(x, speed)
 		var invokeFunction = "scrollOn(" + x + "," + speed + ")";
 		interval = window.setTimeout(invokeFunction, 10);
 	}
-	/*else
-	{
-		interval = null;
-	}*/
 	return;
 }
 
