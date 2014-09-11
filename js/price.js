@@ -306,13 +306,39 @@ function sub()
 		return false;
 	}
 
+	var result = confirm("确认购买并清空购物车？");
+	if (result == false)
+		return false;
+
+	var sub = document.getElementById("submit");
+	sub.disabled = "disabled";
+	sub.className = "disablesub";
+
 	$("#form").ajaxSubmit(function(message) { 
 		if (message == "OK")
+		{
 			alert("订购成功！");
+			clear();
+			document.getElementById("shop").className = "cart";
+		}
 		else
 			alert("订购失败！\n"+message);
+
+		sub.disabled = "";
+		sub.className = "submit";
 	});
 	return false;
+}
+
+function clear()
+{
+	document.getElementById("cart").innerHTML = "";
+	document.getElementById("form").innerHTML = 'Email:&nbsp;<input id="mail" name="mail" type="text" maxlength="50"><input id="submit" type="submit" class="submit" value="确认购买">';
+	document.getElementById("price").innerHTML = 0;
+	storage.removeItem("data");
+	storage.removeItem("form");
+	storage.removeItem("status");
+	storage.removeItem("price");
 }
 
 

@@ -1346,6 +1346,17 @@
 	margin: 10px auto;
 }
 
+.cart .disablesub  {
+	width: 110px;
+	height: 40px;
+	background-color: #444444;
+	color: #ffffff;
+	font-size: 15px;
+	border: none;
+	display: block;
+	margin: 10px auto;
+}
+
 .cart .submit:hover  {
 	background-color: #000000;
 }
@@ -1380,6 +1391,18 @@
 	margin-right: 10px;
 }
 
+#form  {
+	font-size: 15px;
+	line-height: 40px;
+	margin-top: 10px;
+}
+
+#mail  {
+	width: 80%;
+	height: 30px;
+	font-size: 15px;
+	line-height: 30px;
+}
 
 
 
