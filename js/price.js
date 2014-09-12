@@ -338,7 +338,7 @@ function sub()
 				document.getElementById("shop").className = "cart";
 				res.className = "";
 				res.innerHTML = "邮件发送中，请稍后……";
-			}, 500);
+			}, 5000);
 		}
 		else
 		{
