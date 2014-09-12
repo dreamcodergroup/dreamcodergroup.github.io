@@ -338,7 +338,7 @@ function sub()
 			setTimeout(function(){
 				document.getElementById("shop").className = "cart";
 				res.className = "";
-				res.innerHTML = "邮件发送中，请稍后……";
+				/*res.innerHTML = "邮件发送中，请稍后……";*/
 			}, 3000);
 		}
 		else
