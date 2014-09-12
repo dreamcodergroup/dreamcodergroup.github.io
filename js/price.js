@@ -311,6 +311,7 @@ function sub()
 		return false;
 
 	var res = document.getElementById("result");
+	res.innerHTML = "邮件发送中，请稍后……";
 	res.className = "show";
 
 	var sub = document.getElementById("submit");

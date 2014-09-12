@@ -508,7 +508,7 @@
 	margin: 0px auto 40px auto;
 }
 
-.left  {
+.modules .left  {
 	width: 50%;
 	margin: 0;
 	margin-right: -4px;
@@ -518,7 +518,7 @@
 	border-right: 2px dashed #eb6e1e;
 }
 
-.right  {
+.modules .right  {
 	width: 50%;
 	margin: 0;
 	margin-left: -4.5px;
@@ -527,21 +527,21 @@
 	padding-top: 40px;
 }
 
-.sec  {
+.modules .sec  {
 	width: 100%;
 	margin: 0;
 	position: relative;
 }
 
-.left .sec  {
+.modules .left .sec  {
 	margin-bottom: 160px;
 }
 
-.right .sec  {
+.modules .right .sec  {
 	margin-top: 160px;
 }
 
-.left .board  {
+.modules .left .board  {
 	margin: 0;
 	border-right: 8px solid #eb6e1e;
 	width: 90%;
@@ -549,7 +549,7 @@
 	background-color: #ffffff;
 }
 
-.right .board  {
+.modules .right .board  {
 	margin: 0;
 	margin-left: 8%;
 	border-left: 8px solid #eb6e1e;
@@ -558,20 +558,20 @@
 	background-color: #ffffff;
 }
 
-.expl  {
+.modules .expl  {
 	display: block;
 	padding: 10px 20px 20px 30px;
 	margin: 0;
 }
 
-.expl h1  {
+.modules .expl h1  {
 	font-size: 25px;
 	line-height: 55px;
 	color: #eb6e1e;
 	text-align: center;
 }
 
-.expl p  {
+.modules .expl p  {
 	display: block;
 	font-size: 13px;
 	line-height: 30px;
@@ -579,7 +579,7 @@
 	text-align: left;
 }
 
-.pin  {
+.modules .pin  {
 	width: 24px;
 	height: 24px;
 	border-radius: 100%;
@@ -590,15 +590,15 @@
 	margin: auto;
 }
 
-.left .pin  {
+.modules .left .pin  {
 	right: -13px;
 }
 
-.right .pin  {
+.modules .right .pin  {
 	left: -9px;
 }
 
-.pin .one  {
+.modules .pin .one  {
 	position: absolute;
 	width: 8px;
 	height: 8px;
@@ -607,7 +607,7 @@
 	margin: 8px;
 }
 
-.pin .two  {
+.modules .pin .two  {
 	position: absolute;
 	width: 12px;
 	height: 12px;
@@ -616,7 +616,7 @@
 	margin: 4px;
 }
 
-.pin .three  {
+.modules .pin .three  {
 	position: absolute;
 	width: 20px;
 	height: 20px;
