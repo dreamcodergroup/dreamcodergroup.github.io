@@ -377,8 +377,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	padding-bottom: 50px;
 	text-shadow: none;
 	font-weight: bold;
-	opacity: 0.8;
-	filter: Alpha(opacity=80);
 }
 
 #introd  {
@@ -394,8 +392,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 .circle  {
 	border: 1px solid #DDDDDD;
-	opacity: .7;
-	filter: Alpha(opacity=70);
 	border-radius: 100%;
 	height: 160px;
 	width: 160px;
@@ -556,7 +552,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	text-align: center;
 }
 
-.service .uni  {
+/*.service .uni  {
 	position: relative;
 	display: inline-table;
 	width: 28%;
@@ -593,8 +589,8 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 #page3 .back  {
 	background-color: #ffffff;
-	opacity: 0.4;
-	filter: Alpha(opacity=40);
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
 	border: none;
 }
 
@@ -628,6 +624,82 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	width: 120px;
 	display: block;
 	position: absolute;
+}*/
+
+/*#page3  .back  {
+	background-color: #ffffff;
+	border: none;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+}*/
+
+#page3  {
+	min-height: 250px;
+}
+
+.logo  {
+	cursor: pointer;
+	width: 10.5%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	/*opacity: 0.6;
+	filter: Alpha(opacity=60);*/
+	transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+}
+
+.logo:hover  {
+	opacity: 1;
+	filter: Alpha(opacity=100);
+	transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+}
+
+.logo img  {
+	display: block;
+	margin: 0;
+	width: 100%;
+	border-radius: 100%;
+	margin-top: -50%;
+	transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+}
+
+.logo:hover img  {
+	margin-top: 25%;
+	transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+}
+
+.logo .sel  {
+
+}
+
+.det  {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	display: none;
+}
+
+.det .back  {
+	background-color: #ffffff;
+	border: none;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
 }
 
 
@@ -641,6 +713,10 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	font-size: 15px;
 	text-align: left;
 	position: relative;
+}
+
+#footer .mlogo  {
+	cursor: inherit;
 }
 
 #footer .back  {
