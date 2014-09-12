@@ -4,7 +4,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 }
 
 .base  {
-	font-family: FuturaNDBook, YouYuan, Microsoft Yahei Light, Microsoft Yahei,sans-serif;
+	font-family: FuturaNDBook, Microsoft Yahei Light, Microsoft Yahei, YouYuan, sans-serif;
 	text-align: center;
 	min-width: 950px;
 	margin: 0;
@@ -188,13 +188,12 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	width: 100%;
 	padding-top: 120px;
 	text-align: center;
-	font-family: FuturaNDBook, YouYuan, Microsoft Yahei Light, Microsoft Yahei, sans-serif;
 	color: #ffffff;
 }
 
 
 .slogan h1  {
-	font-family: FuturaND-Bold, YouYuan, Microsoft Yahei Light, Microsoft Yahei,sans-serif;
+	font-family: FuturaND-Bold, Microsoft Yahei Light, Microsoft Yahei, YouYuan, sans-serif;
 	font-size: 70px;	
 	letter-spacing:5px;
 	text-transform: uppercase;
