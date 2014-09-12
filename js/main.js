@@ -1,27 +1,14 @@
-/*var Method = function(func, delay, mustrun)
+var last_case = 0;
+
+function showCase(index)
 {
-	var timer = null;
-	var start;
-	return function()
-	{
-		var curr = +new Date();
-		clearTimeout(timer);
-		if (!start)
-		{
-			start = curr;
-		}
-		if (curr - start >= mustrun)
-		{
-			func.call(this);
-			start = curr;
-		}
-		else
-		{
-			timer = setTimeout(function()
-				{func.call(this);}, delay);
-		}
-	};
-};*/
+	if (index == last_case)
+		return;
+	document.getElementById("case" + last_case).className = "det hide";
+	
+	document.getElementById("case" + index).className = "det show";
+	last_case = index;
+}
 
 function scrollNav()
 {
