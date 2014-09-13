@@ -636,7 +636,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
-	min-height: 350px;
+	min-height: 400px;
 }
 
 .det  {
@@ -786,7 +786,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 .det .uni  {
 	width: 30%;
-	margin: 40px 0;
+	margin: 30px 0;
 	margin-right: 5%;
 	display: inline-block;
 	vertical-align: middle;
