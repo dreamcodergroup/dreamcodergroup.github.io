@@ -1,13 +1,13 @@
-var last_case = 0;
+var last_case = {cases:0,latex:0};
 
-function showCase(index)
+function showCase(typ, index)
 {
-	if (index == last_case)
+	if (index == last_case[typ])
 		return;
-	document.getElementById("case" + last_case).className = "det hide";
+	document.getElementById(typ + last_case[typ]).className = "det hide";
 	
-	document.getElementById("case" + index).className = "det show";
-	last_case = index;
+	document.getElementById(typ + index).className = "det show";
+	last_case[typ] = index;
 }
 
 function scrollNav()

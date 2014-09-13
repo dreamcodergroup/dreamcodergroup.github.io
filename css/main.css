@@ -14,6 +14,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	-o-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
+	vertical-align: middle;
 }
 
 .base.index  {
@@ -225,21 +226,27 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	opacity: 0.8;
 	filter: Alpha(opacity=80);
 
-	animation: fade 1s ease infinite;
-	-moz-animation: fade 1s ease infinite;
-	-o-animation: fade 1s ease infinite;
-	-webkit-animation: fade 1s ease infinite;
+	animation: fade 2s ease infinite;
+	-moz-animation: fade 2s ease infinite;
+	-o-animation: fade 2s ease infinite;
+	-webkit-animation: fade 2s ease infinite;
 }
 
 @keyframes fade {
     0% {
         padding-top: 0;
     }
+    15% {
+        padding-top: 20px;
+    }
+    30% {
+    	padding-top: 0;
+    }
     45% {
         padding-top: 20px;
     }
-    90% {
-        padding-top: 0;
+    60% {
+    	padding-top: 0;
     }
 }
 
@@ -247,11 +254,17 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
     0% {
         padding-top: 0;
     }
+    15% {
+        padding-top: 20px;
+    }
+    30% {
+    	padding-top: 0;
+    }
     45% {
         padding-top: 20px;
     }
-    90% {
-        padding-top: 0;
+    60% {
+    	padding-top: 0;
     }
 }
 
@@ -259,11 +272,17 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
     0% {
         padding-top: 0;
     }
+    15% {
+        padding-top: 20px;
+    }
+    30% {
+    	padding-top: 0;
+    }
     45% {
         padding-top: 20px;
     }
-    90% {
-        padding-top: 0;
+    60% {
+    	padding-top: 0;
     }
 }
 
@@ -271,11 +290,17 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
     0% {
         padding-top: 0;
     }
+    15% {
+        padding-top: 20px;
+    }
+    30% {
+    	padding-top: 0;
+    }
     45% {
         padding-top: 20px;
     }
-    90% {
-        padding-top: 0;
+    60% {
+    	padding-top: 0;
     }
 }
 
@@ -672,7 +697,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 @keyframes show {
     from {
-    	margin-left: 100%;
+    	margin-left: 110%;
 		opacity: 0;
 		filter: Alpha(opacity=0);
     }
@@ -685,7 +710,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 @-moz-keyframes show {
     from {
-    	margin-left: 100%;
+    	margin-left: 110%;
 		opacity: 0;
 		filter: Alpha(opacity=0);
     }
@@ -698,7 +723,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 @-o-keyframes show {
     from {
-    	margin-left: 100%;
+    	margin-left: 110%;
 		opacity: 0;
 		filter: Alpha(opacity=0);
     }
@@ -711,7 +736,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 @-webkit-keyframes show {
     from {
-    	margin-left: 100%;
+    	margin-left: 110%;
 		opacity: 0;
 		filter: Alpha(opacity=0);
     }
@@ -729,7 +754,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 		filter: Alpha(opacity=100);
     }
     to {
-    	margin-left: -100%;
+    	margin-left: -110%;
 		opacity: 0;
 		filter: Alpha(opacity=0);
     }
@@ -742,7 +767,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 		filter: Alpha(opacity=100);
     }
     to {
-    	margin-left: -100%;
+    	margin-left: -110%;
 		opacity: 0;
 		filter: Alpha(opacity=0);
     }
@@ -755,7 +780,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 		filter: Alpha(opacity=100);
     }
     to {
-    	margin-left: -100%;
+    	margin-left: -110%;
 		opacity: 0;
 		filter: Alpha(opacity=0);
     }
@@ -768,7 +793,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 		filter: Alpha(opacity=100);
     }
     to {
-    	margin-left: -100%;
+    	margin-left: -110%;
 		opacity: 0;
 		filter: Alpha(opacity=0);
     }
@@ -787,9 +812,9 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	position: relative;
 }
 
-.det .uni  {
+.uni  {
 	width: 30%;
-	margin: 30px 0;
+	margin: 50px 0;
 	margin-right: 5%;
 	display: inline-block;
 	vertical-align: middle;
@@ -816,14 +841,14 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	text-shadow: 0 0 1px #eb6e1e;
 }
 
-.det .info  {
-	width: 50%;
-	display: inline-block;
-	margin-left: 5%;
+.inf  {
+	width: 60%;
+	margin-left: 3%;
 	font-size: 14px;
 	line-height: 30px;
 	color: #000000;
 	text-align: left;
+	display: inline-block;
 	vertical-align: middle;
 }
 
