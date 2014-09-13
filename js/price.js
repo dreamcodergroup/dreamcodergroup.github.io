@@ -37,24 +37,24 @@ var prices = {write:{cv:[497,897,200,300], ps:[1197,3588,200,0], rl:[497,1397,20
 				cotton:{cv:[797,2997,13997]}};
 var last_count = {write:{cv:0, ps:0, rl:0}, latex:{cv:0, ps:0, rl:0}, web:{cv:0}, cotton:{cv:0}};
 
-function showPrice(base, count, obj)
+function showPrice(base, countt, obj)
 {
 	document.getElementById(base+last_type[base]+last_count[base][last_type[base]]).className = "";
 	obj.className = "focus";
 
-	last_count[base][last_type[base]] = count;
+	last_count[base][last_type[base]] = countt;
 	var id = null;
 	if (base == "write")
 	{
 		id = document.getElementById(base+0);
 		if (id)
 		{
-			id.innerHTML = "￥" + price(base, count, 0);
+			id.innerHTML = "￥" + price(base, last_type[base], countt, 0);
 		}
 		id = document.getElementById(base+1);
 		if (id)
 		{
-			id.innerHTML = "￥" + price(base, count, 1);
+			id.innerHTML = "￥" + price(base, last_type[base], countt, 1);
 		}
 		return;
 	}
@@ -63,22 +63,22 @@ function showPrice(base, count, obj)
 		id = document.getElementById(base+0);
 		if (id)
 		{
-			id.innerHTML = "￥" + price(base, count, 0);
+			id.innerHTML = "￥" + price(base, last_type[base], countt, 0);
 		}
 		id = document.getElementById(base+1);
 		if (id)
 		{
-			id.innerHTML = "￥" + price(base, count, 1);
+			id.innerHTML = "￥" + price(base, last_type[base], countt, 1);
 		}
 		id = document.getElementById(base+2);
 		if (id)
 		{
-			id.innerHTML = "￥" + price(base, count, 2);
+			id.innerHTML = "￥" + price(base, last_type[base], countt, 2);
 		}
 		id = document.getElementById(base+3);
 		if (id)
 		{
-			id.innerHTML = "￥" + price(base, count, 3);
+			id.innerHTML = "￥" + price(base, last_type[base], countt, 3);
 		}
 		return;
 	}
@@ -87,39 +87,39 @@ function showPrice(base, count, obj)
 		id = document.getElementById(base+0);
 		if (id)
 		{
-			id.innerHTML = "￥" + price(base, count, 0);
+			id.innerHTML = "￥" + price(base, last_type[base], countt, 0);
 		}
 		id = document.getElementById(base+1);
 		if (id)
 		{
-			id.innerHTML = "￥" + price(base, count, 1);
+			id.innerHTML = "￥" + price(base, last_type[base], countt, 1);
 		}
 		id = document.getElementById(base+2);
 		if (id)
 		{
-			id.innerHTML = "￥" + price(base, count, 2);
+			id.innerHTML = "￥" + price(base, last_type[base], countt, 2);
 		}
 		return;
 	}
 }
 
-function price(base, count, serv)
+function price(base, type, countt, serv)
 {
 	if (base == "write")
 	{
-		return prices[base][last_type[base]][serv] + count * prices[base][last_type[base]][serv+2];
+		return prices[base][type][serv] + countt * prices[base][type][serv+2];
 	}
 	if (base == "latex")
 	{
-		return prices[base][last_type[base]][serv] + count * prices[base][last_type[base]][4];
+		return prices[base][type][serv] + countt * prices[base][type][4];
 	}
 	if (base == "web")
 	{
-		return prices[base][last_type[base]][serv + count*3];
+		return prices[base][type][serv + countt*3];
 	}
 	if (base == "cotton")
 	{
-		return prices[base][last_type[base]][serv];
+		return prices[base][type][serv];
 	}
 }
 
@@ -145,35 +145,35 @@ function addtoCart(base, service)
 
 	var po = document.createElement("div");
 	po.className = "right";
-	po.innerHTML = '<img class="del" src="img/xx.png" onclick="rmfromCart(\''+base+'\','+service +',this);">';
+	po.innerHTML = '<img class="del" src="img/xx.png" onclick="rmfromCart(\''+base+'\',\''+last_type[base]+'\','+last_count[base][last_type[base]]+','+service+',this);">';
 	obj.appendChild(po);
 
 	po = document.createElement("p");
 	po.className = "right";
-	po.innerHTML = price(base, last_count[base][last_type[base]], service) + " 元";
+	po.innerHTML = price(base, last_type[base], last_count[base][last_type[base]], service) + " 元";
 	obj.appendChild(po);
 
-	insertFormItem(formdata, name, price(base, last_count[base][last_type[base]], service));
+	insertFormItem(formdata, name, price(base, last_type[base], last_count[base][last_type[base]], service));
 
 	document.getElementById("cart").appendChild(obj);
 
 	var pri = document.getElementById("price");
 	var tmp = parseInt(pri.innerHTML);
-	tmp += price(base, last_count[base][last_type[base]], service);
+	tmp += price(base, last_type[base], last_count[base][last_type[base]], service);
 	pri.innerHTML = tmp;
 	storage.setItem("data", document.getElementById("cart").innerHTML);
 	storage.setItem("price", tmp);
 	storage.setItem("status", "1");
 }
 
-function rmfromCart(base, service, obj)
+function rmfromCart(base, type, countt, service, obj)
 {
-	var name = base+service+last_type[base]+last_count[base][last_type[base]];
+	var name = base+service+type+countt;
 	obj.parentNode.parentNode.parentNode.removeChild(obj.parentNode.parentNode);
 
 	var pri = document.getElementById("price");
 	var tmp = parseInt(pri.innerHTML);
-	tmp -= price(base, last_count[base][last_type[base]], service);
+	tmp -= price(base, type, countt, service);
 	pri.innerHTML = tmp;
 
 	removeFormItem(name);
