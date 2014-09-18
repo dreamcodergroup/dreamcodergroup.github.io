@@ -1,10 +1,11 @@
-# DreamCoder Group
-
-=======
+DreamCoder Group
+======
 
 *Encode Your Application into Success*
 
 ### 铸造完美留学申请
+
+-------------
 
 DreamCoder 是一所由清华华科学子创建，定位于提升留学申请材料档次的咨询机构。
 
