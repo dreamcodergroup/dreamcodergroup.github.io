@@ -491,6 +491,7 @@
 }
 
 .top  {
+	position: relative;
 	width: 150px;
 	font-size: 20px;
 	height: 60px;
@@ -501,6 +502,7 @@
 }
 
 .bottom  {
+	position: relative;
 	width: 150px;
 	font-size: 20px;
 	height: 60px;
