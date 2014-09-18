@@ -884,13 +884,13 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 #footer .parts  {
 	display: inline-table;
-	width: 22%;
+	min-width: 10%;
 	margin: 0;
-	margin-left: 8%;
+	margin-left: 4.5%;
 }
 
 #footer .row  {
-	margin: 20px;
+	margin: 20px 0;
 	margin-left: 10px;
 }
 
