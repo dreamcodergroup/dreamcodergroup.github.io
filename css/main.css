@@ -11,9 +11,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	padding: 0;
 	position: absolute;
 	font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	-webkit-font-smoothing: antialiased;
 	vertical-align: middle;
 }
 
