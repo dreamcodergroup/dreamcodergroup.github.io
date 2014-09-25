@@ -1,5 +1,5 @@
 @font-face {
-	font-family:FuturaNDBook;
+	font-family:FuturaND;
 	src:url(23F08F_0_0.eot);
 	src:url(23F08F_0_0.eot?#iefix) format('embedded-opentype'),
 		url(23F08F_0_0.woff) format('woff'),
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-	font-family:FuturaNDBook-Oblique;
+	font-family:FuturaND-Oblique;
 	src:url(23F08F_1_0.eot);
 	src:url(23F08F_1_0.eot?#iefix) format('embedded-opentype'),
 		url(23F08F_1_0.woff) format('woff'),

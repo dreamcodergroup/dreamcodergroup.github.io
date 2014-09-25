@@ -69,25 +69,24 @@ h1, h2, h3, th, td  {
 }
 
 .mlogo img  {
-	position:absolute;
+	display: inline-block;
 	margin: auto 0;
-	top: 0;
-	bottom: 0;
 	height:50px;
 	line-height:80px;
+	vertical-align: middle;
 }
 
 .mlogo .name  {
-	position: absolute;
-	margin-left: 70px !important;
+	display: inline-block;
+	margin: 0 5px;
 	font-family: FuturaND-Bold;
-	font-size: 150%;
-	line-height: 150%;
+	font-size: 25px;
+	line-height: 90px;
+	height: 80px;
 	color: #ffffff !important;
 	letter-spacing:1px;
-	text-align: left;
-	display: inline;
-	top: 0;
+	text-align: center;
+	vertical-align: middle;
 }
 
 #global.fixed .navi  {
@@ -203,7 +202,7 @@ h1, h2, h3, th, td  {
 
 
 .slogan h1  {
-	font-family: FuturaND-Bold, Microsoft Yahei Light, Microsoft Yahei, YouYuan, sans-serif;
+	font-family: FuturaND-Bold;
 	font-size: 350%;
 	line-height: 150%;
 	letter-spacing:5px;
@@ -213,6 +212,7 @@ h1, h2, h3, th, td  {
 }
 
 .slogan p  {
+	font-family: FuturaND, PingHei;
 	font-size: 175%;
 	line-height: 150%;
 	margin-top: 10px;
