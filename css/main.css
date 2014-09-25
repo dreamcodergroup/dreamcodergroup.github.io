@@ -7,7 +7,9 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	font-family: PingHei, Microsoft Yahei Light, Microsoft Yahei, YouYuan, sans-serif;
 	text-align: center;
 	min-width: 950px;
-	font-weight: normal;
+	font-weight: lighter;
+	font-size: 19px;
+	line-height: 150%;
 	margin: 0;
 	padding: 0;
 	position: absolute;
@@ -17,7 +19,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	-moz-font-feature-settings: "liga", "kern";
 }
 
-h1, h2, h3  {
+h1, h2, h3, th, td  {
 	font-weight: lighter;
 }
 
@@ -79,10 +81,10 @@ h1, h2, h3  {
 	position: absolute;
 	margin-left: 70px !important;
 	font-family: FuturaND-Bold;
-	font-size: 25px;
+	font-size: 150%;
+	line-height: 150%;
 	color: #ffffff !important;
 	letter-spacing:1px;
-	line-height: 35px;
 	text-align: left;
 	display: inline;
 	top: 0;
@@ -181,11 +183,10 @@ h1, h2, h3  {
 	display: block;
 	color: #ffffff;
 	cursor: pointer;
-	font-size: 15px;
+	font-size: 100%;
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	text-shadow: 0px 0px 1px #ffffff;
 }
 
 #header  {
@@ -203,7 +204,8 @@ h1, h2, h3  {
 
 .slogan h1  {
 	font-family: FuturaND-Bold, Microsoft Yahei Light, Microsoft Yahei, YouYuan, sans-serif;
-	font-size: 70px;
+	font-size: 350%;
+	line-height: 150%;
 	letter-spacing:5px;
 	text-transform: uppercase;
 	margin-top: 40px;
@@ -211,10 +213,10 @@ h1, h2, h3  {
 }
 
 .slogan p  {
-	font-size: 30px;
+	font-size: 175%;
+	line-height: 150%;
 	margin-top: 10px;
 	margin-bottom: 20px;
-	line-height: 60px;
 }
 
 
@@ -389,7 +391,8 @@ h1, h2, h3  {
 }
 
 .title  {
-	font-size: 40px;
+	font-size: 220%;
+	line-height: 150%;
 	color: #ffffff;
 	margin: auto;
 	padding-top: 50px;
@@ -448,16 +451,16 @@ h1, h2, h3  {
 
 .short h1  {
 	display: block !important;
-	font-size: 30px !important;
+	font-size: 160% !important;
 	margin: 0 !important;
-	line-height: 50px !important;
+	line-height: 150% !important;
 }
 
 .short p  {
 	margin: 0;
-	font-size: 20px;
+	font-size: 130%;
 	text-align: center;
-	line-height: 30px;
+	line-height: 150%;
 }
 
 .circle:hover .back  {
@@ -505,15 +508,15 @@ h1, h2, h3  {
 }
 
 .circle .detail p  {
-	font-size: 20px;
-	line-height: 35px;
+	font-size: 120%;
+	line-height: 150%;
 	margin: auto;
 	color: #ffffff;
 }
 
 .circle .detail a  {
-	font-size: 15px;
-	line-height: 30px;
+	font-size: 100%;
+	line-height: 150%;
 	margin: auto;
 	padding-top: 10px;
 	text-decoration: none;
@@ -557,17 +560,17 @@ h1, h2, h3  {
 
 .item h1  {
 	margin-top: 30px;
-	font-size: 25px;
-	line-height: 40px;
+	font-size: 170%;
+	line-height: 150%;
 	color: #dddddd;
 	text-align: center;
 }
 
 .item p  {
-	font-size: 15px;
-	line-height: 30px;
+	font-size: 90%;
+	line-height: 180%;
 	color: #dddddd;
-	text-align: center;
+	text-align: left;
 }
 
 #page3  {
@@ -668,7 +671,7 @@ h1, h2, h3  {
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
-	min-height: 400px;
+	min-height: 350px;
 }
 
 .det  {
@@ -817,7 +820,7 @@ h1, h2, h3  {
 
 .uni  {
 	width: 30%;
-	margin: 50px 0;
+	margin: 0;
 	margin-right: 5%;
 	display: inline-block;
 	vertical-align: middle;
@@ -831,15 +834,16 @@ h1, h2, h3  {
 }
 
 .det .uni p  {
-	font-size: 12px;
-	line-height: 30px;
+	font-size: 80%;
+	line-height: 200%;
 	margin: 0 auto;
 	padding: 0;
 	color: #000000;
 }
 
 .det .uni .serv  {
-	font-size: 14px;
+	font-size: 100%;
+	line-height: 200%;
 	color: #eb6e1e;
 	text-shadow: 0 0 1px #eb6e1e;
 }
@@ -847,8 +851,8 @@ h1, h2, h3  {
 .inf  {
 	width: 60%;
 	margin-left: 3%;
-	font-size: 14px;
-	line-height: 30px;
+	font-size: 90%;
+	line-height: 180%;
 	color: #000000;
 	text-align: left;
 	display: inline-block;
@@ -863,7 +867,8 @@ h1, h2, h3  {
 	padding: 30px 0 80px 0;
 	min-width: 950px;
 	width: 100%;
-	font-size: 15px;
+	font-size: 90%;
+	line-height: 180%;
 	text-align: left;
 	position: relative;
 }
@@ -886,10 +891,10 @@ h1, h2, h3  {
 }
 
 #footer .parts  {
-	display: inline-table;
+	display: inline-block;
+	vertical-align: top;
 	min-width: 10%;
-	margin: 0;
-	margin-left: 4.5%;
+	margin: 0 2.3%;
 }
 
 #footer .row  {
@@ -898,7 +903,8 @@ h1, h2, h3  {
 }
 
 #footer .parts p {
-	font-size: 15px;
+	font-size: 95%;
+	line-height: 180%;
 }
 
 #footer a:hover  {
@@ -939,7 +945,8 @@ h1, h2, h3  {
 }
 
 #footer h1  {
-	font-size: 20px;
+	font-size: 125%;
+	line-height: 200%;
 	color: #ffffff;
 }
 
@@ -951,7 +958,8 @@ h1, h2, h3  {
 #footer .regist  {
 	display: block;
 	margin: 0 auto;
-	font-size: 15px;
+	font-size: 90%;
+	line-height: 80px;
 	height: 80px;
 	position: absolute;
 	bottom: 0;
@@ -970,7 +978,7 @@ h1, h2, h3  {
 	padding: 0;
 	color: #eb6e1e;
 	line-height: 80px;
-	font-size: 20px;
+	font-size: 150%;
 	position: relative;
 }
 
@@ -1088,8 +1096,8 @@ h1, h2, h3  {
 
 .tail  {
 	margin: 30px auto;
-	font-size: 30px;
-	line-height: 50px;
+	font-size: 150%;
+	line-height: 180%;
 	text-shadow: none;
 	color: #dddddd;
 }

@@ -23,8 +23,8 @@
 }
 
 .intro h1  {
-	font-size: 45px;
-	line-height: 90px;
+	font-size: 250%;
+	line-height: 180%;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -37,8 +37,8 @@
 .intro p  {
 	padding: 0;
 	margin: auto;
-	font-size: 20px;
-	line-height: 45px;
+	font-size: 125%;
+	line-height: 200%;
 	text-align: center;
 }
 
@@ -64,7 +64,6 @@
 	margin-top: 20px;
 	left:0;
 	right:0;
-	font-size: 18px;
 	color: #ffffff;
 }
 
@@ -91,9 +90,7 @@
 	height: 180px;
 	bottom: -180px;
 	border-radius: 100%;
-	font-size: 15px;
 	color: #000000;
-	line-height: 30px;
 	padding: 0;
 	text-align: center;
 	opacity: 0;
@@ -176,7 +173,7 @@
 
 .section ul li p  {
 	color: #ffffff;
-	font-size: 15px;
+	font-size: 90%;
 	line-height: 40px;
 	cursor: pointer;
 	text-align: center;
@@ -190,7 +187,7 @@
 }
 
 .section ul li p:hover  {
-	color: #ED7C34;
+	color: #eb6e1e;
 }
 
 @keyframes fadeI {
@@ -263,22 +260,22 @@
 	position: relative;
 	color: #ffffff;
 	text-align: center;
-	line-height: 50px !important;
-	/*font-weight: lighter;*/
+	font-size: 180%;
+	line-height: 150% !important;
 }
 
 .container.ind  h2  {
 	position: relative;
 	color: #eb6e1e;
 	text-align: center;
-	line-height: 40px !important;
-	font-size: 20px;
+	line-height: 150% !important;
+	font-size: 125%;
 }
 
 .container.ind p  {
 	text-align: center;
-	font-size: 15px;
-	line-height: 30px;
+	font-size: 90%;
+	line-height: 180%;
 	padding-left: 0;
 }
 
@@ -297,8 +294,8 @@
 	margin: 0;
 	text-align: left;
 	color: #ffffff;
-	font-size: 50px;
-	line-height: 100px;
+	font-size: 250%;
+	line-height: 200%;
 	padding: 0;
 }
 
@@ -307,11 +304,11 @@
 	text-align: center;
 	color: #333333;
 	text-shadow: none;
-	font-size: 28px;
-	line-height: 45px;
+	font-size: 170%;
+	line-height: 150%;
 	border-bottom: 2px solid #ED7C34;
-	margin-bottom: 40px;
-	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 	display: inline-block;
 }
 
@@ -319,8 +316,8 @@
 	text-align: left;
 	color: #555555;
 	text-shadow: none;
-	font-size: 20px;
-	line-height: 25pt;
+	font-size: 125%;
+	line-height: 150%;
 }
 
 .contents p  {
@@ -328,8 +325,8 @@
 	text-align: left;
 	color: #333333;
 	text-shadow: none;
-	line-height: 40px;
-	font-size: 18px;
+	line-height: 200%;
+	font-size: 100%;
 }
 
 .head_bg  {
@@ -354,9 +351,9 @@
 }
 
 .spliter p  {
-	font-size: 25px !important;
+	font-size: 150% !important;
 	color: #ffffff !important;
-	line-height: 50px !important;
+	line-height: 180% !important;
 	margin: 20px 65px 20px 80px;
 	display: inline-block;
 	text-align: left;
@@ -487,8 +484,8 @@
 	margin-left: 0;
 	color: #555555;
 	text-shadow: none;
-	font-size: 18px;
-	line-height: 60px;
+	font-size: 120%;
+	line-height: 200%;
 	text-decoration: none;
 	display: block;
 	text-align: left;
@@ -506,7 +503,7 @@
 .top  {
 	position: relative;
 	width: 150px;
-	font-size: 20px;
+	font-size: 125%;
 	height: 60px;
 	line-height: 60px;
 	background-color: #eb6e1e;
@@ -517,7 +514,7 @@
 .bottom  {
 	position: relative;
 	width: 150px;
-	font-size: 20px;
+	font-size: 125%;
 	height: 60px;
 	line-height: 60px;
 	background-color: #eb6e1e;
@@ -582,16 +579,16 @@
 }
 
 .modules .expl h1  {
-	font-size: 25px;
-	line-height: 55px;
+	font-size: 150%;
+	line-height: 200%;
 	color: #eb6e1e;
 	text-align: center;
 }
 
 .modules .expl p  {
 	display: block;
-	font-size: 13px;
-	line-height: 30px;
+	font-size: 90%;
+	line-height: 180%;
 	color: #000000;
 	text-align: left;
 }
@@ -687,8 +684,8 @@
 }
 
 .table .pri td  {
-	font-size: 20px;
-	line-height: 50px;
+	font-size: 120%;
+	line-height: 300%;
 	background-color: #333333;
 	color: #ffffff;
 	padding: 0;
@@ -698,15 +695,15 @@
 .table thead  {
 	background-color: #000000;
 	color: #ffffff;
-	font-size: 20px;
-	line-height: 70px;
+	font-size: 120%;
+	line-height: 300%;
 }
 
 .table tbody  {
 	background-color: #ffffff;
 	color: #000000;
-	font-size: 15px;
-	line-height: 30px;
+	font-size: 90%;
+	line-height: 180%;
 }
 
 .table th, .table td  {
@@ -722,19 +719,21 @@
 .table .lead  {
 	border-left: none;
 	width: 180px;
+	font-size: 120%;
+	line-height: 200%;
 }
 
 .table .pric  {
 	color: #ffffff !important;
-	font-size: 40px !important;
-	line-height: 70px !important;
+	font-size: 220% !important;
+	line-height: 150% !important;
 	margin-top: 20px !important;
 	display: inline-block !important;
 }
 
 .price ol, .price ol p  {
-	font-size: 12px;
-	line-height: 22px;
+	font-size: 90%;
+	line-height: 180%;
 }
 
 .price li  {
@@ -787,8 +786,8 @@
 	position: absolute;
 	width: 50%;
 	text-align: center;
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 120%;
+	line-height: 150%;
 	height: 30px;
 	color: #000000;
 	top: 0;
@@ -803,8 +802,8 @@
 
 .part p  {
 	position: relative;
-	font-size: 13px;
-	line-height: 25px;
+	font-size: 85%;
+	line-height: 170%;
 	color: #000000;
 	text-align: left;
 	padding: 15px 20px;
@@ -840,8 +839,8 @@
 
 .labels h1  {
 	position: relative;
-	font-size: 20px;
-	line-height: 50px;
+	font-size: 125%;
+	line-height: 200%;
 	color: #ffffff;
 	background-color: #000000;
 	opacity: 0.8;
@@ -866,8 +865,8 @@
 
 .labels p  {
 	position: relative;
-	font-size: 13px;
-	line-height: 30px;
+	font-size: 85%;
+	line-height: 180%;
 	color: #000000;
 	padding: 20px;
 	margin: 0;
@@ -952,16 +951,16 @@
 
 
 .container h1  {
-	font-size: 30px;
-	line-height: 80px !important;
+	font-size: 170%;
+	line-height: 200% !important;
 	color: #000000;
 	text-align: left;
 }
 
 .container h2  {
 	margin: 0;
-	font-size: 20px;
-	line-height: 60px;
+	font-size: 120%;
+	line-height: 250%;
 	color: #000000;
 	text-align: left;
 }
@@ -971,8 +970,8 @@
 }
 
 .container p  {
-	font-size: 18px;
-	line-height: 40px;
+	font-size: 90%;
+	line-height: 180%;
 	color: #000000;
 	padding-left: 30px;
 	text-align: left;
@@ -1005,27 +1004,29 @@
 	padding-bottom: 0;
 	margin: 0;
 	line-height: 40px;
-	font-size: 15px;
+	font-size: 90%;
+	line-height: 200%;
 }
 
 .work ol li p::before  {
 	content: counter(item);
 	counter-increment: item;
 
-	background-color: #ED7C34;
+	background-color: #eb6e1e;
 	border-radius: 100%;
-	opacity: 0.7;
-	filter: Alpha(opacity=70);
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
 
 	margin-right: 5px;
 	display: inline-block;
-	font-size: 15px;
-	width: 25px;
-	height: 25px;
+	font-size: 90%;
+	width: 23px;
+	height: 23px;
 	color: #ffffff;
-	line-height: 30px;
+	line-height: 23px;
 	text-align: center;
 	text-shadow: none;
+	vertical-align: middle;
 }
 
 .faq .container h1  {
@@ -1041,8 +1042,8 @@
 }
 
 .faq .container p  {
-	font-size: 15px;
-	line-height: 35px;
+	font-size: 90%;
+	line-height: 180%;
 	text-shadow: none;
 	display: block;
 	padding-left: 30px;
@@ -1053,8 +1054,8 @@
 	background-color: #000000;
 	color: #ffffff;
 	width: 150px;
-	line-height: 50px;
-	font-size: 20px;
+	font-size: 125%;
+	line-height: 200%;
 	margin: auto;
 	margin-bottom: 30px;
 	transition: all 0.3s ease-in-out 0s;
@@ -1138,7 +1139,7 @@
 }
 
 .cart .head  {
-	font-size: 18px;
+	font-size: 110%;
 	line-height: 50px;
 	display: inline-block;
 	border-bottom: 1px solid #ED7C34;
@@ -1153,8 +1154,8 @@
 }
 
 .shop  {
-	font-size: 12px;
-	line-height: 30px;
+	font-size: 80%;
+	line-height: 220%;
 	color: #000000;
 	text-align: left;
 	margin: 0 30px 0 20px;
@@ -1182,7 +1183,8 @@
 	height: 40px;
 	background-color: #222222;
 	color: #ffffff;
-	font-size: 15px;
+	font-size: 100%;
+	line-height: 150%;
 	border: none;
 	display: block;
 	margin: 10px auto;
@@ -1193,7 +1195,8 @@
 	height: 40px;
 	background-color: #444444;
 	color: #ffffff;
-	font-size: 15px;
+	font-size: 100%;
+	line-height: 150%;
 	border: none;
 	display: block;
 	margin: 10px auto;
@@ -1242,16 +1245,16 @@
 }
 
 .form  {
-	font-size: 15px;
-	line-height: 40px;
+	font-size: 100%;
+	line-height: 200%;
 	margin-top: 10px;
 }
 
 #mail  {
 	width: 72%;
 	height: 30px;
-	font-size: 15px;
-	line-height: 30px;
+	font-size: 100%;
+	line-height: 180%;
 	margin: 0 auto;
 	display: inline-block;
 }
@@ -1271,10 +1274,10 @@
 
 .infor .exp  {
 	position: absolute;
-	background-color: #222222;
+	background-color: #111111;
 	color: #ffffff;
-	font-size: 12px;
-	line-height: 20px;
+	font-size: 90%;
+	line-height: 180%;
 	width: 200px;
 	margin: 0;
 	display: none;
@@ -1289,8 +1292,8 @@
 
 #result {
 	text-align: center;
-	font-size: 13px;
-	line-height: 30px;
+	font-size: 95%;
+	line-height: 200%;
 	display: none;
 }
 
