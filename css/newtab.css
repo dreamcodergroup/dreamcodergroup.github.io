@@ -95,7 +95,6 @@
 	color: #000000;
 	line-height: 30px;
 	padding: 0;
-	font-weight: bold;
 	text-align: center;
 	opacity: 0;
 	filter: Alpha(opacity=0);
@@ -485,7 +484,6 @@
 }
 
 .contents a  {
-	font-weight: bold;
 	margin-left: 0;
 	color: #555555;
 	text-shadow: none;
@@ -690,7 +688,6 @@
 
 .table .pri td  {
 	font-size: 20px;
-	font-weight: bold;
 	line-height: 50px;
 	background-color: #333333;
 	color: #ffffff;
@@ -724,7 +721,6 @@
 
 .table .lead  {
 	border-left: none;
-	font-weight: bold;
 	width: 180px;
 }
 
@@ -797,7 +793,7 @@
 	color: #000000;
 	top: 0;
 	bottom: 0;
-	margin: auto 0;s
+	margin: auto 0;
 }
 
 .card .cont .text  {
@@ -1144,7 +1140,6 @@
 .cart .head  {
 	font-size: 18px;
 	line-height: 50px;
-	font-weight: bold;
 	display: inline-block;
 	border-bottom: 1px solid #ED7C34;
 	position: absolute;
