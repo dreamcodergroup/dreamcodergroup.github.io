@@ -183,11 +183,11 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	text-shadow: 0px 0px 1px #ffffff;
 }
 
-#header  {	
+#header  {
 	min-height: 700px;
 }
 
-.slogan  {	
+.slogan  {
 	min-width: 950px;
 	width: 100%;
 	padding-top: 120px;
@@ -198,7 +198,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 
 .slogan h1  {
 	font-family: FuturaND-Bold, Microsoft Yahei Light, Microsoft Yahei, YouYuan, sans-serif;
-	font-size: 70px;	
+	font-size: 70px;
 	letter-spacing:5px;
 	text-transform: uppercase;
 	margin-top: 40px;
@@ -893,7 +893,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	margin-left: 10px;
 }
 
-#footer .parts p {	
+#footer .parts p {
 	font-size: 15px;
 }
 
@@ -1090,8 +1090,9 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	color: #dddddd;
 	font-weight: bold;
 }
-
-
+* {
+    -webkit-font-smoothing: antialiased;
+}
 
 
 
