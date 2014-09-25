@@ -28,73 +28,38 @@
 	font-family:'PingHei';
 	font-style:normal;
 	font-weight:200;
-	src:url("PingHei-light.woff") format("woff"),
-		url("PingHei-light.ttf") format("truetype");
-	*src:url('');
+	src:url(PingHei-light.eot);
+	src:url(PingHei-light.eot?#iefix) format('embedded-opentype'),
+		url(PingHei-light.woff) format("woff"),
+		url(PingHei-light.ttf) format("truetype");
 }
 
 @font-face {
 	font-family:'PingHei';
 	font-style:normal;
 	font-weight:400;
-	src:url("PingHei-text.woff") format("woff"),
-		url("PingHei-text.ttf") format("truetype");
-	*src:url('');
+	src:url(PingHei-text.eot);
+	src:url(PingHei-text.eot?#iefix) format('embedded-opentype'),
+		url(PingHei-text.woff) format("woff"),
+		url(PingHei-text.ttf) format("truetype");
 }
 
 @font-face {
 	font-family:'PingHei';
 	font-style:normal;
 	font-weight:600;
-	src:url("PingHei-semibold.woff") format("woff"),
-		url("PingHei-semibold.ttf") format("truetype");
-	*src:url('');
+	src:url(PingHei-semibold.eot);
+	src:url(PingHei-semibold.eot?#iefix) format('embedded-opentype'),
+		url(PingHei-semibold.woff) format("woff"),
+		url(PingHei-semibold.ttf) format("truetype");
 }
 
 @font-face {
 	font-family:'PingHei';
 	font-style:normal;
 	font-weight:700;
-	src:url("PingHei-bold.woff") format("woff"),
-		url("PingHei-bold.ttf") format("truetype");
-	*src:url('');
+	src:url(PingHei-bold.eot);
+	src:url(PingHei-bold.eot?#iefix) format('embedded-opentype'),
+		url(PingHei-bold.woff) format("woff"),
+		url(PingHei-bold.ttf) format("truetype");
 }
-
-/* IE8 and Below
------------------ */
-@font-face {
-	*font-family:'PingHei 100';
-	*src:url("PingHei-light.eot?") format("eot");
-	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
-}
-
-@font-face {
-	*font-family:'PingHei 200';
-	*src:url("PingHei-light.eot?") format("eot");
-	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
-}
-
-@font-face {
-	*font-family:'PingHei';
-	*src:url("PingHei-text.eot?") format("eot");
-	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
-}
-
-@font-face {
-	*font-family:'PingHei 500';
-	*src:url("PingHei-text.eot?") format("eot");
-	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
-}
-
-@font-face {
-	*font-family:'PingHei 600';
-	*src:url("PingHei-semibold.eot?") format("eot");
-	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
-}
-
-@font-face {
-	*font-family:'PingHei 700';
-	*src:url("PingHei-bold.eot?") format("eot");
-	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
-}
-
