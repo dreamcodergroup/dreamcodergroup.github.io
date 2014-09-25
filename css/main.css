@@ -10,7 +10,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 	vertical-align: middle;
 }
 
