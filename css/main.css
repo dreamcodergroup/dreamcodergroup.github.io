@@ -212,7 +212,7 @@ h1, h2, h3, th, td  {
 }
 
 .slogan p  {
-	font-family: FuturaND, PingHei;
+	font-family: PingHei, FuturaND;
 	font-size: 175%;
 	line-height: 150%;
 	margin-top: 10px;
