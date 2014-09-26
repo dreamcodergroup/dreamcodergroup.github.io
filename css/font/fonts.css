@@ -3,8 +3,8 @@
 	src:url(23F08F_0_0.eot);
 	src:url(23F08F_0_0.eot?#iefix) format('embedded-opentype'),
 		url(23F08F_0_0.woff) format('woff'),
-		url(23F08F_0_0.ttf) format('svg'),
-		url(23F08F_0_0.svg) format('truetype')
+		url(23F08F_0_0.ttf) format('truetype'),
+		url(23F08F_0_0.svg) format('svg')
 }
 
 @font-face {
@@ -12,8 +12,8 @@
 	src:url(23F08F_1_0.eot);
 	src:url(23F08F_1_0.eot?#iefix) format('embedded-opentype'),
 		url(23F08F_1_0.woff) format('woff'),
-		url(23F08F_1_0.ttf) format('svg'),
-		url(23F08F_1_0.svg) format('truetype')
+		url(23F08F_1_0.ttf) format('truetype'),
+		url(23F08F_1_0.svg) format('svg')
 }
 
 @font-face {
