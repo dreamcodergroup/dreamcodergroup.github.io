@@ -66,9 +66,26 @@
 	right:0;
 }
 
-.template .index p  {
+.template .index p , a {
 	padding: 0;
 	color: #ffffff;
+}
+
+.template .index a  {
+	color: #ed7c34;
+	text-decoration:none;
+	margin: auto;
+}
+
+.template .index a:hover, a:focus  {
+	color: #eb6e1e;
+	text-decoration: underline;
+}
+
+.template .index a:focus {
+    outline:thin dotted;
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:2px
 }
 
 .template .cover  {
