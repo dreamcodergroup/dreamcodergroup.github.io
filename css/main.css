@@ -368,10 +368,10 @@ h1, h2, h3, th, td  {
 	min-width: 950px;
 	width: 100%;
 	position: relative;
-	user-select:none;
+	/*user-select:none;
 	-webkit-user-select:none;
 	-o-user-select:none;
-	-moz-user-select:none;
+	-moz-user-select:none;*/
 	margin-bottom: 280px;
 	margin-top: 0;
 }
@@ -847,7 +847,7 @@ h1, h2, h3, th, td  {
 
 .det .uni .serv  {
 	font-size: 100%;
-	line-height: 200%;
+	line-height: 150%;
 	color: #eb6e1e;
 	text-shadow: 0 0 1px #eb6e1e;
 }
