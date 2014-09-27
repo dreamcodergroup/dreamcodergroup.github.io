@@ -80,13 +80,17 @@ h1, h2, h3, th, td  {
 	display: inline-block;
 	margin: 0 5px;
 	font-family: FuturaND-Bold;
-	font-size: 25px;
+	font-size: 150%;
 	line-height: 90px;
 	height: 80px;
 	color: #ffffff !important;
 	letter-spacing:1px;
 	text-align: center;
 	vertical-align: middle;
+}
+
+#footer .mlogo .name  {
+	font-size: 180%;
 }
 
 #global.fixed .navi  {
@@ -887,7 +891,7 @@ h1, h2, h3, th, td  {
 	float: none;
 	margin: 10px auto !important;
 	margin-top: 0 !important;
-	width: 300px;
+	width: 330px;
 }
 
 #footer .parts  {

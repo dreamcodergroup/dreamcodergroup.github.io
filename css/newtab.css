@@ -64,6 +64,10 @@
 	margin-top: 20px;
 	left:0;
 	right:0;
+}
+
+.template .index p  {
+	padding: 0;
 	color: #ffffff;
 }
 
