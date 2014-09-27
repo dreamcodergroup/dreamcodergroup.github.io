@@ -30,7 +30,7 @@
 	text-align: center;
 }
 
-.intro.backp h1  {	
+.intro.backp h1  {
 	margin: 40px auto 20px auto;
 }
 
@@ -645,7 +645,7 @@
 }
 
 .select p  {
-	display: inline-block;	
+	display: inline-block;
 	cursor: pointer;
 	color: #ffffff;
 	text-align: center;
@@ -811,7 +811,7 @@
 
 .labels  {
 	margin: 20px -2.5px;
-	padding-top: 30px; 
+	padding-top: 30px;
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
@@ -829,8 +829,8 @@
 }
 
 .labels:hover .back  {
-	opacity: 0.8;
-	filter: Alpha(opacity=80);
+	opacity: 0.75;
+	filter: Alpha(opacity=75);
     transition: all .5s ease-in-out 0s;
     -moz-transition: all .5s ease-in-out 0s;
     -o-transition: all .5s ease-in-out 0s;
@@ -996,7 +996,7 @@
 	margin: 0;
 	counter-reset: item;
 	padding-left: 30px;
-	list-style: none;	
+	list-style: none;
 }
 
 .work ol li p  {
