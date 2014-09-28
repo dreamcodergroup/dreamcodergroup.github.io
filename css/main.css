@@ -966,8 +966,13 @@ h1, h2, h3, th, td  {
 #footer .icon  {
 	width: 30px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	display:inline-block;
 	vertical-align:middle;
+=======
+	display: inline-block;
+	vertical-align: middle;
+>>>>>>> FETCH_HEAD
 =======
 	display: inline-block;
 	vertical-align: middle;
