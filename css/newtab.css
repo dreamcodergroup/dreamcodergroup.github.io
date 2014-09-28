@@ -53,7 +53,7 @@
 	position: relative;
 	display: inline-block;
 	padding: 0;
-	margin: 60px auto;
+	margin: 40px auto 60px auto;
 	margin-left: 4%;
 	width: 30%;
 	text-shadow: none;
@@ -255,8 +255,8 @@
 }
 
 .resume .tmp  {
-	height: 80px;
-	margin-top: -80px;
+	height: 120px;
+	margin-top: -120px;
 }
 
 .contents  {
@@ -283,13 +283,14 @@
 	text-align: center;
 	font-size: 180%;
 	line-height: 150% !important;
+	margin: 0 auto;
 }
 
 .container.ind  h2  {
 	position: relative;
 	color: #eb6e1e;
 	text-align: center;
-	line-height: 150% !important;
+	line-height: 200% !important;
 	font-size: 125%;
 }
 
@@ -483,7 +484,7 @@
 }
 
 .container  {
-	padding-top: 40px;
+	padding-top: 50px;
 	padding-bottom: 40px;
 	position: relative;
 }
@@ -986,9 +987,9 @@
 	text-align: left;
 }
 
-.work p  {
+/*.work p  {
 	padding-left: 30px;
-}
+}*/
 
 .container p  {
 	font-size: 90%;
