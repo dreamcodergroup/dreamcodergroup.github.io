@@ -219,6 +219,7 @@ h1, h2, h3, th, td  {
 .slogan p  {
 	font-family: PingHei, FuturaND;
 	font-size: 175%;
+	font-weight: lighter;
 	line-height: 150%;
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -398,6 +399,7 @@ h1, h2, h3, th, td  {
 .title  {
 	font-size: 220%;
 	line-height: 150%;
+	font-weight: lighter;
 	color: #ffffff;
 	margin: auto;
 	padding-top: 50px;
