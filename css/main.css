@@ -19,7 +19,7 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	-moz-font-feature-settings: "liga", "kern";
 }
 
-h1, h2, h3, th, td  {
+h1, h2, h3, th  {
 	font-weight: lighter;
 }
 
