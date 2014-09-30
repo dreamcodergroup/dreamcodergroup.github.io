@@ -988,7 +988,7 @@ h1, h2, h3, th  {
 }
 
 #footer .regist p  {
-	width: 300px;
+	text-align: center;
 	margin: 0 auto;
 	padding: 0;
 	color: #eb6e1e;
