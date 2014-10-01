@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg>
 <metadata>
-Created by FontForge 20110222 at Fri Sep 26 13:42:56 2014
+Created by FontForge 20110222 at Tue Sep 30 22:10:21 2014
  By Orthosie Webhosting
 Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved.
 </metadata>
@@ -17822,8 +17822,9 @@ v-100h107v-59h-107v-152l80 63z" />
  />
     <glyph glyph-name="uni7E82" vert-adv-y="0" 
  />
-    <glyph glyph-name="uni4F50" vert-adv-y="0" 
- />
+    <glyph glyph-name="uni4F50" unicode="&#x4f50;" horiz-adv-x="820" vert-adv-y="0" 
+d="M247 706q-11 -40 -24.5 -83t-29.5 -86v-565h-65v421q-15 -28 -30 -53.5t-33 -50.5l-49 49q63 89 104 185.5t63 195.5zM762 73v-62h-497v62h231v234h-118q-26 -48 -55.5 -92.5t-67.5 -91.5l-57 41q67 80 118.5 171t85.5 191h-151v61h171q9 32 17 64.5t12 65.5l69 -11
+q-8 -34 -14.5 -63t-14.5 -56h268v-61h-287q-12 -37 -28 -74t-35 -83h321v-62h-167v-234h199z" />
     <glyph glyph-name="uni67DE" vert-adv-y="0" 
  />
     <glyph glyph-name="uniE810" horiz-adv-x="786" vert-adv-y="0" 
