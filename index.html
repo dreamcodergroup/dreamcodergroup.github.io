@@ -30,6 +30,10 @@
 			{
 				scrollAnim();
 			};
+			window.onresize = function()
+			{
+				scrollNav();
+			}
 	    };
 		</script>
 	</head>
@@ -40,25 +44,28 @@
 				<img src="img/logo-DC-w.png">
 				<p class="name">DREAMCODER</p>
 			</div>
-			<ul class="navi">
-				<li style="padding: 0;">
+			<ul id="navi" class="navi">
+				<div class="bar">
+					<div class="bar_part top"></div>
+					<div class="bar_part middle"></div>
+					<div class="bar_part bottom"></div>
+				</div>
+				<li>
 					<p onclick="scroll('', 0);">内容概览</p>
 				</li>
-				<li style="padding: 0;">
+				<li>
+					<p onclick="location.href='service.html'">业务详情</p>
 					<ul class="pop">
-						<li class="pop_top">
-							<p onclick="location.href='service.html'">业务详情</p>
-						</li>
-						<li class="pop_medium">
+						<li>
 							<p onclick="location.href='service.html#modify'">文书写作</p>
 						</li>
-						<li class="pop_medium">
+						<li>
 							<p onclick="location.href='service.html#latex'">LATEX排版</p>
 						</li>
-						<li class="pop_medium">
+						<li>
 							<p onclick="location.href='service.html#webpage'">个人网页</p>
 						</li>
-						<li class="pop_bottom">
+						<li>
 							<p onclick="location.href='service.html#cottonup'">套磁服务</p>
 						</li>
 					</ul>
@@ -66,27 +73,28 @@
 				<li>
 					<p onclick="location.href='price.html'">购买服务</p>
 				</li>
-				<li style="padding:0;">
+				<li>
+					<p onclick="location.href='template.html'">模板示例</p>
 					<ul class="pop">
-						<li class="pop_top">
-							<p onclick="location.href='template.html'">模板示例</p>
-						</li>
-						<li class="pop_medium">
+						<li>
 							<p onclick="location.href='template.html#latex'">LATEX模板</p>
 						</li>
-						<li class="pop_bottom">
+						<li>
 							<p onclick="location.href='template.html#web'">网页模板</p>
 						</li>
 					</ul>
 				</li>
-				<li style="padding-right: 0;">
+				<li>
+					<p onclick="location.href='column/typesetting-weibo.html'">专栏文章</p>
+				</li>
+				<li>
 					<p onclick="location.href='faq.html'">常见问题</p>
 				</li>
 			</ul>
 		</nav>
 		<div id="header">
 			<div class="slogan">
-				<img src="img/logo-DC-w.png" style="display:block;width: 15%;margin: 0 auto;" alt="DreamCoder">
+				<img src="img/logo-DC-w.png" class="slogo" alt="DreamCoder">
 				<h1>DreamCoder</h1>
 				<p>
 					Encode Your Application into Success
@@ -94,26 +102,26 @@
 					铸造完美留学申请
 				</p>
 				<div style="height:80px;display:block;">
-					<img src="img/arrow.png" class="arrow" onclick="scroll('page1', 80);">
+					<img src="img/arrow.png" class="arrow" onclick="scroll('page1', 60);">
 				</div>
 			</div>
 		</div>
 
 		<div id="page1" class="service">
 			<div class="back"></div>
- 			<div class="wrapper" style="left:0;right:0;padding-bottom:50px;">
+ 			<div class="wrapper">
 				<div class="title">为特别的你，我们准备了</div>
- 				<div class="circle" style="margin-left:0;">
+ 				<div class="circle">
  					<div class="back"></div>
  					<div class="short">
 	 					<h1>申请文书</h1>
 	 					<p>写作与修改</p>
  					</div>
  					<div class="detail">
+						<img src="img/write.png" class="icon">
  						<p>发掘个人优势<br/>彰显优秀特质</p>
  						<a href="service.html#writing">了解详情</a>
  					</div>
-						<img src="img/write.png" class="icon">
  				</div>
  				<div class="circle">
  					<div class="back"></div>
@@ -122,10 +130,10 @@
 	 					<p>专业排版</p>
 	 				</div>
  					<div class="detail">
+						<img src="img/latex.png" class="icon">
  						<p>定制专业版式<br />突出科研潜力</p>
  						<a href="service.html#latex">了解详情</a>
  					</div>
-						<img src="img/latex.png" class="icon">
  				</div>
  				<div class="circle">
  					<div class="back"></div>
@@ -134,10 +142,10 @@
 	 					<p>设计制作</p>
 	 				</div>
  					<div class="detail">
+						<img src="img/mail.png" class="icon">
  						<p>个性化的网页<br/>你的独一无二</p>
  						<a href="service.html#webpage">了解详情</a>
  					</div>
-						<img src="img/mail.png" class="icon">
  				</div>
  				<div class="circle">
  					<div class="back"></div>
@@ -146,17 +154,17 @@
 	 					<p>服务</p>
 	 				</div>
  					<div class="detail">
+						<img src="img/grad.png" class="icon">
  						<p>与教授套磁<br/>为申请加分</p>
  						<a href="service.html#cottonup">了解详情</a>
  					</div>
-						<img src="img/grad.png" class="icon">
  				</div>
 			</div>
 		</div>
 
 		<div id="page2" class="success">
- 			<div class="wrapper" style="left:0;right:0;">
- 				<div class="item" style="margin-left:0;">
+ 			<div class="wrapper">
+ 				<div class="item">
  					<h1>地道的文书</h1>
  					<p>
  						文书是申请中的核心材料，DreamCoder&nbsp;独创的外籍编辑七轮往返修改服务，能显著提升文书档次，呈现完美稿件。
@@ -190,9 +198,9 @@
 			<div class="back"></div>
 			<p style="position:relative;">你的成功，是我们的追求</p>
 		</div> -->
-		<div id="page3" class="service" style=" margin:0;">
+		<div id="page3" class="service" style="margin:0;">
 			<div class="back"></div>
-			<div class="wrapper" style="position:absolute;margin:0 auto;left:0;right:0;z-index:9;">
+			<div class="wrapper" style="position:absolute;left:0;right:0;margin:auto;width:95%;z-index:9;">
 				<div class="logo" onclick="showCase('cases',0);">
 					<img src="img/college/ucolumbia.jpg">
 				</div>
@@ -395,7 +403,7 @@
 					<img src="img/logo-DC-w.png">
 					<p class="name">DREAMCODER</p>
 				</div>
-	 			<div class="parts" style="width:22%;">
+	 			<div class="parts int">
 					<p class="deta">
 						Dreamcoder&nbsp;是一个追求完美的团队。为了您的申请，我们将竭尽全力，协助您走好留学申请的每一步，让您成为背景相仿者中的唯一选择，助您在激烈的申请中脱颖而出。
 					</p>

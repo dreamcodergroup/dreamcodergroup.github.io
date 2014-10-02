@@ -12,48 +12,28 @@ function showCase(typ, index)
 
 function scrollNav()
 {
-	var obj = document.getElementById('global');	
-
-	if (document.body.offsetWidth > 950)
-		return;
-	
-	var browserLeft = document.body.scrollLeft || document.documentElement.scrollLeft;
-	if(obj)
-	{
-		if (obj.className == "fixed")
-			obj.style.left = (0 - browserLeft) + "px";
-		else
-			obj.style.left = "0px";
-	}
-
-	obj = document.getElementById('section');
-	if(obj)
-	{
-		obj.style.left = (0 - browserLeft) + "px";
-	}
-	obj = document.getElementById('page1');
-	if(obj)
-	{
-		if (obj.className == "service fixed")
-			obj.style.left = (0 - browserLeft) + "px";
-		else 
-			obj.style.left = "0px";
-	}
+	var obj = document.getElementById('global');
+	if (document.body.clientWidth <= 1000 && obj.className == "fixed")
+		document.getElementById('navi').className = "navi shrink";
+	else if (document.body.clientWidth <= 650)
+		document.getElementById('navi').className = "navi shrink";
+	else
+		document.getElementById('navi').className = "navi";
 }
 
 function scrollAnim()
 {
 	var browserTop = document.body.scrollTop || document.documentElement.scrollTop;
 	var global = document.getElementById('global');
-	var page1 = document.getElementById('page1');
-	var page2 = document.getElementById('page2');
-	var scrollheight = document.getElementById('header').scrollHeight - 80;
-	var scrolld = window.screen.availHeight - 140;
+	/*var page1 = document.getElementById('page1');
+	var page2 = document.getElementById('page2');*/
+	var scrollheight = document.getElementById('header').scrollHeight - 60;
+	/*var scrolld = window.screen.availHeight - 140;*/
 
 	if(browserTop>=scrollheight)
 	{
 		global.className = 'fixed';
-		page1.className = "service fixed";
+		/*page1.className = "service fixed";
 		page2.style.marginTop = scrolld + "px";
 		scrollheight += scrolld - page1.clientHeight;
 		if (browserTop>=scrollheight)
@@ -69,12 +49,12 @@ function scrollAnim()
 			page1.style.marginTop = "0px";
 			page1.style.marginBottom = "280px";
 			page2.style.marginTop = scrolld + "px";
-		}
+		}*/
 	}
 	else
 	{
 		global.className = '';
-		page1.className = "service";
+		/*page1.className = "service";*/
 	}
 	scrollNav();
 }

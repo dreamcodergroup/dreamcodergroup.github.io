@@ -44,20 +44,28 @@
 				<img src="img/logo-DC-w.png">
 				<p class="name">DREAMCODER</p>
 			</div>
-			<ul class="navi">
-				<li style="padding: 0;">
+			<ul id="navi" class="navi">
+				<div class="bar">
+					<div class="bar_part top"></div>
+					<div class="bar_part middle"></div>
+					<div class="bar_part bottom"></div>
+				</div>
+				<li>
 					<p onclick="location.href='index.html'">内容概览</p>
 				</li>
-				<li style="padding: 0;">
+				<li >
 					<p onclick="scroll('',0);">业务详情</p>
 				</li>
 				<li>
 					<p onclick="location.href='price.html'">购买服务</p>
 				</li>
-				<li style="padding:0;">
+				<li>
 					<p onclick="location.href='template.html'">模板示例</p>
 				</li>
-				<li style="padding-right: 0;">
+				<li>
+					<p onclick="location.href='column/typesetting-weibo.html'">专栏文章</p>
+				</li>
+				<li >
 					<p onclick="location.href='faq.html'">常见问题</p>
 				</li>
 			</ul>
@@ -122,119 +130,122 @@
 						<p>
 							经过去年与外编的合作与磨合，我们的服务流程分为以下七个阶段。
 						</p>
-						<div class="top">
-							服务开始
-						</div>
 						<div class="modules">
-							<div class="left">
-								<div class="sec">
-									<div class="board">
-										<div class="expl">
-											<h1>建议咨询</h1>
-											<p>
-												对您的文书提出建议。PhD文书团队成员（非外编）给您的文书一些结构上、内容上的建议。比如文书主题是否明确，文书中的一些例子是否可以替换等等。（免费，欢迎您来试一试。）
-											</p>
-										</div>
-									</div>
-									<div class="pin">
-										<div class="one"></div>
-										<div class="two"></div>
-										<div class="three"></div>
+							<div class="top">
+								服务开始
+							</div>
+							<div class="sec left">
+								<div class="board">
+									<div class="expl">
+										<h1>建议咨询</h1>
+										<p>
+											对您的文书提出建议。PhD文书团队成员（非外编）给您的文书一些结构上、内容上的建议。比如文书主题是否明确，文书中的一些例子是否可以替换等等。（免费，欢迎您来试一试。）
+										</p>
 									</div>
 								</div>
-								<div class="sec">
-									<div class="board">
-										<div class="expl">
-											<h1>文法粗修</h1>
-											<p>
-												修改明显的词句错误，并提出内容建议。这一阶段，主要是段落结构、行为逻辑上的进一步建议，并标出文章中产生歧义的词和句。在这一基础上，外编也会对有明显错误的词句进行修改，保证语法正确，用词地道。
-											</p>
-										</div>
-									</div>
-									<div class="pin">
-										<div class="one"></div>
-										<div class="two"></div>
-										<div class="three"></div>
-									</div>
-								</div>
-								<div class="sec" style="margin-top:240px;margin-bottom:140px;">
-									<div class="board">
-										<div class="expl">
-											<h1>外编精修</h1>
-											<p>
-												外编对您的文书进行第二次深度修改。这次修改主要是语言上的精修。外编会对文书进行深层次的修改，包括词句的替换，一些小词的使用等等。我们希望在这次修改之后，可以为您提供一份语言流畅，主题明确动人的文书。
-											</p>
-										</div>
-									</div>
-									<div class="pin">
-										<div class="one"></div>
-										<div class="two"></div>
-										<div class="three"></div>
-									</div>
-								</div>
-								<div class="sec" style="margin-bottom:40px;">
-									<div class="board">
-										<div class="expl">
-											<h1>答疑解惑</h1>
-											<p>
-												外编对您的问题做出回答。
-											</p>
-										</div>
-									</div>
-									<div class="pin">
-										<div class="one"></div>
-										<div class="two"></div>
-										<div class="three"></div>
-									</div>
+								<div class="pin">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
 								</div>
 							</div>
-							<div class="right">
-								<div class="sec">
-									<div class="board">
-										<div class="expl">
-											<h1>要求收集</h1>
-											<p>
-												收集您对稿件的要求与想法。比如字数要求，对哪个部分段落不满意、急切想改进等等。需要提醒的是，修改是基于您的文书内容，外编无法杜撰扩写不存在的内容，因此字数要求只能比你提交文档的字数少。
-											</p>
-										</div>
-									</div>
-									<div class="pin">
-										<div class="one"></div>
-										<div class="two"></div>
-										<div class="three"></div>
+
+							<div class="sec right">
+								<div class="board">
+									<div class="expl">
+										<h1>要求收集</h1>
+										<p>
+											收集您对稿件的要求与想法。比如字数要求，对哪个部分段落不满意、急切想改进等等。需要提醒的是，修改是基于您的文书内容，外编无法杜撰扩写不存在的内容，因此字数要求只能比你提交文档的字数少。
+										</p>
 									</div>
 								</div>
-								<div class="sec">
-									<div class="board">
-										<div class="expl">
-											<h1>材料补充</h1>
-											<p>
-												补充相关材料，替换不够好的例子。您在外编的建议下，对文书进行内容上的补充与修改，这其中包括换掉那些很天真不恰当的例子，删去不相关的内容，使主题更加明确。一份好的SoP (Statement of Purpose)，要能充分表达你为什么要选择这个学校这个专业，这个学校这个专业又为什么适合你。一份好的SoP，要能充分展示你的独一无二，你的不可替代，要能体现出你是背景相仿者中的第一选择。这些，都是要在双方的合作下才能完成的。
-											</p>
-										</div>
-									</div>
-									<div class="pin">
-										<div class="one"></div>
-										<div class="two"></div>
-										<div class="three"></div>
-									</div>
-								</div>
-								<div class="sec" style="margin-top:130px;">
-									<div class="board">
-										<div class="expl">
-											<h1>意见反馈</h1>
-											<p>
-												对修改文书进行反馈（可选）。如果您对外编的修改有不满意或者是疑惑的地方，您可以对文书提出一到三个疑问（因为外编不会中文，所以提问只能是用英文，还请谅解）。
-											</p>
-										</div>
-									</div>
-									<div class="pin">
-										<div class="one"></div>
-										<div class="two"></div>
-										<div class="three"></div>
-									</div>
+								<div class="pin">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
 								</div>
 							</div>
+
+							<div class="sec left">
+								<div class="board">
+									<div class="expl">
+										<h1>文法粗修</h1>
+										<p>
+											修改明显的词句错误，并提出内容建议。这一阶段，主要是段落结构、行为逻辑上的进一步建议，并标出文章中产生歧义的词和句。在这一基础上，外编也会对有明显错误的词句进行修改，保证语法正确，用词地道。
+										</p>
+									</div>
+								</div>
+								<div class="pin">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
+								</div>
+							</div>
+
+							<div class="sec right">
+								<div class="board">
+									<div class="expl">
+										<h1>材料补充</h1>
+										<p>
+											补充相关材料，替换不够好的例子。您在外编的建议下，对文书进行内容上的补充与修改，这其中包括换掉那些很天真不恰当的例子，删去不相关的内容，使主题更加明确。一份好的SoP (Statement of Purpose)，要能充分表达你为什么要选择这个学校这个专业，这个学校这个专业又为什么适合你。一份好的SoP，要能充分展示你的独一无二，你的不可替代，要能体现出你是背景相仿者中的第一选择。这些，都是要在双方的合作下才能完成的。
+										</p>
+									</div>
+								</div>
+								<div class="pin">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
+								</div>
+							</div>
+
+							<div class="sec left">
+								<div class="board">
+									<div class="expl">
+										<h1>外编精修</h1>
+										<p>
+											外编对您的文书进行第二次深度修改。这次修改主要是语言上的精修。外编会对文书进行深层次的修改，包括词句的替换，一些小词的使用等等。我们希望在这次修改之后，可以为您提供一份语言流畅，主题明确动人的文书。
+										</p>
+									</div>
+								</div>
+								<div class="pin">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
+								</div>
+							</div>
+
+							<div class="sec right">
+								<div class="board">
+									<div class="expl">
+										<h1>意见反馈</h1>
+										<p>
+											对修改文书进行反馈（可选）。如果您对外编的修改有不满意或者是疑惑的地方，您可以对文书提出一到三个疑问（因为外编不会中文，所以提问只能是用英文，还请谅解）。
+										</p>
+									</div>
+								</div>
+								<div class="pin">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
+								</div>
+							</div>
+
+							<div class="sec left" style="margin-bottom:40px;">
+								<div class="board">
+									<div class="expl">
+										<h1>答疑解惑</h1>
+										<p>
+											外编对您的问题做出回答。
+										</p>
+									</div>
+								</div>
+								<div class="pin">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
+								</div>
+							</div>
+
 							<div class="bottom">
 								服务结束
 							</div>
@@ -283,7 +294,6 @@
 					<div class="back"></div>
 					<div class="wrapper">
 						<div class="part three">
-							<div class="left"></div>
 							<div class="top">
 								个人陈述
 							</div>
@@ -708,7 +718,7 @@
 					<img src="img/logo-DC-w.png">
 					<p class="name">DREAMCODER</p>
 				</div>
-	 			<div class="parts" style="width:22%;">
+	 			<div class="parts int">
 					<p class="deta">
 						Dreamcoder&nbsp;是一个追求完美的团队。为了您的申请，我们将竭尽全力，协助您走好留学申请的每一步，让您成为背景相仿者中的唯一选择，助您在激烈的申请中脱颖而出。
 					</p>
