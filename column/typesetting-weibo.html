@@ -1,0 +1,485 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Lucida Grande", "Hiragino Sans GB", "Helvetica Neue", "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height:1.45;
+    color:#333;
+    background-color:#fafafa
+}
+table {
+    margin: 10px 0 15px 0;
+    border-collapse: collapse;
+}
+td,th {
+    border: 1px solid #ddd;
+    padding: 3px 10px;
+}
+th {
+    padding: 5px 10px;
+}
+a  {
+    color:#428bca;
+    text-decoration:none
+}
+a:hover,
+a:focus {
+    color:#2a6496;
+    text-decoration:underline
+}
+a:focus {
+    outline:thin dotted;
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:-2px
+}
+
+img {
+    vertical-align:middle;
+    width:100%;
+    height:100%;
+}
+.img-responsive {
+    display:block;
+    max-width:100%;
+    height:auto;
+    width:100%;
+}
+.img-rounded  {
+    border-radius:6px
+}
+.img-thumbnail {
+    padding:4px;
+    line-height:1.45;
+    background-color:#fff;
+    border:1px solid #ddd;
+    border-radius:4px;
+    -webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;
+    display:inline-block;
+    max-width:100%;
+    height:auto
+}
+.img-circle {
+    border-radius:50%
+}
+p {
+    margin-bottom: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:inherit;
+    font-weight:300;
+    line-height:1.1;
+    color: #444;
+    /*line-height: 1.1;*/
+}
+h1 {
+    /*margin-top:21px;*/
+    /*margin-bottom: 18px;*/
+    font-size: 40px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 14px;
+}
+hr {
+    margin-top:21px;
+    margin-bottom:21px;
+    border:0;
+    border-top:1px solid #ccc
+}
+blockquote {
+    background: #eee;
+    border-left: 5px solid #ccc;
+    padding: 20px 30px;
+    margin-bottom: 24px;
+    font-family:inherit;/*"Source Sans Pro", sans-serif,georgia;*/
+    /*font-style: italic;*/
+    position:relative;
+}
+blockquote:after,blockquote:before {
+    color:#ccc;
+    font-size:40px;
+    position:absolute
+}
+blockquote:before{
+    top:0;
+    left:10px;
+    content:"\201C"
+}
+blockquote:after{
+    bottom:-15px;
+    right:10px;
+    content:"\201D"
+}
+/*blockquote:before {
+    content:"\201C";
+    font-size:60px;
+    margin-left:-10px;
+    font-family:inherit;
+    color:#bbb;
+    position:absolute;
+    top:0;
+    left:10px;
+}*/
+blockquote p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-family:inherit;/*"Source Sans Pro", sans-serif,georgia;*/
+    /*font-style: italic;*/
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 20px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 20px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+    -webkit-print-color-adjust: exact;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    -webkit-font-smoothing: antialiased;
+}
+@media screen and (min-width: 500px) {
+    body {
+        width: 500px;
+        margin:10px auto;
+    }
+}
+@media print {
+    body,code,pre code,h1,h2,h3,h4,h5,h6 {
+        color: black;
+    }
+    table, pre {
+        page-break-inside: avoid;
+    }
+}
+
+</style>
+<title>谈谈留学文书排版</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>谈谈留学文书排版</h1>
+
+<hr />
+
+<p>最近又到了出国申请的热季，作为一名「正直」的学长，过去几年帮不少学弟学妹改过文书（当然，主要是学妹 →_→），其实每次看到他们的文书，尤其是简历，我脑子里真是满屏的弹幕滑过，本来想想，还是忍了吧，他们毕竟还年轻，我是见得多了，西方哪一种简历我没有看过。<strong>但是</strong>，最近有这么一个学妹给我发来了这么一个简历
+<img src="http://www.dreamcodergroup.com/column/img/sample_cv.png" alt="image" />
+<h4>(出于个人隐私缘故，我把重要信息和谐了)&nbsp;<a href="http://www.dreamcodergroup.com/column/img/sample_cv.png">原图在此</a></h4></p>
+
+<p>看完了这个简历，我默默的关掉了 word。我觉得这个世界不会好了。内容不论，尼玛这排版实在是槽点太多无从吐起啊！如果你觉得这个简历排版还不错，您还是留在学校保研吧。</p>
+
+<p>首先映入眼帘的是那个看起来奇奇怪怪的彩色混浊物，她用作小条目的标记，好嘛让我们来仔细看下</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/sample_cv_1.png" alt="image" style="width:auto"/></p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/wuyu.gif" alt="image" style="width:20%"/></p>
+
+<p>。。。</p>
+
+<p>我去这个图标好熟悉啊，这不是国内大学老师最喜欢用的 ppt 装饰的么？以这种微妙的方式装点你的简历我也是醉了。</p>
+
+<p>然后我的视线移到了右边......</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/sample_cv_2.png" alt="image" style="width:auto"/></p>
+
+<p>咦？Oct 2010 年后面怎么没东西了？下面的 Oct 2010 后面倒是有个 Aug ...... 可是 Aug 什么啊，同学你是不是特别不想找一个处女座的教授？用这种方式筛选教授啊？新技能我 get 了。然后红圈里面的两根横线好像还不一样长啊...... 看到这里我基本已经阵亡了。</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/tuxie.gif" alt="image" style="width:auto"/></p>
+
+<p>我抚着心脏又往上看了下</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/sample_cv_3.png" alt="image" /></p>
+
+<p>同学你的大标题可不可以稍微大一个字号，跟下面挤得这么紧看着真捉急啊，不过这是小事了，真的。可是，下面那个 Present 是什么东西？我怎么就看不懂了呢？等我往周围看了下恍然大悟，原来这个 Present 是接着上面那个 Oct 2010 啊！原来她居然换行了啊！换行了啊！真是前后呼应的（yi）佳（tuo）作（shi）啊！</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/tuxie2.gif" alt="image" style="width:auto"/></p>
+
+<p>然后这个简历无论是标题还是正文除了职位全尼玛都是<strong>粗体</strong>是几个意思，<strong>通篇都是重点是吗</strong>？</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/shentou.gif" alt="image" style="width:auto"/></p>
+
+<p>其实这真的不是个例，很多的简历或多或少都有里面的一些问题。每年都碰到一样的问题，我觉得我整个人都不好了。<strong>所以今天我决定正儿八经的来总结下关于文书排版的问题，真心希望能改进一下目前这个局面。</strong>以后真的不愿再看到这种排版的简历了。</p>
+
+<p><strong>注意：以下内容全程干货！建议先马再看。</strong></p>
+
+<p><strong>内容比较长，已将关键点加粗，木有耐心的童鞋可以只看加粗部分。</strong></p>
+
+<h2>排版的重要性</h2>
+
+<hr />
+
+<p>在具体分析排版问题之前，我们先来谈谈排版的重要性。有很多人说「简历嘛，内容最重要，排版什么的看得过去就行，细枝末节的问题无足轻重」。我先不谈这句话对不对，来看另一句话「男人嘛，内涵最重要，长相什么的看得过去就行，细枝末节的问题无足轻重」。<strong>在如今这个吸了毒是被骂还是被同情都要看脸的社会，外表的重要性其实就和排版的重要性是一样的。</strong>有句话说，「你长得好不好看决定了我要不要了解你的内涵，而你的内涵决定了我要不要一票否决你」，放在简历上也是一样。除非你的内涵像马云一样，不然你的长相肯定是要影响你的评价的。当然这里我不是在宣扬什么看脸无敌论，这太不正能量了。但是这里我得说，<strong>排版跟长相的不同之处在于，长相是爹妈给的，改不了了，但是排版是自己造的啊。只要你能遵守一定的规范，加上细致和认真，你的简历就是众多简历中的女神。</strong></p>
+
+<p>上面说的是鸡汤。下面我给你配个勺子，来点数据。</p>
+
+<p>研究发现，当你的简历出现在 HR 的视野中时，他们倾向于按照一种持续的扫描路径去看你的简历。初次审查的平均时间是多少呢？只有 6 秒。对，只有 6 秒，你要在 6 秒钟内用你的简历说服他们让你通过。而你的排版，设计和布局决定了你在这 6 秒内能有多高效的传递你的信息。下面两份简历来自同一个求职者，内容完全相同，只有排版是不同的。共有 30 多名 HR 参与了打分，以 100 分为满分，左边的简历只得到了 56 分，而右边的简历得到了 89 分。原因就是左边的简历层次不清晰，传递信息的效率很低。从图里也可以看出右边修改排版之后的简历视觉亮点增加了很多。</p>
+
+<p><img src="http://impressiveresumes.files.wordpress.com/2014/04/impressive-resumes.jpg" alt="image" /></p>
+
+<p>（以上两幅图来自<a href="http://www.theladders.com/">TheLadders</a>的大数据统计。）</p>
+
+<p>当然，这点数据还不够，我再来说一个事。最近阿里巴巴的上市让很多人又成为了马云的脑残粉，估计向阿里巴巴投简历的人要多出不少。可是你知道阿里巴巴的 HR 怎么筛选简历的吗，淘宝工程师李哲瑞（<a href="http://www.weibo.com/lzrm4a1">@lzrm4a1</a>）的一篇<a href="http://www.lizherui.com/tag/nei-tui.html">博客</a>里有详细的介绍，其中说到「<strong>丑陋、混乱的简历排版</strong>」以及「<strong>简历中的缩进同时使用了空格和 Tab 键</strong>」的，<strong>直接淘汰</strong>。</p>
+
+<p>有人可能会说了，空格和 Tab，或者全角半角的标点，有这么重要？能比我「牛逼闪闪的」背景还重要？
+其实，当你自己看到数字里的逗号是中文逗号时，我相信你心中也是有 10，000 个草泥马呼啸而过的。关于这类细节，我会在下面详细讲解。这里你只需要记住，<strong>细节远比你想象的重要</strong>。我们写简历的时候总是费很大心思在内容上，却不愿意花时间调整看似不重要的排版，事实上牛逼的简历内容未必能让你得到 offer，但马虎的格式很大可能会让你失去面试的机会。</p>
+
+<h2>工具选择</h2>
+
+<hr />
+
+<p>接下来我来讲一讲排版工具的选择。排版工具表面上看来跟排版好像没什么太大关系。这句话其实也有道理，因为只要你技艺娴熟，用什么都能排出好看精致的简历。但是工具决定了什么呢？决定了逼格——————吗？显然不是，拿排版工具来体现逼格的人就好比拿钱包炫富一样，谁知道你是拿它装钱还是装逼。但是鸽子为什么这么大，啊不，<strong>为什么还是要选择排版工具呢？</strong>原因有这么几点：</p>
+
+<ol>
+<li><strong>在同样的输入下，排版工具决定了你的简历的精致程度</strong>，这取决于默认设置与底层机制的威力；</li>
+<li><strong>在花费同等时间的前提下，排版工具决定了你排版的自定义程度</strong>；</li>
+<li><strong>排版的好坏也能体现出你对这个工具使用的熟练程度，可能会给你加印象分</strong>；</li>
+<li><strong>不同的工具有不同的适用场合，严肃程度不同</strong>，跟不同场合穿不同的衣服一个道理。</li>
+</ol>
+
+
+<p>那么有人可能要问了，挖掘机到底是哪家强呢？啊不是，排版工具到底是哪家强呢？相信大家最熟悉的，那就是 MS Word 了，但是，像甜豆腐脑和咸豆腐脑的圣战一样，排版界也一直有一个圣战，就是 MS Word 和 LaTeX 的圣战。Adobe 的那个 InDesign 一直似乎是设计圈的人用的多，比较高冷，所以不怎么参与这场圣战。可能很多人还不知道 LaTeX 是什么，但是这个强大的软件其实历史比 Word 要悠久很多了，可以说是电子排版的革命性产物。这个软件之所以没有 Word 那么人尽皆知是因为相比于 Word 一样的傻瓜式操作，它要显得复杂一些。但正是这种复杂让它变的非常强大，好比美图秀秀和 Photoshop，你用美图确实简单，但是可能把脸和房子一起 P 「瘦」（...）。同时，也正是 LaTeX 这种复杂让它无比的简单，因为只要你第一次设置好了一个模式，你就开心的码字就好了不用担心这里没有对齐，那里多了缩进这种问题。因为 <strong>LaTeX 的思想是格式与内容分离</strong>，所有的格式预先定好，写内容的时候不再管格式。</p>
+
+<p><strong>推崇使用 Word 的人，一般来说习惯了所见即所得，在软件里看见的是什么，最后排出来效果就是什么。但这不一定是最好的排版处理方式</strong>，所见即所得的缺点是，已经输入好的东西不会因为未来的输入而改变（计算机术语叫贪婪算法）。<strong>更好的排版方式是所想即所得，你想出来的效果和最后的结果出来分毫不差，每次的生成都是基于全局的考虑</strong>（计算机术语叫动态规划）。 <strong>而 LaTeX 就是这样一款所想即所得的软件，你看见的可能是没有任何格式的纯文本，但是生成出来的 PDF 文档是非常精致完美的</strong>。关于留学申请的文书，我建议大家如果有时间，<strong>最好使用 LaTeX 排版一下你的文书</strong>。为什么这么说？我一点点给你解释。</p>
+
+<ol>
+<li><strong>LaTeX 是最适合学术申请的排版工具</strong>。你出国申请的性质是「学术申请」，不是「就业申请」。不管你将来是当教授还是找工作，至少你未来这几年是在学校里当<em>研究生</em>，混的是<em>学术圈</em>，那就要符合学术圈的口味。而 LaTeX 是大多数学术期刊指定要求的格式，甚至是很多大学本科课程，特别是计算机相关的课程建议（或指定）的作业格式。在 Quora 上有人问到，<a href="http://www.quora.com/What-can-should-a-college-1st-year-student-do-in-summer">上大一之前的暑假学什么最好？</a>，里面排名第一的答案里第一条，就是学习使用 LaTeX。可见美国学术圈对于它的重视程度是非常高的。某<a href="http://www.zhihu.com/question/20542113/answer/15428429">知乎大 V</a> 曾说，「LaTeX 是<strong>科研界标准</strong>，Word 文档容易被修改，显得不够严肃，而使用 PDF 格式的文档，更加正式，也更加美观」。我在上面提到过，不同的工具用在不同的场合，在「出国留学申请」的场合，LaTeX 就是最符合规范的排版工具。</li>
+<li><strong>LaTeX 能让你在同等硬件水平下脱颖而出</strong>。从<a href="http://blog.renren.com/share/326435326/16438412357">申请材料审阅的流程</a>来看，当你的文书历经筛选到了教授手中的时候，你的简历和同时摆在他面前的其他简历，基本上硬件水平都在伯仲之间。这时一份好的排版材料很可能取到意想不到的效果。毕竟这份材料表达了一个非常好的潜在意思，我是经过专门的学术训练的，我熟悉学术界的各种规范。这点其实很多教授都很看重。对于大部分人来说，<strong>LaTeX 排出来的文档和 Word 排出来的文档看起来没什么区别，但这并不能说明他们真的的差别很小，而审核你材料的教授就可以看出这一区别</strong>。给教授留下一个专业严谨的印象，也就是我推荐使用 LaTeX 排版的原因。选择一种更加专业，被教授所喜好的格式来排版文书，抓住任何能表现出自己专业严谨特质的方式，竭尽全力去做好申请的每一步，去争取最好的结果，这才是我们在申请中应该遵守的准则。</li>
+<li><strong>LaTeX 能增大你筛选通过的几率</strong>。使用 LaTeX 排版本身就说明了，你是会使用代码来完成排版任务的。如今计算机专业火遍全球的大趋势下，从这个侧面在一定程度上证明自己编程能力，总是有好处的。相比之下，LaTeX 代码的学习难度，比起其他计算机语言还是要简单很多的。上面提到过的阿里巴巴的 HR 筛选简历的方案里面，有一条，符合「<strong>Markdown/LaTeX生成的PDF简历</strong>」将会<strong>增大筛选通过的可能性</strong>，所以可以看到 LaTeX 排版在 IT 行业有怎样的地位。</li>
+</ol>
+
+
+<p>以上说的是一些大方向的原因。至于为什么学术圈都喜欢用 LaTeX，为什么 LaTeX 排出来的文档更加美观，我没有细说，因为在下面讲一些文书排版问题的时候，我会做一些对比，相信你能自己找到答案。</p>
+
+<h2>内容编排</h2>
+
+<hr />
+
+<p>好的排版与内容的编排是分不开的，合理的布局你的内容，能提高你的文书传递信息的效率。以下几个原则最好能够遵守：</p>
+
+<ol>
+<li><strong>疏密有致</strong>。一份密密麻麻的简历一眼看上去就容易犯密集恐惧症，<strong>适当的留出间隙能够让读者感到更加舒适，切忌大块大块的文字</strong>。不是你的内容越多就说明你越厉害的，真正的牛人都是把自己的履历精挑细选，最后不多不少的放在一页之内，成就一目了然。有很多人为了把内容塞进一页，不惜调小字体，缩小页边距，这其实是下下策。<strong>简历的页边距最好不要少于 <code>0.8 英寸</code>（inch），字体最小也不要小于 <code>9 号</code>（pt）（部分字体甚至不能小于 <code>11 号</code>），否则严重影响阅读和美感</strong>。这里建议大家把各种<strong>尺寸都设置成美国的单位</strong>，例如使用英寸而不使用厘米、毫米。</li>
+<li><strong>阵列整齐</strong>。将你的简历各个部分用非常清晰明确的方式排列。
+<br><strong>首先，纵向上来说，不同的<code>小节</code>要有明确的标识</strong>，有些人喜欢用分割线，有些人用侧边栏形式，都是可以的，要让人一眼看过去就能知道哪部分是你的教育背景，哪部分是学术背景等等，如下面的简历所示。
+<br><strong>其次，横向上来说，要有明确的阵列</strong>。一般来说，<strong>主要的项目标题、公司名称、学校名称左对齐，日期、地址右对齐，详细的信息分条目在下面把整个宽度填满</strong> (见下面的例子)。这个是比较标准的模式。如果你想使用其他的模式，请务必遵循阵列的原则，这样基本的信息能够比较快速的被获取，同时不影响详细信息的阅读。</li>
+<li><strong>层次分明</strong>。上一条是从布局上让你的各个部分内容分割开来，这一条主要是要求你从格式上将各部分分割开来。使用不同的格式来区分不同层次的内容，通常来说有如下规则（参考<a href="http://www.zhihu.com/question/19856083/answer/16386273">@纸比尔</a>的一个回答）：
+<br> <code>小节标题</code>：大写加粗，通常字号大一号，下有分割线；
+<br> <code>机构/学校 名称</code>：大写加粗
+<br> <code>部门和职位</code>：粗斜体
+<br> <code>日期/地址</code>：斜体或正体，字号可小一号
+<br> <code>经历内容详述</code>：正体，字体可小一号
+<br> 此外，注意为了保证层次的清晰明了，以及版式的简洁，这里在排版之外也给一个内容上的要求，<strong>每一条详述的 bullet 最好不要超过一行，或者不超过一行的占大多数</strong>。</li>
+</ol>
+
+
+<p>下面这个简历是用 LaTeX 排版出来的很好的例子。引用自<a href="http://www.dreamcodergroup.com/template.html">DreamCoder</a>，这里有很多 LaTeX 排出来的很好看的简历。</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/template.png" alt="image" /></p>
+
+<p>下面我来说说 LaTeX 相比于 Word 以及其他软件在以上三点要求下的优势。</p>
+
+<p>第一，关于疏密有致。<strong>简历的页面是寸土寸金的</strong>。我们希望放下尽量完备的信息，同时还要看起来不那么拥挤，这两者很多时候是矛盾的。这里我还是分纵向和横向来说。</p>
+
+<p><strong>纵向上，最理想的效果是主要大条目之间的间距略微大一点，次要的详细内容间距略微小一点</strong>（见上面的例子），这个需要在行距上精细调整。Word 使用默认的行距经常会莫名的就到了下一页，你只有手动的去调整一个一个的行距，然后，阿西吧又挤不下一页，再重新设置各个板块的距离，整个调整过程说出来都是泪，不仅麻烦而且不一定管用。而 LaTeX 能够精细的制定各个层次内容之间的距离，达到非常细腻的程度，比如横线和文字的间距。由于距离的灵活度与模块化操作，给简历带来不少空间，给编写者节省不少时间。有内容实在删减不了又超出一行了，整个简历又超出一页了怎么办？只需要在代码中修改几个数字然后生成PDF！瞬间搞定，让你像印刷工匠一般精准的控制每一个尺寸，而在写内容的时候完全不用管调整行距的问题。</p>
+
+<p><strong>横向上，最理想的效果是单词与单词之间的间距不会过大也不会过小，并且两侧对齐</strong>。左对齐的话，右边锯齿状不好看。Word 提供两侧对齐的功能，但是用过的人都知道，往往会导致什么呢？单词间距过大或者过小，因为要撑满整行，而且默认单词不能被打断。即使单词可以被打断，Word 做的也并不好。文字的断行其实是一个非常复杂的数学问题，想要做到完美的断行（既不会过密，也不会过疏，尽量少断词，同时减少总行数），所见即所得的工具从逻辑上就行不通。<strong>LaTeX 不是所见即所得，每一次编译，它都试图从整篇文档的全局出发，尽可能的让最后的版面效果达到最均匀，最完美</strong>。这就是我前面所提到的，<code>默认设置与底层机制</code>的威力。这么说可能不直观，下面一幅图帮助你理解。</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/texvsword.png" alt="image" /></p>
+
+<p>（引用自<a href="http://blog.csdn.net/solstice/article/details/8567865">陈硕的 Blog</a>）</p>
+
+<p>可以很明显看到，因为最后输入了一个过长的单词，所以必须换行，但是 Word 只能生硬的塞到下一行去，导致第二行的文字很稀疏第一行很拥挤，但是 LaTeX 就能够把第一行的内容放到第二行来这样两行都比较均匀。好，你可能又说，这个例子太极端，我们平时很少遇到，OK，OK，（王自如登场...）OK，我放下面这张图肯定李菊福。</p>
+
+<p><img src="http://www.zinktypografie.nl/uitlijning-afbreking.png" alt="image" /></p>
+
+<p>这幅图来自 <a href="http://www.zinktypografie.nl/latex.php?lang=en">Zink Typography</a>。是用三大排版软件排同样一段很普通的文字的结果。红色的圈圈表示断词断行了。很明显看到，Word 和 InDesign 断词的次数远远大于 LaTeX，这就是内部机制不同导致最直接的结果。很明显，我们在文档中不希望看到太多单词被强行断开，这毕竟很影响阅读。如果说上面的图视觉上的对比还不够，我再来几个数据，根据 <a href="http://www.zinktypografie.nl/latex.php?lang=en">Zink Typography</a> 的统计，图中的全文（截图只是一部分），LaTeX 断词个数仅仅为其他两个软件的40%，最大的单词之间的空白是其他软件的60%，而超过 <code>9pt</code> 的空白（过大的留白） LaTeX 一个都没有，其他的软件都有好几个。</p>
+
+<p>正如我上面所说，<strong>在寸土寸金的简历页面上，能够利用内部机制最大程度的均匀化你的版面，让每个间距都恰到好处，只有 LaTeX 能做到最好，而且根本不需要你做什么，这都是默认的。正是这每一个细节的小小改进，让整体的效果看起来很美观</strong>。</p>
+
+<p>第二，关于阵列整齐。<strong>这里我推荐使用 Word 排版简历的同学最好采用<code>表格+隐藏表格线</code>的方式（其实也就是利用了制表位）格式化你的简历，不要用什么空格或者 Tab 对齐，不仅麻烦而且容易乱</strong>。如果使用 LaTeX，因为 LaTeX 本身就支持很多对齐的环境，所以阵列对于 LaTeX 来说十分容易，而且很容易模块化，能够让你的内容「自动」对齐。</p>
+
+<p>第三，关于层次分明。使用 Word 的同学就只能手动一个一个改变字体了，虽说不是很麻烦，但是当你想要批量调整格式的时候就会觉得十分烦躁。LaTeX 同样可以把每个层次的对齐模式连同字体一起封装到模块里面，你仍然只需要填写你要写的内容，排出来之后字体自动就按层次分配好了。而且批量修改只用改一改模块参数就行了，其他都不用管。</p>
+
+<p>从以上几点分析来看，相信你能够明白为什么我推荐尽量使用 LaTeX 来做留学简历了。关于如何使用 LaTeX 制作简历，我在之前的另一篇文章里有一个很简单的<a href="http://blog.renren.com/share/326435326/16438412357">教程</a>，可以参考一下。</p>
+
+<h2>文字设计</h2>
+
+<hr />
+
+<p>内容的编排做好了之后，整个简历的大框架就已经搭好了，但我们不能金玉其外败絮其中，框架再好看，教授们还是要去看你的内容的，那么... 慢着我并不是打算讲内容的部分，而是要讲一下内容里面的文字设计（typography），<strong>这一部分看似都是细枝末节，但是非常重要，能够完全做到的人很少</strong>，但如果你能做到，正如我之前所说，你的简历在文字规范程度上就能秒杀绝大多数申请者了。</p>
+
+<p>这里我引用知乎<a href="http://www.zhihu.com/question/19856083/answer/17362430">@Lawrence Li</a>所提到的十大基本原则来说明一下文字方面的要求：</p>
+
+<ol>
+<li><strong>标点符号一律使用半角</strong>。</li>
+<li><strong>逗号，句号，分号，冒号，感叹号，问号和他们后面的字符必须留一个半角空格</strong>。
+<br> 错误：Hi,I'm an entrepreneur.Can you make this app for me for free?Because,you know,I have this brilliant idea but I don't know how to code.
+<br> 正确：Hi, I'm an entrepreneur. Can you make this app for me for free? Because, you know, I have this brilliant idea but I don't know how to code.</li>
+<li><strong>逗号，句号，分号，冒号，感叹号，问号和他们前面的字符不能留有空格</strong>。
+<br> 错误：I think our current version is too skeuomorphic ,why don't we ,uh ,make it flatter so that it looks more metro-ish?
+<br> 正确：I think our current version is too skeuomorphic, why don't we, uh, make it flatter so that it looks more metro-ish?</li>
+<li><strong>将长串数字分开写，降低辨识难度</strong>
+<br> 错误：18681776492
+<br> 正确：186 8177 6492 或 186-8177-6492</li>
+<li><strong>书名，杂志名，电影名，专辑名，英文中出现的外文（包括拼音，人名除外）用斜体</strong>
+<br> 错误：In 2008, I created this amazing service during my internship at Playboy which is totally LBS avant la lettre.
+<br> 正确：In 2008, I created this amazing service during my internship at <em>Playboy</em> which is totally LBS <em>avant la lettre</em>.</li>
+<li><strong>电话区号用不同的符号区分</strong>
+<br> 错误：+86-186-8177-6492
+<br> 正确：(86) 186 8177 6492 或 (86) 186-8177-6492</li>
+<li><strong>简历中的有序列表，应当采用「阿拉伯数字+英文句点+半角空格」的方式</strong>
+<br> 错误：
+<br> Three words I hate:
+<br> 1.Innovation.
+<br> 2, Leverage.
+<br> 3 Synergy.
+<br> 正确：
+<br> Three words I hate:
+<br> 1. Innovation.
+<br> 2. Leverage.
+<br> 3. Synergy.</li>
+<li><strong>括号弧线外要留有空格，弧线内不需要</strong>
+<br> 错误：Byte Press(née Tangcha ) is the best Chinese-language eBook app. Period.
+<br> 正确：Byte Press (née Tangcha) is the best Chinese-language eBook app. Period.
+<br> 但同一个单词内的括号例外：
+<br> 错误：After the linguistic turn, people are getting addicted to pretentious bracketed words such as ‘(ex) plain (ed)’.
+<br> 正确：After the linguistic turn, people are getting addicted to pretentious bracketed words such as ‘(ex)plain(ed)’.</li>
+<li><strong>用弯引号，不要用直（的弯）引号</strong>
+<br> 错误："Bazinga!" 'You are pwned!'
+<br> 正确：“Bazinga!” ‘You are pwned!’</li>
+<li><strong>正确使用各种短横：em dash (—) 是破折号，en dash (–)用来连接年份、时间，是「到」的意思，hyphen (-) 是连字符。</strong>
+<br> 错误：Glenn Gould (1932-1982) is probably my one and only hero - the person who taught me to think differently well before Steve Jobs.
+<br> 正确：Glenn Gould (1932–1982) is probably my one and only hero — the person who taught me to think differently well before Steve Jobs.</li>
+</ol>
+
+
+<p>注意：</p>
+
+<ol>
+<li>若写作时用两个 hyphen (--) 代替破折号，Word 等文书处理软件会自动将其转为 em dash。有鉴于 em dash 输入不便（Mac 上是 shift + option + -），这也是英文写作通用的替代法。在 LaTeX 中，两个短横线能够被自动对应成正确的 en dash，三个短横线能够被自动对应为 em dash。</li>
+<li>破折号（em dash）两端可各留一半角空格，亦可不留。此乃英美习惯之不同，无对错之分。惟请在同一份简历中保持统一。</li>
+</ol>
+
+
+<p>以上这些细节你可能觉得过于微妙，甚至无关紧要，那么我们来看看服装达人<a href="http://www.weibo.com/40017026997">@葛巾玉版</a>对于男性正装的评价：</p>
+
+<blockquote><p>为什么说它有点品质，注意看一下衬衫露出领口的高度，看看衬衫领口的伏贴，衬衫的法式袖剪裁，面料在灯光下的质感，手抬起时西装肩部的滑顺度，一件好的正装不要求多贵，要的是你看起来没有违和感。</p></blockquote>
+
+<p>感受一下，排版简历也是如此，这些看似无关紧要的细节，恰恰是专业与业余的区别（知乎大 V <a href="http://www.zhihu.com/people/chen-hao-84">@陈浩</a>在一篇<a href="http://zhuanlan.zhihu.com/LaTeX/19683504">专栏</a>里也提出了这个观点）。美国的教授经常写论文，审论文，对于英文排版的细节可以说非常的敏感。就我个人而言，我的老板在改我论文的时候，就经常会提出很多排版上的瑕疵，而我自己都很难发现，比如图片标题需要句点，行间公式需要逗号，「i.e.」后面要加逗号变成 「i.e.,」。事实上，<strong>越是学术上享有盛誉的教授，在排版上的强迫症越严重，因为他们对待每一个细节的严谨已经成为了习惯，对于他们来说，排版上的瑕疵和语法上的瑕疵一样扎眼。</strong> 所以我衷心希望大家在以后能像扣语法错误一样扣排版错误，染上强迫症也是没有关系的（跟教授们一起弃疗就好了咩哈哈哈）。我相信，追求完美的特质，一定会给你的申请带来好处。</p>
+
+<h2>字体选择</h2>
+
+<hr />
+
+<p>最后我们来谈谈简历字体的选择。字体也是排版中很重要的一部分，但<strong>我们对于英文字体敏感性相比于美国人而言其实是很低的</strong>。不信你看这三个，<img src="http://www.dreamcodergroup.com/column/img/new_test.png" alt="image" style="width:50%"/>
+。第一个的字体叫 Garamond，第二个是 Times New Roman，而第三个是 Computer Modern Roman。你可能觉得第一个和第二个看起来差的并不多，这其实和美国人觉得楷书的柳体和欧体没区别一样。所以我们眼中很普通的字体，也许在美国人眼中具有一些独特的艺术性。比如第一个 Garamond 事实上是属于旧体（Old Style），而第二个 Times New Roman 则是过渡体（Transitional）或者巴洛克体（Baroque），两者是完全不同的类别。第三个是 LaTeX 系统默认的 Computer Modern 体，这是一种现代体（Didone），似乎跟前面两种不同时代的字体差别也不是很大，但他们的产生是基于完全不同的机制了。</p>
+
+<p>基于以上原因，我们在字体的选择中就需要比较谨慎，一个稳妥的方式是<strong>不要去随便尝试什么猎奇的字体，无论它看起来多么的帅气</strong>。如果你对这个字体不够了解，就不要轻易使用。我们经常使用的字体比如， Times New Roman 和 Arial，是衬线字体和无衬线字体的典型，在简历中使用它们肯定是不会有问题的。只是你自己看久了可能觉得腻。但要明白的一点是，使用广泛的字体必然有其原因，而其中很大的一个原因就是可读性，比如 Arial 的可读性极高。可读性就是阅读该字体的容易程度，可读性高的字体读起来眼睛不费力，能够把精力更多的集中在内容本身。因此，<strong>我们在选择字体的时候，首要考虑的问题就是可读性</strong>。下面这个表格总结了几种常见的衬线/无衬线字体的可读性。最右边的一列表示可读性，星星越多，可读性越高。</p>
+
+<p><img src="http://www.resumetemplates-usa.com/assets/Miscellaenious-Images/_resampled/ResizedImage501325-Best-Resume-Fonts.gif" alt="image" /></p>
+
+<p>（表格来源：<a href="http://www.resumetemplates-usa.com/what-fonts-should-i-use/">Best resume fonts</a>）</p>
+
+<p>基本上表格中所罗列的字体都是文书中可接受的。但对于<strong>可读性较差的字体来说（通常会是衬线类，特别是旧体），不要大量使用，最多做一个标题，而正文尽量采用可读性高的字体</strong>。</p>
+
+<p>此外，整个简历中字体<strong>尽量统一，最好只用一种字体，或者是同一个字族的两种字体（大标题一种，其他另一种）</strong>。如果是使用同一种字体，可以尝试使用多种字重，比如如果你用 Helvetica Neue，你可以尝试使用 Condensed Bold 作为标题，同时使用 Light 作为正文，Medium 作为粗体，比如下面这样</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/helvetica_example.png" alt="image" /></p>
+
+<p>看起来浑然一体而又不失单调。如果想使用两种字体，比如你正文用了 Garamond，可以大标题用 Trajan，像下面这样</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/garamond_example.png" alt="image" /></p>
+
+<p>看起来也比较和谐。当然字体的审美每个人都不一样，但在自己看着舒服的情况下，一定要遵守以上原则。英文字体的定制在 LaTeX 中可以很好的处理，并且默认是可以渲染 Opentype 字型的（Word 需要自己开启），加上字母间距的微调，连字的效果，（字体处理的对比见 <a href="http://www.zinktypografie.nl/latex.php?lang=en">Zink Typography</a>）足以让你的文字细节符合传统印刷级欧美文书排版的要求。</p>
+
+<h2>结语</h2>
+
+<hr />
+
+<p>经过了以上关于排版各个方面的简单介绍，相信大家对留学文书排版会有一些新的认识，如果能够逐一做到，肯定可以让你在干货相同的情况下脱颖而出，为自己争取到额外的机会。</p>
+
+<p>当然，我这里讲的只是一些很基本的原则，我并没有讲怎么设计一个简历的排版让它显得 B 格很高，这个要讲的话坑就比较深了，而且大部分留学申请的同学也不是搞设计专业的，不需要把简历做的狂霸炫酷吊炸天，<strong>中规中矩是最重要的，而上面讲的很多基本上就是所谓的「规矩」</strong>。但如何在简洁的前提下，中规中矩的前提下，提升 B 格呢？这里面就涉及一些技巧了，原理可能复杂，但是做起来不难。比如上面两幅图，虽然只是很简单的文字，但是看起来就让人觉得舒服，甚至可能还有点 B 格。我以后有空会详细说说这个问题。</p>
+
+<p>另外，要注意，<strong>好的版式设计和内容永远是分不开的</strong>，在提升外观的同时，内容也一定要跟上节奏。内容如何搭配版式也是一个需要讲究的问题。我以后也会慢慢补上这部分内容。如果想了解更多关于文书排版以及写作的技巧，或需要帮助，可以关注我的微博，<a href="http://weibo.com/u/3819372195">@Dream_Coder</a>，或者加我的微信</p>
+
+<p style="text-align:center"><img src="http://www.dreamcodergroup.com/img/wechat-qr.jpg" alt="image" style="width:80%"/></p>
+
+<p>干货结束！能看到这里的同学，我为你的耐心点个赞！最后，</p>
+
+<p><img src="http://www.dreamcodergroup.com/column/img/chiyao.gif" alt="image" style="width:auto"/></p>
+
+<!--
+名称              |字体族  |可读性
+--------------  | ----  | ---------
+Times New Roman | 衬线    | *
+Bodoni MT       | 衬线    | *
+Courier New     | 衬线    | *
+Garamond        | 衬线    |
+Georgia         | 衬线    |
+Goudy Old Style | 衬线    |
+Arial           | 无衬线 | ***
+Century Gothic  |
+-->
+
+</body>
+</html>
