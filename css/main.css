@@ -69,15 +69,17 @@ h1, h2, h3, th  {
 	margin-left: 3%;
 }
 
+@media screen and (max-width: 650px)  {	
+	#global  {
+		opacity: 0.8;
+		filter: Alpha(opacity=80);
+	}
+}
+
 @media screen and (max-width: 320px)  {
 	.mlogo  {
 		margin-left: 20px;
 		zoom: 0.8;
-	}
-
-	#global  {
-		opacity: 0.8;
-		filter: Alpha(opacity=80);
 	}
 
 	.navi.shrink   {

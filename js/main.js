@@ -13,9 +13,9 @@ function showCase(typ, index)
 function scrollNav()
 {
 	var obj = document.getElementById('global');
-	if (document.body.clientWidth <= 950 && obj.className == "fixed")
+	if (document.body.clientWidth <= 1000 && obj.className == "fixed")
 		document.getElementById('navi').className = "navi shrink";
-	else if (document.body.clientWidth <= 320)
+	else if (document.body.clientWidth <= 650)
 		document.getElementById('navi').className = "navi shrink";
 	else
 		document.getElementById('navi').className = "navi";
