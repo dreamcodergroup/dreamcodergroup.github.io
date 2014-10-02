@@ -352,7 +352,7 @@ sup {
 
 <p>可以很明显看到，因为最后输入了一个过长的单词，所以必须换行，但是 Word 只能生硬的塞到下一行去，导致第二行的文字很稀疏第一行很拥挤，但是 LaTeX 就能够把第一行的内容放到第二行来这样两行都比较均匀。好，你可能又说，这个例子太极端，我们平时很少遇到，OK，OK，（王自如登场...）OK，我放下面这张图肯定李菊福。</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/uitlijning-afbreking.png" alt="image" /></p>
+<p><img src="http://www.dreamcodergroup.com/column/img/uitlijning-afbreking.png" alt="image" style="width:100%"/></p>
 
 <p>这幅图来自 <a href="http://www.zinktypografie.nl/latex.php?lang=en">Zink Typography</a>。是用三大排版软件排同样一段很普通的文字的结果。红色的圈圈表示断词断行了。很明显看到，Word 和 InDesign 断词的次数远远大于 LaTeX，这就是内部机制不同导致最直接的结果。很明显，我们在文档中不希望看到太多单词被强行断开，这毕竟很影响阅读。如果说上面的图视觉上的对比还不够，我再来几个数据，根据 <a href="http://www.zinktypografie.nl/latex.php?lang=en">Zink Typography</a> 的统计，图中的全文（截图只是一部分），LaTeX 断词个数仅仅为其他两个软件的40%，最大的单词之间的空白是其他软件的60%，而超过 <code>9pt</code> 的空白（过大的留白） LaTeX 一个都没有，其他的软件都有好几个。</p>
 
