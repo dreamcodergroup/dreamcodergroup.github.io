@@ -55,10 +55,11 @@ h1, h2, h3, th  {
 .navi  {
 	margin: 0 auto;
 	padding: 0;
-	z-index: 999;
+	position: relative;
 }
 
 .mlogo  {
+	min-width: 1px;
 	cursor:pointer;
 	position: absolute;
 	padding: 0;
@@ -154,8 +155,10 @@ h1, h2, h3, th  {
 }
 
 #global.fixed .navi  {
-	right: 3%;
-	position: absolute;
+	float: right;
+	margin-right: 3%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 #global.fixed .mlogo  {
