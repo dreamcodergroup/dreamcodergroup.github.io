@@ -78,14 +78,14 @@ h1, h2, h3, th  {
 	}
 }
 
-@media screen and (max-width: 320px)  {
+@media screen and (max-width: 450px)  {
 	.mlogo  {
 		margin-left: 20px;
 		zoom: 0.8;
 	}
 
 	.navi.shrink   {
-		right: 0px !important;
+		margin-right: 0 !important;
 	}
 
 	.navi.shrink .bar  {
@@ -99,6 +99,7 @@ h1, h2, h3, th  {
 	width: 60px;
 	margin: 0 auto;
 	display: none;
+	z-index: 9999;
 }
 
 .shrink .bar  {
@@ -262,7 +263,7 @@ h1, h2, h3, th  {
 	margin-bottom: 20px;
 }
 
-@media screen and (max-width: 320px)  {
+@media screen and (max-width: 450px)  {
 	.slogan h1  {
 		font-size: 200%;
 		letter-spacing: 0;
@@ -915,7 +916,7 @@ h1, h2, h3, th  {
 	vertical-align: middle;
 }
 
-@media screen and (max-width: 320px)  {
+@media screen and (max-width: 450px)  {
 	.uni, .inf  {
 		width: 100%;
 	}
