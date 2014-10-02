@@ -1,17 +1,13 @@
-.intro.green {
-	background-color: #86c440 !important;
-}
-
-.head_bg.green {
-	background-color: #86c440 !important;
-}
-
 .intro  {
 	position: relative;
 	margin: 0;
-	padding-top: 120px;
+	padding-top: 100px;
 	padding-bottom: 40px;
 	color: #FFFFFF;
+}
+
+.intro .wrapper  {
+	width: 85%;
 }
 
 .backp  {
@@ -24,7 +20,7 @@
 
 .intro h1  {
 	font-size: 250%;
-	line-height: 180%;
+	line-height: 150%;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -52,10 +48,10 @@
 .template  {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	padding: 0;
-	margin: 40px auto 60px auto;
-	margin-left: 4%;
-	width: 30%;
+	margin: 40px 2% 60px 2%;
+	width: 28%;
 	text-shadow: none;
 }
 
@@ -163,11 +159,10 @@
 }
 
 .section  {
-	min-width: 950px;
 	width: 100%;
 	position: fixed;
 	padding: 0;
-	top: 80px;
+	top: 60px;
 	margin: 0;
 	background-color: #000000;
 	opacity: 0.7;
@@ -181,10 +176,16 @@
 
 .section ul  {
 	height: 40px;
-	width: 75%;
+	width: 80%;
 	margin: 0 auto;
 	padding: 0;
 	display: block;
+}
+
+@media screen and (max-width: 640px)  {
+	.section ul  {
+		width: 100%;
+	}
 }
 
 .section ul li  {
@@ -217,7 +218,7 @@
     	top: -40px
 	}
 	to {
-    	top: 80px
+    	top: 60px
 	}
 }
 
@@ -226,7 +227,7 @@
     	top: -40px
 	}
 	to {
-    	top: 80px
+    	top: 60px
 	}
 }
 
@@ -235,7 +236,7 @@
     	top: -40px
 	}
 	to {
-    	top: 80px
+    	top: 60px
 	}
 }
 
@@ -244,7 +245,7 @@
     	top: -40px
 	}
 	to {
-    	top: 80px
+    	top: 60px
 	}
 }
 
@@ -264,6 +265,10 @@
 	width: 100%;
 	margin:0;
 	padding: 50px 0;
+}
+
+.contents .wrapper, .spliter .wrapper, .container .wrapper  {
+	width: 80%;
 }
 
 .ind  {
@@ -377,7 +382,7 @@
 	font-size: 150% !important;
 	color: #ffffff !important;
 	line-height: 180% !important;
-	margin: 20px 65px 20px 80px;
+	margin: 20px 6% 20px 8%;
 	display: inline-block;
 	text-align: left;
 }
@@ -390,14 +395,14 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 65px;
+	width: 7%;
 }
 
 .quote_right  {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 65px;
+	width: 7%;
 }
 
 .modify  {
@@ -519,11 +524,10 @@
 }
 
 .modules  {
-	width: 90%;
 	margin: 0px auto;
 }
 
-.top  {
+.wrapper .top  {
 	position: relative;
 	width: 150px;
 	font-size: 125%;
@@ -531,10 +535,10 @@
 	line-height: 60px;
 	background-color: #eb6e1e;
 	color: #ffffff;
-	margin: 40px auto 0 auto;
+	margin: 40px auto 90px auto;
 }
 
-.bottom  {
+.wrapper .bottom  {
 	position: relative;
 	width: 150px;
 	font-size: 125%;
@@ -542,57 +546,108 @@
 	line-height: 60px;
 	background-color: #eb6e1e;
 	color: #ffffff;
-	margin: 0px auto 40px auto;
+	margin: -40px auto 40px auto;
 }
 
-.left   {
-	width: 50%;
-	margin: 0;
-	margin-right: -4px;
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 40px;
+.modules .sec.left   {
+	margin-left: 0;
 	border-right: 2px dashed #eb6e1e;
 }
 
-.modules .right  {
-	width: 50%;
-	margin: 0;
-	margin-left: -4.5px;
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 40px;
+.modules .sec.right  {
+	margin-left: 50%;
+	border-left: 2px dashed #eb6e1e;
 }
 
 .modules .sec  {
-	width: 100%;
+	width: 50%;
 	margin: 0;
+	display: block;
+	vertical-align: top;
+	padding: 0;
+	margin: -90px 0;
 	position: relative;
+	padding: 30px 0;
 }
 
-.left .sec  {
-	margin-bottom: 160px;
+@media screen and (max-width: 850px)  {
+	.modules .sec  {
+		width: 100%;
+		margin: 0 !important;
+		border: none !important;
+	}
+
+	.modules .board  {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+
+	.modules .pin  {
+		display: none;
+	}
+
+	.modules .top  {
+		margin-bottom: 0px;
+	}
+
+	.modules .bottom  {
+		margin-top: 30px;
+	}
+
+	.part  {
+		width: 80% !important;
+	}
+
+	.labels  {
+		width: 80% !important;
+	}
+
+	.template  {
+		width: 45% !important;
+	}
 }
 
-.modules .right .sec  {
-	margin-top: 160px;
+@media screen and (max-width: 510px)  {
+	.section ul li  {
+		margin: 0 -2px !important;
+	}
+
+	.section ul li p  {
+		font-size: 75%;
+	}
+
+	.part  {
+		width: 100% !important;
+	}
+
+	.labels  {
+		width: 100% !important;
+	}
+
+	.card  {
+		margin: 40px 0 !important;
+	}
+
+	.template  {
+		width: 90% !important;
+	}
+}
+
+.sec .board  {
+	width: 90%;
+	border-radius: 5px;
+	background-color: #ffffff;
 }
 
 .left .board  {
 	margin: 0;
 	border-right: 8px solid #eb6e1e;
-	width: 90%;
-	border-radius: 5px;
-	background-color: #ffffff;
 }
 
 .modules .right .board  {
 	margin: 0;
 	margin-left: 8%;
 	border-left: 8px solid #eb6e1e;
-	width: 90%;
-	border-radius: 5px;
-	background-color: #ffffff;
 }
 
 .modules .expl  {
@@ -632,7 +687,7 @@
 }
 
 .modules .right .pin  {
-	left: -9px;
+	left: -13px;
 }
 
 .modules .pin .one  {
@@ -785,6 +840,14 @@
 	background-color: #ffffff;
 	min-height: 50px;
 	overflow: hidden;
+}
+
+.part .bottom  {
+	margin-top: 30px;
+}
+
+.part .top  {
+	margin-bottom: 0px;
 }
 
 .card:hover .cont  {
@@ -1076,7 +1139,6 @@
 	cursor: pointer;
 	background-color: #000000;
 	color: #ffffff;
-	width: 150px;
 	font-size: 125%;
 	line-height: 200%;
 	margin: auto;
