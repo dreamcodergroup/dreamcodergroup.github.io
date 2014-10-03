@@ -104,9 +104,9 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	margin: auto;
-	height: 180px;
-	bottom: -180px;
+	margin: auto 15px;
+	height:200px;
+	bottom: -200px;
 	border-radius: 100%;
 	color: #000000;
 	padding: 0;
@@ -182,9 +182,6 @@
 	display: block;
 }
 
-@media screen and (max-width: 640px)  {
-}
-
 .section ul li  {
 	display: inline-block;
 	width: 19%;
@@ -254,11 +251,6 @@
 	height: 100px;
 	width: 100%;
 	position: absolute;
-	margin-top: -100px;
-}
-
-.resume .tmp  {
-	height: 100px;
 	margin-top: -100px;
 }
 
@@ -571,6 +563,12 @@
 	padding: 30px 0;
 }
 
+@media screen and (max-width: 1050px)  {	
+	.template  {
+		width: 45% !important;
+	}
+}
+
 @media screen and (max-width: 850px)  {
 	.modules .sec  {
 		width: 100%;
@@ -603,12 +601,14 @@
 		width: 80% !important;
 	}
 
-	.template  {
-		width: 45% !important;
-	}
-
 	.section ul  {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 650px)  {
+	.template  {
+		width: 90% !important;
 	}
 }
 
@@ -631,10 +631,6 @@
 
 	.card  {
 		margin: 40px 0 !important;
-	}
-
-	.template  {
-		width: 90% !important;
 	}
 }
 
