@@ -207,7 +207,7 @@ h1, h2, h3, th  {
 }
 
 .navi.shrink li  {
-	/*visibility: hidden;*/
+	visibility: hidden;
 	display: block;
 	background-color: #000000;
 	position: relative;
