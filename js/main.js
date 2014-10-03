@@ -10,6 +10,12 @@ function showCase(typ, index)
 	last_case[typ] = index;
 }
 
+function HoverIn(obj)  {
+	if (obj.className == "navi shrink")
+		obj.className = "navi shrink hover";
+
+}
+
 function scrollNav()
 {
 	var obj = document.getElementById('global');

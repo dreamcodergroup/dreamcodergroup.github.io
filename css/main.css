@@ -189,7 +189,7 @@ h1, h2, h3, th  {
 	background-color: #000000;
 }
 
-.fixed .navi li:hover .pop, .fixed .navi li:focus .pop  {
+.fixed .navi li:hover .pop  {
 	display: block;
 }
 
@@ -200,14 +200,14 @@ h1, h2, h3, th  {
 
 .navi.shrink  {
 	height: 60px;
+	overflow: hidden;
 }
 
-.navi.shrink:hover li, .navi.shrink:focus li  {
-	visibility: visible;
+.navi.shrink:hover, .navi.shrink.hover  {
+	overflow: visible;
 }
 
 .navi.shrink li  {
-	visibility: hidden;
 	display: block;
 	background-color: #000000;
 	position: relative;
