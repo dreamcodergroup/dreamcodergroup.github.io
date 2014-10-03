@@ -260,7 +260,7 @@ h1, h2, h3, th  {
 }
 
 .slogan p  {
-	font-family: PingHei, FuturaND;
+	font-family: PingHei, FuturaND, Microsoft Yahei Light, Microsoft Yahei, YouYuan, sans-serif;
 	font-size: 175%;
 	font-weight: lighter;
 	line-height: 150%;
