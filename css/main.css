@@ -203,7 +203,7 @@ h1, h2, h3, th  {
 	overflow: hidden;
 }
 
-.navi.shrink:hover  {
+.navi:hover  {
 	overflow: visible;
 }
 
