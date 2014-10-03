@@ -190,8 +190,12 @@
 
 .section ul li  {
 	display: inline-block;
-	width: 19%;
+	width: 20%;
 	margin: 0;
+}
+
+.resume .section ul li  {
+	width: 25%;
 }
 
 .section ul li p  {
@@ -613,7 +617,7 @@
 	}
 
 	.section ul li p  {
-		font-size: 75%;
+		font-size: 80%;
 	}
 
 	.part  {
