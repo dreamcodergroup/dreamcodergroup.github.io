@@ -55,7 +55,6 @@ h1, h2, h3, th  {
 .navi  {
 	margin: 0 auto;
 	padding: 0;
-	position: relative;
 }
 
 .mlogo  {
@@ -94,12 +93,12 @@ h1, h2, h3, th  {
 }
 
 .bar  {
+	cursor: pointer;
 	position: relative;
 	height: 100%;
 	width: 60px;
 	margin: 0 auto;
 	display: none;
-	z-index: 9999;
 }
 
 .shrink .bar  {
@@ -156,10 +155,11 @@ h1, h2, h3, th  {
 }
 
 #global.fixed .navi  {
-	float: right;
+	right: 0;
 	margin-right: 3%;
 	display: inline-block;
 	vertical-align: top;
+	position: absolute;
 }
 
 #global.fixed .mlogo  {
@@ -173,6 +173,7 @@ h1, h2, h3, th  {
 	text-align: center;
 	line-height: 100px;
 	margin: 0;
+	position: relative;
 }
 
 .fixed .navi li  {
@@ -186,6 +187,10 @@ h1, h2, h3, th  {
 	position: absolute;
 	width: 100%;
 	background-color: #000000;
+}
+
+.fixed .navi li:hover .pop  {
+	display: block;
 }
 
 .navi .pop li  {
