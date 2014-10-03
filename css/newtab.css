@@ -183,19 +183,16 @@
 }
 
 @media screen and (max-width: 640px)  {
-	.section ul  {
-		width: 100%;
-	}
 }
 
 .section ul li  {
 	display: inline-block;
-	width: 20%;
+	width: 19%;
 	margin: 0;
 }
 
 .resume .section ul li  {
-	width: 25%;
+	width: 24%;
 }
 
 .section ul li p  {
@@ -609,6 +606,10 @@
 	.template  {
 		width: 45% !important;
 	}
+
+	.section ul  {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 510px)  {
@@ -617,7 +618,7 @@
 	}
 
 	.section ul li p  {
-		font-size: 80%;
+		font-size: 75%;
 	}
 
 	.part  {
