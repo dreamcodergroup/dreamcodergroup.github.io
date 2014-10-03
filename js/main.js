@@ -10,10 +10,22 @@ function showCase(typ, index)
 	last_case[typ] = index;
 }
 
-function HoverIn(obj)  {
+function Hover(obj)  {
 	if (obj.className == "navi shrink")
 		obj.className = "navi shrink hover";
+}
 
+var files = ["CV-template-1"];
+
+function Download(name)  {
+	for (var key in files) {
+		if (files[key] == name)
+		{
+			window.open("template/"+name+".zip");
+			return;
+		}
+	};
+	window.open("price.html#platex");
 }
 
 function scrollNav()

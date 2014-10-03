@@ -6,6 +6,16 @@
 	color: #FFFFFF;
 }
 
+.intro h2 a  {
+	color: #fd8c44;
+	text-decoration: none;
+}
+
+.intro h2 a:hover  {
+	color: #eb6e1e;
+	text-decoration: underline;
+}
+
 .intro .wrapper  {
 	width: 85%;
 }
@@ -141,6 +151,14 @@
 	-moz-transition: all 0.4s ease-in-out 0.2s;
 	-webkit-transition: all 0.4s ease-in-out 0.2s;
 	-o-transition: all 0.4s ease-in-out 0.2s;
+}
+
+.template .download  {
+	width:40px;
+	margin: 0 10px;
+	margin-top:5px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .template .pic  {
