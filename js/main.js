@@ -10,9 +10,14 @@ function showCase(typ, index)
 	last_case[typ] = index;
 }
 
-function Hover(obj)  {
+function HoverIn(obj) {
 	if (obj.className == "navi shrink")
 		obj.className = "navi shrink hover";
+}
+
+function HoverOut(obj) {
+	if (obj.className == "navi shrink hover")
+		obj.className = "navi shrink";
 }
 
 var files = ["CV-template-1"];
