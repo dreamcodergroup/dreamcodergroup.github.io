@@ -12,12 +12,28 @@ function showCase(typ, index)
 
 function HoverIn(obj) {
 	if (obj.className == "navi shrink")
+	{
 		obj.className = "navi shrink hover";
+		return;
+	}
+	if (obj.className == "template")
+	{
+		obj.className = "template hover";
+		return;
+	}
 }
 
 function HoverOut(obj) {
 	if (obj.className == "navi shrink hover")
+	{
 		obj.className = "navi shrink";
+		return;
+	}
+	if (obj.className == "template hover")
+	{
+		obj.className = "template";
+		return;
+	}
 }
 
 var files = ["CV-template-1"];

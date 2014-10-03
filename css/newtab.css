@@ -135,7 +135,7 @@
 	display: block;
 }
 
-.template:hover .cover  {
+.template:hover .cover, .template.hover .cover  {
 	background-color: #ffffff;
 	transition: all 0.3s ease-in-out 0s;
 	-moz-transition: all 0.3s ease-in-out 0s;
@@ -143,7 +143,7 @@
 	-o-transition: all 0.3s ease-in-out 0s;
 }
 
-.template:hover .info  {
+.template:hover .info, .template.hover .info  {
 	opacity: 1;
 	filter: Alpha(opacity=100);
 	bottom: 0;
