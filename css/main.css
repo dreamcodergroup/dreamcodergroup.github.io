@@ -200,14 +200,14 @@ h1, h2, h3, th  {
 
 .navi.shrink  {
 	height: 60px;
-	overflow: hidden;
 }
 
-.navi:hover  {
-	overflow: visible;
+.navi.shrink:hover li  {
+	visibility: visible;
 }
 
 .navi.shrink li  {
+	visibility: hidden;
 	display: block;
 	background-color: #000000;
 	position: relative;
