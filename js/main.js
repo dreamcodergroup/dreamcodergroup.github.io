@@ -42,7 +42,7 @@ function Download(name)  {
 	for (var key in files) {
 		if (files[key] == name)
 		{
-			window.open("template/"+name+".zip");
+			window.open("templates/"+name+".zip");
 			return;
 		}
 	};
