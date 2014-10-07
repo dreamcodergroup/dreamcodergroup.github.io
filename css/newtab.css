@@ -496,6 +496,14 @@
 	background-attachment: fixed;
 }
 
+.column  {
+	background: url("../columns/img/column.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .price .intro  {
 	padding-top: 160px;
 }
@@ -1456,6 +1464,20 @@
 
 #result.show  {
 	display: block;
+}
+
+.column h1  {
+	cursor: pointer;
+	font-size: 200%;
+}
+
+.column h1:hover  {
+	text-decoration: underline;
+}
+
+hr  {
+	border: none;
+	border-top: 1px solid #777777;
 }
 
 
