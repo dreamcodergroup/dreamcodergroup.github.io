@@ -11,7 +11,6 @@ article,aside,dialog,footer,header,section,footer,nav,figure,menu
 	line-height: 150%;
 	margin: 0;
 	padding: 0;
-	position: absolute;
 	vertical-align: middle;text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -1179,6 +1178,63 @@ h1, h2, h3, th  {
 	line-height: 180%;
 	text-shadow: none;
 	color: #dddddd;
+}
+
+.page  {
+	position: relative;
+	cursor: pointer;
+	width: 50%;
+	margin: 0 -3px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 140px;
+}
+
+.page.whole  {
+	width: 100%;
+}
+
+.page:hover  {
+	background-color: #eeeeee;
+}
+
+.page .in  {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 40px;
+}
+
+.page .in.pre  {
+	left: 10%;
+}
+
+.whole .in.pre  {
+	left: 5%;
+}
+
+.page .in.next  {
+	right: 10%;
+}
+
+.whole .in.next  {
+	right: 5%;
+}
+
+.in img, .in p  {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	font-size: 25px;
+	line-height: 40px;
+}
+
+.in img  {
+	width: 35px;
 }
 
 

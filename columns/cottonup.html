@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>DreamCoder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
+        <base href=".." />
+        <meta name="author" content="Jingru">
+        <meta property="og:title" content="DreamCoder 留学申请">
+        <meta property="title" content="DreamCoder 留学申请">
+        <meta property="og:site_name" content="DreamCoder 留学申请">
+        <meta property="site_name" content="DreamCoder 留学申请">
+        <meta property="og:description" content="铸造完美留学申请">
+        <meta property="description" content="铸造完美留学申请">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/font/fonts.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+        <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="js/main.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        window.onload = function()
+        {
+            modifyHeight();
+            scrollNav();
+            window.onresize = function()
+            {
+                scrollNav();
+            };
+            window.onscroll = function()
+            {
+                scrollNav();
+            };
+        };
+        </script>
+        <style>
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: "Lucida Grande", "Hiragino Sans GB", "Helvetica Neue", "Source Sans Pro", sans-serif;
+                font-weight: 300;
+                font-size: 18px;
+                line-height:1.75em;
+                color:#333;
+                background-color:#fafafa;
+                position: relative;
+                margin: 0;
+                padding: 0;
+            }
+
+            .wrapp  {
+                margin: 130px 15%;
+            }
+            table {
+                margin: 10px 0 15px 0;
+                border-collapse: collapse;
+            }
+            td,th {
+                border: 1px solid #ddd;
+                padding: 3px 10px;
+            }
+            th {
+                padding: 5px 10px;
+            }
+            a  {
+                color:#428bca;
+                text-decoration:none
+            }
+            a:hover,
+            a:focus {
+                color:#2a6496;
+                text-decoration:underline
+            }
+            a:focus {
+                outline:thin dotted;
+                outline:5px auto -webkit-focus-ring-color;
+                outline-offset:-2px
+            }           
+
+            img {
+                display: block;
+                margin: 0 auto;
+                width: auto;
+            }           
+
+            .img-left {
+                margin-left: 0 !important;
+            }           
+
+            .img-responsive {
+                display:block;
+                max-width:100%;
+                height:auto;
+                width:auto;
+            }
+            .img-rounded  {
+                border-radius:6px；
+            }
+            .img-thumbnail {
+                padding:4px;
+                line-height:1.45;
+                background-color:#fff;
+                border:1px solid #ddd;
+                border-radius:4px;
+                -webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;
+                display:inline-block;
+                max-width:100%;
+                height:auto
+            }
+            .img-circle {
+                border-radius:50%
+            }
+            p {
+                margin-bottom: 30px;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family:inherit;
+                font-weight:300;
+                line-height:1.1;
+                color: #444;
+                /*line-height: 1.1;*/
+            }
+            h1 {
+                /*margin-top:21px;*/
+                /*margin-bottom: 18px;*/
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 32px;
+            }
+            h3 {
+                font-size: 24px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 16px;
+            }
+            h6 {
+                font-size: 14px;
+            }
+            hr {
+                margin-top:21px;
+                margin-bottom:21px;
+                border:0;
+                border-top:1px solid #ccc
+            }
+            blockquote {
+                background: #fcfcfc;
+                border-left: 5px solid #eee;
+                padding: 13px 13px 21px 15px;
+                margin-bottom: 18px;
+                font-family: "PingHei", georgia,serif;
+                font-style: italic;
+            }
+            blockquote:before{
+                content:"\201C";
+                font-size:40px;
+                margin-left:-10px;
+                font-family: "PingHei", georgia,serif;
+                color:#eee;
+            }
+            blockquote p {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 18px;
+                margin-bottom: 0;
+                font-family: "PingHei", georgia,serif;
+                font-style: italic;
+            }
+            code, pre {
+                font-family: Monaco, Andale Mono, Courier New, monospace;
+            }
+            code {
+                color: rgba(0, 0, 0, 0.75);
+                padding: 1px 3px;
+                font-size: 17px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+            }
+            pre {
+                display: block;
+                padding: 14px;
+                margin: 0 0 18px;
+                line-height: 16px;
+                font-size: 17px;
+                border: 1px solid #d9d9d9;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+            pre code {
+                color:#737373;
+                font-size: 14px;
+                padding: 0;
+            }
+            sup {
+                font-size: 0.83em;
+                vertical-align: super;
+                line-height: 0;
+            }
+            * {
+                -webkit-print-color-adjust: exact;
+                -ms-text-size-adjust:100%;
+                -webkit-text-size-adjust:100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            @media print {
+                body,code,pre code,h1,h2,h3,h4,h5,h6 {
+                    color: black;
+                }
+                table, pre {
+                    page-break-inside: avoid;
+                }
+            }           
+
+            @media screen and (max-width: 930px)  {
+                .wrapp  {
+                   margin-left: 12%;
+                   margin-right: 12%;
+                }
+                .img-adj {
+                    width: 100%;
+                }
+            }           
+
+            @media screen and (max-width: 700px)  {
+                .wrapp  {
+                   margin-left: 8%;
+                   margin-right: 8%;
+                }
+                .img-adj-6 {
+                    width: 100%;
+                }
+            }           
+
+            @media screen and (max-width: 470px)  {
+                .wrapp  {
+                   margin-left: 5%;
+                   margin-right: 5%;
+                }
+                .img-adj-4 {
+                    width: 100%;
+                }
+            }           
+
+            @media screen and (max-width: 320px)  {
+                .wrapp  {
+                   margin-left: 2%;
+                   margin-right: 2%;
+                }
+            } 
+        </style>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <div class="base">
+        <nav id="global" class="fixed">
+            <div class="mlogo" onclick="location.href='index.html'">
+                <img src="img/logo-DC-w.png">
+                <p class="name">DREAMCODER</p>
+            </div>
+            <ul id="navi" class="navi" onmouseover="HoverIn(this);" onmouseout="HoverOut(this);">
+                <div class="bar">
+                    <div class="bar_part top"></div>
+                    <div class="bar_part middle"></div>
+                    <div class="bar_part bottom"></div>
+                </div>
+                <li>
+                    <p onclick="location.href='index.html'">内容概览</p>
+                </li>
+                <li>
+                    <p onclick="location.href='service.html'">业务详情</p>
+                    <ul class="pop">
+                        <li>
+                            <p onclick="location.href='service.html#writing'">文书写作</p>
+                        </li>
+                        <li >
+                            <p onclick="location.href='service.html#latex'">LATEX排版</p>
+                        </li>
+                        <li>
+                            <p onclick="location.href='service.html#webpage'">个人网页</p>
+                        </li>
+                        <li>
+                            <p onclick="location.href='service.html#cottonup'">套磁服务</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p onclick="location.href='price.html'">购买服务</p>
+                </li>
+                <li>
+                    <p onclick="location.href='template.html'">模板示例</p>
+                    <ul class="pop">
+                        <li>
+                            <p onclick="location.href='template.html#latex'">LATEX模板</p>
+                        </li>
+                        <li>
+                            <p onclick="location.href='template.html#web'">网页模板</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p onclick="location.href='index.html'">专栏文章</p>
+                </li>
+                <li>
+                    <p onclick="location.href='faq.html">常见问题</p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapp">
+<h1>套磁随感</h1>
+
+<hr />
+
+<h2>引</h2>
+
+<p><br></p>
+
+<p>回想这几年，套过推荐信、面试机会、奖学金、新的老师。这期间，有过太多的成功与失败，在这期间也犯过太多的错误，懂了很多道理。又到了申请的时候，想着这两年，自己犯过的一些错误，感慨万千。如果再来一次，我肯定能做的更好。</p>
+
+<p>这里我抛砖引玉，给出两个我当年写的套磁信，一些分析和反思，希望对你有所帮助。申请一途，希望你能走的更远更好，能去见识那个心中理想的学校，去见识更好的人与更大的世界。</p>
+
+<hr />
+
+<h3>一</h3>
+
+<pre><code>这个教授是我本科做的课题的方法的创始人，是一个意大利的教授。我并不认识他，只是非常详细的读过和拓展过他的那一批文章。在发套磁邮件前，我并没有发过任何一封邮件。只发了这么一封套磁信，之后他给我写了一封非常好的推荐信。这里面有太多运气成分，不过如果你也对某个教授的某个课题相当了解，可以发封邮件试试。起码他知道，在世界的某个角落，还有个学生，默默的扩展了他的研究，并取得了些进展。也许，他会帮你，帮你去实现你的梦想。这样的套磁信往往可以给带来很好的结果。
+</code></pre>
+
+<blockquote><p><strong>Students interested in intracranial hydrodynamics</strong></p>
+
+<p><br>
+Dear Dr. **,<br/>
+<br></p>
+
+<p>I will be finishing a BS degree in Applied Math at the Huazhong University of Science &amp; Technology (in China, Top 10) next year. I am writing to ask a huge favor — I am applying for a PHD program in statistics and I was hoping you'd consider writing a letter of recommendation on my behalf.</p>
+
+<p><br></p>
+
+<p>I was fascinated by your papers about human intracranial hydrodynamics (such as “DreamCoder: Encode your application into success.”). And I built a mathematical model of intracranial pressure which is extended to analyze the cerebrospinal fluid (CSF) circulation resistance and the effect of decompressive craniectomy (DC). Attached is my detailed paper about this mathematical model (and this paper is waiting for publication). Here is the paper’s abstract.</p>
+
+<p><br>
+Moreover, I enclose the CV for your reference. I’d like to make the process as easy as possible on you. If for any reason you don’t feel comfortable writing a recommendation letter on my behalf, I completely understand. If you are willing to do so, however, please feel free to write letters.</p>
+
+<p><br>
+Finally, if you are interested in my paper, I was very pleased to provide codes related to the paper. Moreover, would it convenient to make some comments on my works?</p>
+
+<p><br>
+<em>Best wishes,</em></p>
+
+<p><br>
+Chong</p></blockquote>
+
+<p><strong>分析：</strong></p>
+
+<p>标题最好包含教授关心的关键词，这样可以方便过滤到重要邮件中，更易引起教授兴趣。
+语气最好诚恳一些，姿态最好低一些。要给人一种，帮我是我莫大的福缘，不帮我我也会完全理解的感觉。
+信的结尾，只需留下自己的 <code>First Name</code> 就可以了。留下全名会太过正式，并不合适。
+信不要太长，学术的总结一定要写到点上。</p>
+
+<p>算好时差，发信时间在当地时间的凌晨五点，这样在教授起来查邮件时，我们所发的邮件会起码出现在第一页上。</p>
+
+<h3>二</h3>
+
+<pre><code>这是一封非常典型的套磁信。申请的是一个硕士项目，套的是一个年轻的助理教授（Assistant Professor）。在写这封信之前，我花了一上午了解这个教授所做的方向，利用 Google scholar教授发表的最新文章。之后，选择了一篇读得懂且较为相关的文章。读完之后，给这个教授发了这封半学术套的邮件。教授回复极为积极，说会帮我向招生委员推荐。之后在一月份拿到了最早一批的全奖硕士录取。再之后，教授给我推荐了一个奖学金，四月份的时候，拿到了一个两万多刀的入学奖学金。虽然最后没有去这里，但是非常感激这个教授给我的帮助。
+</code></pre>
+
+<blockquote><p><strong>Prospective student interested in mathematical modeling and Differential Equation</strong></p>
+
+<p><br>
+Dear Dr. **<br/>
+<br>
+I am Chong Wu and I will be finishing a BS degree in Applied Math at the Huazhong University of Science &amp; Technology (top 10 universities in China) next year. I am applying to ** and would be interested in joining your research group. <strong>I was wondering if you have any plan to recruit new candidate in 2013 fall.</strong></p>
+
+<p><br>
+I went through your group page and your publications in 2012. I knew your research interests are mainly in the area of mathematical biology modeling and the application of differential equation. Moreover, I found your paper "DreamCoder: Encoder your application into success" on website: http://www.dreamcodergroup.com. In this paper, DreamCoder, a new and professional group was introduced. Motivated by helping students making a best application to reach their potential, a creative way was created. The application results in 2013 showed that DreamCoder could help student apply to a better program comparing to the other existing groups. I was fascinated about the application of this work because this work can provide guidelines for further theoretical and empirical researches.</p>
+
+<p><br>
+I was also interested in solving real world problems via mathematical model. In my senior year, I did some work about human intracranial hydrodynamics. To be specific, I extended Linear Ordinary Differential Equation Model into a Second Ordinary Differential Equation Model, which analyzes the relation between DreamCoder and the application results. You could read my published first-author paper on website: http://www.dreamcodergroup.com (If you are unable to download it, a PDF version is in the attachment). I also participated in several mathematical modeling competitions. These competitions and related training introduced me into systematic statistical methods and harnessed my statistical modeling skills. I got several honors from these competitions. Furthermore, my course work in sophomore and junior years strengthened my academic foundation, as attested by the 3.92 GPA, while I engaged in extracurricular activities, a feat which tested my ability to balance priorities.</p>
+
+<p><br>
+I hope I could do some related research with you, especially in mathematical modeling and Differential Equations. I enclose my CV for your reference. <strong>I was wondering if you have any plan to recruit new candidate in 2013 fall.</strong> Do you think my background is suitable to work in your group?</p>
+
+<p><br>
+Best,</p>
+
+<p><br>
+Chong</p></blockquote>
+
+<p><strong>分析：</strong></p>
+
+<p>这是一个比较典型的情况，你做的研究和教授做的研究联系极小，甚至根本不相关。在这样的情况下，我们只能去教授的个人网站了解教授所研究的方向，临时读文章，去尽可能的了解教授最新的研究进展。之后，我们要设法把教授的研究和我们所做的方向联系起来。</p>
+
+<p>在提及教授研究时，最好保守一些。尽量表达我知道你做了啥，并对你做的东西很感兴趣，感觉你的研究非常有意义，是我所爱。如果不是完全读懂了教授的文章，最好不要提问题。提问是一个比较危险的行为。如果不是做过相关项目的人，很容易提出比较幼稚的问题。这些问题答案一般都是非常显然的，主要是因为我们缺少相关背景知识而不懂。</p>
+
+<p>在描述自己的研究和经历时，要突出教授感兴趣的和注重的点。比如说在这封信中，我突出了我项目中所用的微分方程，这其实只是我项目中极为细节的东西，但因为与教授研究相关，所以我将其提出来强调了。再比如说，申请统计、生统，教授所关心的主要是两点，会不会编程（是否写过R包，是否用C实现过某些算法，是否在Linux服务器上跑过大型的仿真），数学背景知识是不是够（是否学过实分析、随机过程、高等概率论）。如果申请统计、生统，我们就应该在这两个方面进行突出。套磁信中，就应该表现出这两点。</p>
+
+<p>这样的信，一定要直接一些，可以问问今年有没有招生计划，能不能打个电话聊一聊之类的。最后，在正文之后，贴上一个非常简单的简历。一般教授很忙，根本不会打开你所附的附件。做个非常简单的简历，写上最主要的信息，争取在最短的时间内，能吸引到教授。</p>
+
+<hr />
+
+<h2>总结</h2>
+
+<p><br>
+其他一些比较失败的套磁信就不在这里分析了。几年的套磁，有过太多的失败与不甘。发邮件是件非常严肃的事情，你必须对自己所发出去的任何一封邮件负责，这就是世界的准则。没有人会当你是个小孩，哭哭笑笑卖个萌认个错，就可以将错误翻过。下面是一些我在这几年套磁和总结其他人套磁之后的一些经验，希望对你有所帮助。尽量少错，尽量给教授留下一个好的印象，去利用一切资源，去得到最好的结果，这才是我们在申请时应该信奉的哲学准则。</p>
+
+<ul>
+<li>不要不懂装懂。如果不懂，不要装作读懂了教授文章。如果没有完全读懂，最好不要问问题。没有读懂，问出来的问题基本上是答案显然。你不知道，只是因为你没有相关的背景知识。</li>
+<li>不要做任何违反学术规范的事情。一切都按照学术规范来。用 <a href="http://www.dreamcodergroup.com/template.html"><code>LaTeX</code></a> 排简历。如果写了research summary，一定要做好引用，严格区分自己的工作和别人已有的工作。尽量不要有语法错误，虽然大家都知道我们是国际生，但是能不犯错误总比犯错误要好。</li>
+<li>学术名词一定不要写错。写错了名词，没有任何挽回的机会。比如clinical trials，不要写成clinic trials。一旦写错，会留下极为恶劣的印象。如果犯了这样的错误，建议放弃和这个教授再联系，没办法挽回的。</li>
+<li>永远不要放弃任何机会和努力。过了十二月，回信率极低，但是不要放弃。任何坚持都会得到回报。任何不努力都会有恶果。相信我，只要坚持，真的会有奇迹会发生的。</li>
+<li>做好自我展示的幻灯片，多给人讲几遍，以备不时之需。每次面试完，记得发感谢邮件，之后多总结面试之间所犯的错误，争取下次做的更好。</li>
+<li>找到套磁期间的队友，一起分享消息、套磁信，一起分析如何回复套磁邮件才能得到最好的结果，走好套磁这一路。</li>
+<li>最后，祝大家套磁顺利，能得到理想的结果。如果想得到更多留学申请的经验与帮助，请关注我的微博 <a href="http://weibo.com/u/3819372195">@Dream_Coder</a>。</li>
+</ul>
+<div class="page whole" onclick="location.href='columns/typesetting-weibo.html'">
+    <div class="in pre">
+        <img src="columns/img/left.png">
+        <p>谈谈留学申请简历的排版</p>
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>

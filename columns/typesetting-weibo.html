@@ -1,224 +1,342 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<style>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: "Lucida Grande", "Hiragino Sans GB", "Helvetica Neue", "Source Sans Pro", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height:1.45;
-    color:#333;
-    background-color:#fafafa
-}
-table {
-    margin: 10px 0 15px 0;
-    border-collapse: collapse;
-}
-td,th {
-    border: 1px solid #ddd;
-    padding: 3px 10px;
-}
-th {
-    padding: 5px 10px;
-}
-a  {
-    color:#428bca;
-    text-decoration:none
-}
-a:hover,
-a:focus {
-    color:#2a6496;
-    text-decoration:underline
-}
-a:focus {
-    outline:thin dotted;
-    outline:5px auto -webkit-focus-ring-color;
-    outline-offset:-2px
-}
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>DreamCoder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
+        <base href=".." />
+        <meta name="author" content="Jingru">
+        <meta property="og:title" content="DreamCoder 留学申请">
+        <meta property="title" content="DreamCoder 留学申请">
+        <meta property="og:site_name" content="DreamCoder 留学申请">
+        <meta property="site_name" content="DreamCoder 留学申请">
+        <meta property="og:description" content="铸造完美留学申请">
+        <meta property="description" content="铸造完美留学申请">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/font/fonts.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+        <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="js/main.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        window.onload = function()
+        {
+            modifyHeight();
+            scrollNav();
+            window.onresize = function()
+            {
+                scrollNav();
+            };
+            window.onscroll = function()
+            {
+                scrollNav();
+            };
+        };
+        </script>
+        <style>
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: "Lucida Grande", "Hiragino Sans GB", "Helvetica Neue", "Source Sans Pro", sans-serif;
+                font-weight: 300;
+                font-size: 18px;
+                line-height:1.75em;
+                color:#333;
+                background-color:#fafafa;
+                position: relative;
+                margin: 0;
+                padding: 0;
+            }
 
-img {
-    vertical-align:middle;
-    width:auto;
-    height:auto;
-}
-.img-responsive {
-    display:block;
-    max-width:100%;
-    height:auto;
-    width:auto;
-}
-.img-rounded  {
-    border-radius:6px
-}
-.img-thumbnail {
-    padding:4px;
-    line-height:1.45;
-    background-color:#fff;
-    border:1px solid #ddd;
-    border-radius:4px;
-    -webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;
-    display:inline-block;
-    max-width:100%;
-    height:auto
-}
-.img-circle {
-    border-radius:50%
-}
-p {
-    margin-bottom: 30px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family:inherit;
-    font-weight:300;
-    line-height:1.1;
-    color: #444;
-    /*line-height: 1.1;*/
-}
-h1 {
-    /*margin-top:21px;*/
-    /*margin-bottom: 18px;*/
-    font-size: 40px;
-}
-h2 {
-    font-size: 36px;
-}
-h3 {
-    font-size: 24px;
-}
-h4 {
-    font-size: 18px;
-}
-h5 {
-    font-size: 16px;
-}
-h6 {
-    font-size: 14px;
-}
-hr {
-    margin-top:21px;
-    margin-bottom:21px;
-    border:0;
-    border-top:1px solid #ccc
-}
-blockquote {
-    background: #eee;
-    border-left: 5px solid #ccc;
-    padding: 20px 30px;
-    margin-bottom: 24px;
-    font-family:inherit;/*"Source Sans Pro", sans-serif,georgia;*/
-    /*font-style: italic;*/
-    position:relative;
-}
-blockquote:after,blockquote:before {
-    color:#ccc;
-    font-size:40px;
-    position:absolute
-}
-blockquote:before{
-    top:0;
-    left:10px;
-    content:"\201C"
-}
-blockquote:after{
-    bottom:-15px;
-    right:10px;
-    content:"\201D"
-}
-/*blockquote:before {
-    content:"\201C";
-    font-size:60px;
-    margin-left:-10px;
-    font-family:inherit;
-    color:#bbb;
-    position:absolute;
-    top:0;
-    left:10px;
-}*/
-blockquote p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 18px;
-    margin-bottom: 0;
-    font-family:inherit;/*"Source Sans Pro", sans-serif,georgia;*/
-    /*font-style: italic;*/
-}
-code, pre {
-    font-family: Monaco, Andale Mono, Courier New, monospace;
-}
-code {
-    background-color: #fee9cc;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 1px 3px;
-    font-size: 17px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-pre {
-    display: block;
-    padding: 14px;
-    margin: 0 0 18px;
-    line-height: 16px;
-    font-size: 17px;
-    border: 1px solid #d9d9d9;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-pre code {
-    background-color: #fff;
-    color:#737373;
-    font-size: 17px;
-    padding: 0;
-}
-sup {
-    font-size: 0.83em;
-    vertical-align: super;
-    line-height: 0;
-}
-* {
-    -webkit-print-color-adjust: exact;
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%;
-    -webkit-font-smoothing: antialiased;
-}
-@media screen and (min-width: 600px) {
-    body {
-        width: 800px;
-        margin:10px auto;
-    }
-}
-@media print {
-    body,code,pre code,h1,h2,h3,h4,h5,h6 {
-        color: black;
-    }
-    table, pre {
-        page-break-inside: avoid;
-    }
-}
+            .wrapp  {
+                margin: 130px 15%;
+            }
+            table {
+                margin: 10px 0 15px 0;
+                border-collapse: collapse;
+            }
+            td,th {
+                border: 1px solid #ddd;
+                padding: 3px 10px;
+            }
+            th {
+                padding: 5px 10px;
+            }
+            a  {
+                color:#428bca;
+                text-decoration:none
+            }
+            a:hover,
+            a:focus {
+                color:#2a6496;
+                text-decoration:underline
+            }
+            a:focus {
+                outline:thin dotted;
+                outline:5px auto -webkit-focus-ring-color;
+                outline-offset:-2px
+            }           
 
-</style>
-<title>谈谈留学申请简历的排版</title>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</head>
-<body>
+            img {
+                display: block;
+                margin: 0 auto;
+                width: auto;
+            }           
+
+            .img-left {
+                margin-left: 0 !important;
+            }           
+
+            .img-responsive {
+                display:block;
+                max-width:100%;
+                height:auto;
+                width:auto;
+            }
+            .img-rounded  {
+                border-radius:6px；
+            }
+            .img-thumbnail {
+                padding:4px;
+                line-height:1.45;
+                background-color:#fff;
+                border:1px solid #ddd;
+                border-radius:4px;
+                -webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;
+                display:inline-block;
+                max-width:100%;
+                height:auto
+            }
+            .img-circle {
+                border-radius:50%
+            }
+            p {
+                margin-bottom: 30px;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family:inherit;
+                font-weight:300;
+                line-height:1.1;
+                color: #444;
+                /*line-height: 1.1;*/
+            }
+            h1 {
+                /*margin-top:21px;*/
+                /*margin-bottom: 18px;*/
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 32px;
+            }
+            h3 {
+                font-size: 24px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 16px;
+            }
+            h6 {
+                font-size: 14px;
+            }
+            hr {
+                margin-top:21px;
+                margin-bottom:21px;
+                border:0;
+                border-top:1px solid #ccc
+            }
+            blockquote {
+                background: #eee;
+                border-left: 5px solid #ccc;
+                padding: 20px 30px;
+                margin-bottom: 24px;
+                font-family:inherit;/*"Source Sans Pro", sans-serif,georgia;*/
+                /*font-style: italic;*/
+                position:relative;
+            }
+            blockquote:after,blockquote:before {
+                color:#ccc;
+                font-size:40px;
+                position:absolute
+            }
+            blockquote:before{
+                top:0;
+                left:10px;
+                content:"\201C"
+            }
+            blockquote:after{
+                bottom:-15px;
+                right:10px;
+                content:"\201D"
+            }
+            blockquote p {
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 18px;
+                margin-bottom: 0;
+                font-family:inherit;/*"Source Sans Pro", sans-serif,georgia;*/
+                /*font-style: italic;*/
+            }
+            code, pre {
+                font-family: Monaco, Andale Mono, Courier New, monospace;
+            }
+            code {
+                color: rgba(0, 0, 0, 0.75);
+                padding: 1px 3px;
+                font-size: 17px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+            }
+            pre {
+                display: block;
+                padding: 14px;
+                margin: 0 0 18px;
+                line-height: 16px;
+                font-size: 17px;
+                border: 1px solid #d9d9d9;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+            pre code {
+                color:#737373;
+                font-size: 17px;
+                padding: 0;
+            }
+            sup {
+                font-size: 0.83em;
+                vertical-align: super;
+                line-height: 0;
+            }
+            * {
+                -webkit-print-color-adjust: exact;
+                -ms-text-size-adjust:100%;
+                -webkit-text-size-adjust:100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            @media print {
+                body,code,pre code,h1,h2,h3,h4,h5,h6 {
+                    color: black;
+                }
+                table, pre {
+                    page-break-inside: avoid;
+                }
+            }           
+
+            @media screen and (max-width: 930px)  {
+                .wrapp  {
+                   margin-left: 12%;
+                   margin-right: 12%;
+                }
+                .img-adj {
+                    width: 100%;
+                }
+            }           
+
+            @media screen and (max-width: 700px)  {
+                .wrapp  {
+                   margin-left: 8%;
+                   margin-right: 8%;
+                }
+                .img-adj-6 {
+                    width: 100%;
+                }
+            }           
+
+            @media screen and (max-width: 470px)  {
+                .wrapp  {
+                   margin-left: 5%;
+                   margin-right: 5%;
+                }
+                .img-adj-4 {
+                    width: 100%;
+                }
+            }           
+
+            @media screen and (max-width: 320px)  {
+                .wrapp  {
+                   margin-left: 2%;
+                   margin-right: 2%;
+                }
+            }           
+
+        </style>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+    <div class="base">
+        <nav id="global" class="fixed">
+            <div class="mlogo" onclick="location.href='index.html'">
+                <img src="img/logo-DC-w.png">
+                <p class="name">DREAMCODER</p>
+            </div>
+            <ul id="navi" class="navi" onmouseover="HoverIn(this);" onmouseout="HoverOut(this);">
+                <div class="bar">
+                    <div class="bar_part top"></div>
+                    <div class="bar_part middle"></div>
+                    <div class="bar_part bottom"></div>
+                </div>
+                <li>
+                    <p onclick="location.href='index.html'">内容概览</p>
+                </li>
+                <li>
+                    <p onclick="location.href='service.html'">业务详情</p>
+                    <ul class="pop">
+                        <li>
+                            <p onclick="location.href='service.html#writing'">文书写作</p>
+                        </li>
+                        <li >
+                            <p onclick="location.href='service.html#latex'">LATEX排版</p>
+                        </li>
+                        <li>
+                            <p onclick="location.href='service.html#webpage'">个人网页</p>
+                        </li>
+                        <li>
+                            <p onclick="location.href='service.html#cottonup'">套磁服务</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p onclick="location.href='price.html'">购买服务</p>
+                </li>
+                <li>
+                    <p onclick="location.href='template.html'">模板示例</p>
+                    <ul class="pop">
+                        <li>
+                            <p onclick="location.href='template.html#latex'">LATEX模板</p>
+                        </li>
+                        <li>
+                            <p onclick="location.href='template.html#web'">网页模板</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p onclick="location.href='index.html'">专栏文章</p>
+                </li>
+                <li>
+                    <p onclick="location.href='faq.html">常见问题</p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapp">
 <h1>谈谈留学申请简历的排版</h1>
 
 <hr />
@@ -226,16 +344,16 @@ sup {
 <p>最近又到了出国申请的热季，作为一名「正直」的学长，过去几年帮不少学弟学妹改过文书（当然，主要是学妹 →_→）。其实每次看到他们的文书，尤其是简历，我脑子里真是满屏的弹幕滑过，怎一个惨字了得。本来想想，还是忍了吧，毕竟他们还年轻，而我什么简历没有见过。但是，最近看到的一位学妹的简历让我感觉灵魂收到了冲击，于是不得不细说一下留学简历应该注意哪些问题了。
 <br/><br/>
 我们先来欣（tu）赏（cao）一下这份最近发来的简历：
-<img src="http://www.dreamcodergroup.com/column/img/sample_cv.png" alt="image"  style="width:100%"/>
-<h4>(出于个人隐私缘故，我把重要信息和谐了)&nbsp;<a href="http://www.dreamcodergroup.com/column/img/sample_cv.png">原图在此</a></h4></p>
+<img src="columns/img/sample_cv.png" alt="cv" style="width:100%"/>
+<h4>(出于个人隐私缘故，我把重要信息和谐了)&nbsp;<a href="columns/img/sample_cv.png">原图在此</a></h4></p>
 
 <p>看完了这个简历，我默默的关掉了 Word。我觉得这个世界不会好了。内容不论，尼玛这排版实在是槽点太多无从吐起啊！如果你觉得这个简历排版还不错，您还是留在学校保研吧。</p>
 
 <p>首先映入眼帘的是那个看起来奇奇怪怪的彩色混浊物，她用作小条目的标记，好嘛让我们来仔细看下</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/sample_cv_1.png" alt="image" style="width:auto"/></p>
+<p><img src="columns/img/sample_cv_1.png" class="img-adj-4" alt="cv-1"/></p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/wuyu.gif" alt="image"/></p>
+<p><img src="columns/img/wuyu.gif" class="img-left" alt="无语"/></p>
 
 <p>。。。</p>
 
@@ -243,23 +361,23 @@ sup {
 
 <p>然后我的视线移到了右边......</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/sample_cv_2.png" alt="image" style="width:auto"/></p>
+<p><img src="columns/img/sample_cv_2.png" class="img-adj-4" alt="cv-2"/></p>
 
 <p>咦？Oct 2010 年后面怎么没东西了？下面的 Oct 2010 后面倒是有个 Aug ...... 可是 Aug 什么啊，同学你是不是特别不想找一个处女座的教授？用这种方式筛选教授啊？新技能我 get 了。然后红圈里面的两根横线好像还不一样长啊...... 看到这里我基本已经阵亡了。</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/tuxie.gif" alt="image" style="width:auto"/></p>
+<p><img src="columns/img/tuxie.gif" class="img-left" alt="吐血"/></p>
 
 <p>我抚着心脏又往上看了下</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/sample_cv_3.png" alt="image" /></p>
+<p><img src="columns/img/sample_cv_3.png" class="img-adj" alt="cv-3"></p>
 
 <p>同学你的大标题可不可以稍微大一个字号，跟下面挤得这么紧看着真捉急啊，不过这是小事了，真的。可是，下面那个 Present 是什么东西？我怎么就看不懂了呢？等我往周围看了下恍然大悟，原来这个 Present 是接着上面那个 Oct 2010 啊！原来她居然换行了啊！换行了啊！真是前后呼应的（yi）佳（tuo）作（shi）啊！</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/tuxie2.gif" alt="image" style="width:auto"/></p>
+<p><img src="columns/img/tuxie2.gif" alt="吐血" class="img-left"></p>
 
 <p>然后这个简历无论是标题还是正文除了职位全尼玛都是<strong>粗体</strong>是几个意思，<strong>通篇都是重点是吗</strong>？</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/shentou.gif" alt="image" style="width:auto"/></p>
+<p><img src="columns/img/shentou.gif" alt="伸头" class="img-left"/></p>
 
 <p>其实这真的不是个例，很多的简历或多或少都有里面的一些问题。每年都碰到一样的问题，我觉得我整个人都不好了。<strong>所以今天我决定正儿八经的来总结下关于文书排版的问题，真心希望能改进一下目前这个局面。</strong>以后真的不愿再看到这种排版的简历了。</p>
 
@@ -277,7 +395,7 @@ sup {
 
 <p>研究发现，当你的简历出现在 HR 的视野中时，他们倾向于按照一种持续的扫描路径去看你的简历。初次审查的平均时间是多少呢？只有 6 秒。对，只有 6 秒，你要在 6 秒钟内用你的简历说服他们让你通过。而你的排版，设计和布局决定了你在这 6 秒内能有多高效的传递你的信息。下面两份简历来自同一个求职者，内容完全相同，只有排版是不同的。共有 30 多名 HR 审阅这两份简历，通过他们眼动轨迹分析他们关注的位置和停留的时间，颜色越偏红表示停留时间越长。最后，他们对这两份简历打分，以 100 分为满分，左边的简历平均只得到了 56 分，而右边的简历得到了 89 分。原因就是左边的简历层次不清晰，传递信息的效率很低。从图里也可以看出右边修改排版之后的简历视觉亮点增加了很多。</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/impressive-resumes.jpg" alt="image" /></p>
+<p><img src="columns/img/impressive-resumes.jpg" class="img-adj" alt="resume" /></p>
 
 <p>（以上两幅图来自<a href="http://www.theladders.com/">TheLadders</a>的大数据统计。）</p>
 
@@ -334,9 +452,9 @@ sup {
 </ol>
 
 
-<p>下面这个简历是用 LaTeX 排版出来的很好的例子。引用自<a href="http://www.dreamcodergroup.com/template.html">DreamCoder</a>，这里有很多 LaTeX 排出来的很好看的简历。</p>
+<p>下面这个简历是用 LaTeX 排版出来的很好的例子。引用自<a href="http://www.dreamcodergroup.com/templates.html">DreamCoder</a>，这里有很多 LaTeX 排出来的很好看的简历。</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/template.png" alt="image" /></p>
+<p><img src="columns/img/template.png" class="img-adj" alt="template" /></p>
 
 <p>下面我来说说 LaTeX 相比于 Word 以及其他软件在以上三点要求下的优势。</p>
 
@@ -346,13 +464,13 @@ sup {
 
 <p><strong>横向上，最理想的效果是单词与单词之间的间距不会过大也不会过小，并且两侧对齐</strong>。左对齐的话，右边锯齿状不好看。Word 提供两侧对齐的功能，但是用过的人都知道，往往会导致什么呢？单词间距过大或者过小，因为要撑满整行，而且默认单词不能被打断。即使单词可以被打断，Word 做的也并不好。文字的断行其实是一个非常复杂的数学问题，想要做到完美的断行（既不会过密，也不会过疏，尽量少断词，同时减少总行数），所见即所得的工具从逻辑上就行不通。<strong>LaTeX 不是所见即所得，每一次编译，它都试图从整篇文档的全局出发，尽可能的让最后的版面效果达到最均匀，最完美</strong>。这就是我前面所提到的，<code>默认设置与底层机制</code>的威力。这么说可能不直观，下面一幅图帮助你理解。</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/texvsword.png" alt="image" /></p>
+<p><img src="columns/img/texvsword.png" class="img-adj-6" alt="tex.vs.word" /></p>
 
 <p>（引用自<a href="http://blog.csdn.net/solstice/article/details/8567865">陈硕的 Blog</a>）</p>
 
 <p>可以很明显看到，因为最后输入了一个过长的单词，所以必须换行，但是 Word 只能生硬的塞到下一行去，导致第二行的文字很稀疏第一行很拥挤，但是 LaTeX 就能够把第一行的内容放到第二行来这样两行都比较均匀。好，你可能又说，这个例子太极端，我们平时很少遇到，OK，OK，（王自如登场...）OK，我放下面这张图肯定李菊福。</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/uitlijning-afbreking.png" alt="image" style="width:100%"/></p>
+<p><img src="columns/img/uitlijning-afbreking.png" alt="image" style="width:100%"/></p>
 
 <p>这幅图来自 <a href="http://www.zinktypografie.nl/latex.php?lang=en">Zink Typography</a>。是用三大排版软件排同样一段很普通的文字的结果。红色的圈圈表示断词断行了。很明显看到，Word 和 InDesign 断词的次数远远大于 LaTeX，这就是内部机制不同导致最直接的结果。很明显，我们在文档中不希望看到太多单词被强行断开，这毕竟很影响阅读。如果说上面的图视觉上的对比还不够，我再来几个数据，根据 <a href="http://www.zinktypografie.nl/latex.php?lang=en">Zink Typography</a> 的统计，图中的全文（截图只是一部分），LaTeX 断词个数仅仅为其他两个软件的40%，最大的单词之间的空白是其他软件的60%，而超过 <code>9pt</code> 的空白（过大的留白） LaTeX 一个都没有，其他的软件都有好几个。</p>
 
@@ -433,12 +551,12 @@ sup {
 
 <hr />
 
-<p>最后我们来谈谈简历字体的选择。字体也是排版中很重要的一部分，但<strong>我们对于英文字体敏感性相比于美国人而言其实是很低的</strong>。不信你看这三个，<img src="http://www.dreamcodergroup.com/column/img/new_test.png" alt="image" />
+<p>最后我们来谈谈简历字体的选择。字体也是排版中很重要的一部分，但<strong>我们对于英文字体敏感性相比于美国人而言其实是很低的</strong>。不信你看这三个，<img src="columns/img/new_test.png" alt="new_test"/>
 。第一个的字体叫 Garamond，第二个是 Times New Roman，而第三个是 Computer Modern Roman。你可能觉得第一个和第二个看起来差的并不多，这其实和美国人觉得楷书的柳体和欧体没区别一样。所以我们眼中很普通的字体，也许在美国人眼中具有一些独特的艺术性。比如第一个 Garamond 事实上是属于旧体（Old Style），而第二个 Times New Roman 则是过渡体（Transitional）或者巴洛克体（Baroque），两者是完全不同的类别。第三个是 LaTeX 系统默认的 Computer Modern 体，这是一种现代体（Didone），似乎跟前面两种不同时代的字体差别也不是很大，但他们的产生是基于完全不同的机制了。</p>
 
 <p>基于以上原因，我们在字体的选择中就需要比较谨慎，一个稳妥的方式是<strong>不要去随便尝试什么猎奇的字体，无论它看起来多么的帅气</strong>。如果你对这个字体不够了解，就不要轻易使用。我们经常使用的字体比如， Times New Roman 和 Arial，是衬线字体和无衬线字体的典型，在简历中使用它们肯定是不会有问题的。只是你自己看久了可能觉得腻。但要明白的一点是，使用广泛的字体必然有其原因，而其中很大的一个原因就是可读性，比如 Arial 的可读性极高。可读性就是阅读该字体的容易程度，可读性高的字体读起来眼睛不费力，能够把精力更多的集中在内容本身。因此，<strong>我们在选择字体的时候，首要考虑的问题就是可读性</strong>。下面这个表格总结了几种常见的衬线/无衬线字体的可读性。最右边的一列表示可读性，星星越多，可读性越高。</p>
 
-<p><img src="http://www.resumetemplates-usa.com/assets/Miscellaenious-Images/_resampled/ResizedImage501325-Best-Resume-Fonts.gif" alt="image" /></p>
+<p><img src="http://www.resumetemplates-usa.com/assets/Miscellaenious-Images/_resampled/ResizedImage501325-Best-Resume-Fonts.gif" alt="resume-fonts" class="img-adj-6" /></p>
 
 <p>（表格来源：<a href="http://www.resumetemplates-usa.com/what-fonts-should-i-use/">Best resume fonts</a>）</p>
 
@@ -446,11 +564,11 @@ sup {
 
 <p>此外，整个简历中字体<strong>尽量统一，最好只用一种字体，或者是同一个字族的两种字体（大标题一种，其他另一种）</strong>。如果是使用同一种字体，可以尝试使用多种字重，比如如果你用 Helvetica Neue，你可以尝试使用 Condensed Bold 作为标题，同时使用 Light 作为正文，Medium 作为粗体，比如下面这样</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/helvetica_example.png" alt="image" /></p>
+<p><img src="columns/img/helvetica_example.png" class="img-adj" alt="helvetica" /></p>
 
 <p>看起来浑然一体而又不失单调。如果想使用两种字体，比如你正文用了 Garamond，可以大标题用 Trajan，像下面这样</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/garamond_example.png" alt="image" /></p>
+<p><img src="columns/img/garamond_example.png" class="img-adj" alt="garamond" /></p>
 
 <p>看起来也比较和谐。当然字体的审美每个人都不一样，但在自己看着舒服的情况下，一定要遵守以上原则。英文字体的定制在 LaTeX 中可以很好的处理，并且默认是可以渲染 Opentype 字型的（Word 需要自己开启），加上字母间距的微调，连字的效果，（字体处理的对比见 <a href="http://www.zinktypografie.nl/latex.php?lang=en">Zink Typography</a>）足以让你的文字细节符合传统印刷级欧美文书排版的要求。</p>
 
@@ -464,11 +582,11 @@ sup {
 
 <p>另外，要注意，<strong>好的版式设计和内容永远是分不开的</strong>，在提升外观的同时，内容也一定要跟上节奏。内容如何搭配版式也是一个需要讲究的问题。我以后也会慢慢补上这部分内容。如果想了解更多关于文书排版以及写作的技巧，或需要帮助，可以关注我的微博，<a href="http://weibo.com/u/3819372195">@Dream_Coder</a>，或者加我的微信</p>
 
-<p><img src="http://www.dreamcodergroup.com/img/wechat-qr.jpg" alt="image" style="width:auto"/></p>
+<p><img src="img/wechat-qr.jpg" alt="image" style="width:130px;" class="img-left"/></p>
 
 <p>干货结束！能看到这里的同学，我为你的耐心点个赞！最后，</p>
 
-<p><img src="http://www.dreamcodergroup.com/column/img/chiyao.gif" alt="image" style="width:auto"/></p>
+<p><img src="columns/img/chiyao.gif" alt="吃药" class="img-left" /></p>
 
 <!--
 名称              |字体族  |可读性
@@ -482,6 +600,13 @@ Goudy Old Style | 衬线    |
 Arial           | 无衬线 | ***
 Century Gothic  |
 -->
+<div class="page whole" onclick="location.href='columns/cottonup.html'">
+    <div class="in next">
+        <p>套磁随感</p>
+        <img src="columns/img/right.png">
+    </div>
+</div>
+</div>
 
 </body>
 </html>
