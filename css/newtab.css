@@ -1466,12 +1466,12 @@
 	display: block;
 }
 
-.column h1  {
+.column .container h1  {
 	cursor: pointer;
 	font-size: 200%;
 }
 
-.column h1:hover  {
+.column .container h1:hover  {
 	text-decoration: underline;
 }
 
