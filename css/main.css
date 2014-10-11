@@ -1237,6 +1237,24 @@ h1, h2, h3, th  {
 	width: 35px;
 }
 
+.qq  {
+	position: fixed;
+	bottom: -130px;
+	right: 20%;
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+.qq:hover  {
+	bottom: -10px;
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+}
+
 
 
 
