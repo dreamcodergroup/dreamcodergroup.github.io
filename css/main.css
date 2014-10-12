@@ -1238,8 +1238,10 @@ h1, h2, h3, th  {
 }
 
 .qq  {
+	z-index: 9999;
+	cursor: pointer;
 	position: fixed;
-	bottom: -110px;
+	bottom: -90px;
 	right: 12%;
 	width: 90px;
 	transition: all 0.3s ease-in-out 0s;
@@ -1249,7 +1251,7 @@ h1, h2, h3, th  {
 }
 
 .qq:hover  {
-	bottom: -10px;
+	bottom: 0px;
 	transition: all 0.3s ease-in-out 0s;
 	-moz-transition: all 0.3s ease-in-out 0s;
 	-webkit-transition: all 0.3s ease-in-out 0s;
