@@ -1239,8 +1239,9 @@ h1, h2, h3, th  {
 
 .qq  {
 	position: fixed;
-	bottom: -130px;
-	right: 20%;
+	bottom: -110px;
+	right: 12%;
+	width: 90px;
 	transition: all 0.3s ease-in-out 0s;
 	-moz-transition: all 0.3s ease-in-out 0s;
 	-webkit-transition: all 0.3s ease-in-out 0s;

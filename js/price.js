@@ -37,6 +37,13 @@ var prices = {write:{cv:[497,897,200,300], ps:[1197,3588,200,0], rl:[497,1397,20
 				cotton:{cv:[797,2997,13997]}};
 var last_count = {write:{cv:0, ps:0, rl:0}, latex:{cv:0, ps:0, rl:0}, web:{cv:0}, cotton:{cv:0}};
 
+function Initialize()
+{
+	showPrice('write', 0, document.getElementById('writecv0'));
+	showPrice('latex', 0, document.getElementById('latexcv0'));
+	showPrice('web', 0, document.getElementById('webcv0'));
+}
+
 function showPrice(base, countt, obj)
 {
 	document.getElementById(base+last_type[base]+last_count[base][last_type[base]]).className = "";
@@ -105,22 +112,25 @@ function showPrice(base, countt, obj)
 
 function price(base, type, countt, serv)
 {
+
+	var price = 0;
 	if (base == "write")
 	{
-		return prices[base][type][serv] + countt * prices[base][type][serv+2];
+		price = prices[base][type][serv] + countt * prices[base][type][serv+2] - 200;
 	}
-	if (base == "latex")
+	else if (base == "latex")
 	{
-		return prices[base][type][serv] + countt * prices[base][type][4];
+		price = prices[base][type][serv] + countt * prices[base][type][4] - 100;
 	}
-	if (base == "web")
+	else if (base == "web")
 	{
-		return prices[base][type][serv + countt*3];
+		price = prices[base][type][serv + countt*3];
 	}
-	if (base == "cotton")
+	else if (base == "cotton")
 	{
-		return prices[base][type][serv];
+		price = prices[base][type][serv];
 	}
+	return price;
 }
 
 var storage = window.localStorage;
