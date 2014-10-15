@@ -297,7 +297,7 @@ function insertFormItem(data, id, price)
 function removeFormItem(id)
 {
 	document.getElementById("form").removeChild(document.getElementById(id+"data"));
-	document.getElementById("form").removeChild(document.getElementById(id+"price"));
+	/*document.getElementById("form").removeChild(document.getElementById(id+"price"));*/
 	storage.setItem("form", document.getElementById("form").innerHTML);
 }
 
