@@ -36,7 +36,7 @@ function HoverOut(obj) {
 	}
 }
 
-var files = ["CV-template-1"];
+var files = [/*"CV-template-1"*/];
 
 function Download(name)  {
 	for (var key in files) {
