@@ -62,7 +62,7 @@
 					<p onclick="location.href='service.html'">业务详情</p>
 				</li>
 				<li>
-					<p onclick="scroll('',0);">预订服务</p>
+					<p onclick="scroll('',0);">购买服务</p>
 				</li>
 				<li>
 					<p onclick="location.href='template.html'">模板示例</p>
@@ -104,11 +104,11 @@
 			<div id="clogo" class="clogo" onclick="Switch(this);">
 				<img src="img/cart.png">
 			</div>
-			<p class="head">预订项目</p>
+			<p class="head">已购项目</p>
 			<div id="cart"></div>
-			<div class="shop" style="margin-top:10px;"><!-- 合计： -->
-				<div class="right" style="display:none;">&nbsp;元</div>
-				<div id="price" class="right" style="display:none;">0</div>
+			<div class="shop" style="margin-top:10px;">合计：
+				<div class="right">&nbsp;元</div>
+				<div id="price" class="right">0</div>
 				<form id="formdata" class="form" action="http://54.191.115.62/mail.php" method="post" onsubmit="return sub()">
 					Email:
 					<div class="infor">
@@ -119,7 +119,7 @@
 					&nbsp;<input id="mail" name="mail" type="text" maxlength="50">
 					<div id="form"></div>
 					<div id="result">邮件发送中，请稍后……</div>
-					<input id="submit" type="submit" class="submit" value="确认预订">
+					<input id="submit" type="submit" class="submit" value="确认购买">
 				</form>
 			</div>
 		</div>
@@ -167,10 +167,11 @@
 							</tr>
 							<tr class="pri">
 								<td id="write-name" class="lead">简历</td>
+								<td class="show"><p id="write0" class="pric">￥297</p> RMB
+									<div class="addcart" onclick="addtoCart('write', 0)">购买</td>
 								<td class="show">
-									<div class="addcart" onclick="addtoCart('write', 0)">预订</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('write', 1)">预订</td>
+									<p id="write1" class="pric">￥697</p> RMB
+									<div class="addcart" onclick="addtoCart('write', 1)">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
@@ -291,15 +292,15 @@
 							</tr>
 							<tr class="pri">
 								<td id="latex-name" class="lead">简历</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('latex', 0)">预订</div>
+								<td class="show"><p id="latex0" class="pric">￥299</p> RMB
+									<div class="addcart" onclick="addtoCart('latex', 0)">购买</div>
 								</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('latex', 1)">预订</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('latex', 2)">预订</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('latex', 3)">预订</td>
+								<td class="show"><p id="latex1" class="pric">￥499</p> RMB
+									<div class="addcart" onclick="addtoCart('latex', 1)">购买</td>
+								<td class="show"><p id="latex2" class="pric">￥699</p> RMB
+									<div class="addcart" onclick="addtoCart('latex', 2)">购买</td>
+								<td class="show"><p id="latex3" class="pric">￥899</p> RMB
+									<div class="addcart" onclick="addtoCart('latex', 3)">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
@@ -443,13 +444,13 @@
 							</tr>
 							<tr class="pri">
 								<td id="web-name" class="lead">个人网页</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('web', 0)">预订</div>
+								<td class="show"><p id="web0" class="pric">￥797</p> RMB
+									<div class="addcart" onclick="addtoCart('web', 0)">购买</div>
 								</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('web', 1)">预订</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('web', 2)">预订</td>
+								<td class="show"><p id="web1" class="pric">￥1497</p> RMB
+									<div class="addcart" onclick="addtoCart('web', 1)">购买</td>
+								<td class="show"><p id="web2" class="pric">￥3497</p> RMB
+									<div class="addcart" onclick="addtoCart('web', 2)">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>
@@ -551,13 +552,13 @@
 						<tbody>
 							<tr class="pri">
 								<td id="cotton-name" class="lead">服务价格</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('cotton', 0)">预订</div>
+								<td class="show"><p id="cotton0" class="pric">￥797</p> RMB
+									<div class="addcart" onclick="addtoCart('cotton', 0)">购买</div>
 								</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('cotton', 1)">预订</td>
-								<td class="show">
-									<div class="addcart" onclick="addtoCart('cotton', 2)">预订</td>
+								<td class="show"><p id="cotton1" class="pric">￥2997</p> RMB
+									<div class="addcart" onclick="addtoCart('cotton', 1)">购买</td>
+								<td class="show"><p id="cotton2" class="pric">￥13997</p> RMB
+									<div class="addcart" onclick="addtoCart('cotton', 2)">购买</td>
 							</tr>
 							<tr>
 								<td class="lead">适合客户</td>

@@ -158,10 +158,10 @@ function addtoCart(base, service)
 	po.innerHTML = '<img class="del" src="img/xx.png" onclick="rmfromCart(\''+base+'\',\''+last_type[base]+'\','+last_count[base][last_type[base]]+','+service+',this);">';
 	obj.appendChild(po);
 
-	po = document.createElement("p");
+	/*po = document.createElement("p");
 	po.className = "right";
 	po.innerHTML = price(base, last_type[base], last_count[base][last_type[base]], service) + " 元";
-	obj.appendChild(po);
+	obj.appendChild(po);*/
 
 	insertFormItem(formdata, name, price(base, last_type[base], last_count[base][last_type[base]], service));
 
@@ -284,13 +284,13 @@ function insertFormItem(data, id, price)
 	obj.setAttribute("type", "hidden");
 	document.getElementById("form").appendChild(obj);
 	
-	obj = document.createElement("input");
+	/*obj = document.createElement("input");
 	obj.setAttribute("name", count+"price");
-	count++;
 	obj.setAttribute("id", id+"price");
 	obj.setAttribute("value", price);
 	obj.setAttribute("type", "hidden");
-	document.getElementById("form").appendChild(obj);
+	document.getElementById("form").appendChild(obj);*/
+	count++;
 	storage.setItem("form", document.getElementById("form").innerHTML);
 }
 
@@ -306,7 +306,7 @@ function sub()
 {
 	if (storage.getItem("status") == null)
 	{
-		alert("您没有购买任何服务！");
+		alert("您没有预订任何服务！");
 		return false;
 	}
 	var obj = document.getElementById("mail");
@@ -316,7 +316,7 @@ function sub()
 		return false;
 	}
 
-	var result = confirm("确认购买并清空购物车？");
+	var result = confirm("确认预订并清空购物车？");
 	if (result == false)
 		return false;
 
@@ -349,7 +349,7 @@ function sub()
 				document.getElementById("shop").className = "cart";
 				res.className = "";
 				/*res.innerHTML = "邮件发送中，请稍后……";*/
-			}, 3000);
+			}, 2000);
 		}
 		else
 		{
