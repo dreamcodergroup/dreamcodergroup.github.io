@@ -162,6 +162,31 @@ function scrollOn(x, speed)
 	return;
 }
 
+function Message()
+{
+	var res = document.getElementById('msgresult');
+	var sub = document.getElementById('msgsubmit');
+	res.className = "show";	
+	sub.disabled = "disabled";
+	$("#msg").ajaxSubmit(function(message) { 
+		if (message == "OK")
+		{
+			res.innerHTML = "已发送，我们将尽快与您联系";
+			setTimeout(function(){
+				res.className = "";
+				document.getElementById('mmail').value="";
+				document.getElementById('message').value="";
+				res.innerHTML = "邮件发送中，请稍后……";
+			}, 2000);
+		}
+		else
+		{
+			res.innerHTML = "发送失败！请再次点击发送";
+		}
+		sub.disabled = "";
+	});
+	return false;
+}
 
 
 

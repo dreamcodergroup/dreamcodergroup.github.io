@@ -116,7 +116,7 @@
 						<div class="exp">为保证服务质量，我们将发送一封确认邮件给您，随后将会有工作人员和您邮件联系具体的服务和支付事宜</div>
 					</div>
 
-					&nbsp;<input id="mail" name="mail" type="text" maxlength="50">
+					&nbsp;<input id="mail" name="mail" type="text" placeholder="example@example.com" maxlength="50" required="required">
 					<div id="form"></div>
 					<div id="result">邮件发送中，请稍后……</div>
 					<input id="submit" type="submit" class="submit" value="确认预订">
@@ -749,6 +749,18 @@
 				<p>Copyright&nbsp;&copy;&nbsp;2014 DreamCoder</p>
 			</div>
 		</footer>
-		<img class="qq" border="0" src="img/online-chat.png" alt="点我咨询" title="点我咨询" onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=308482328&site=qq&menu=yes')">
+		<div class="consult qq" onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=308482328&site=qq&menu=yes')">
+			<h1>在线咨询</h1>
+			<img border="0" src="img/online-chat.png" alt="点我咨询" title="点我咨询">
+		</div>
+		<div class="consult message">
+			<h1>给我留言</h1>
+			<form id="msg" action="http://54.191.115.62/message.php" method="post" onsubmit="return Message()">
+					<textarea id="mmail" class="input" name="mmail" col="50" rows="1" type="text" placeholder="请留下您的邮箱" maxlength="50" required="required" ></textarea>
+					<textarea id="message" class="input" name="message" col="50" rows="8" placeholder="请留下您所需的帮助或者对我们的建议，我们会尽快回复您" wrap="soft"></textarea>
+				<div id="msgresult">发送中，请稍候</div>
+				<input id="msgsubmit" type="submit" class="submit" value="提交"/>
+			</form>
+		</div>
 	</body>
 </html>

@@ -309,12 +309,6 @@ function sub()
 		alert("您没有预订任何服务！");
 		return false;
 	}
-	var obj = document.getElementById("mail");
-	if ( obj.value == "" || obj.value ==null)
-	{
-		alert("请输入您的邮箱！");
-		return false;
-	}
 
 	var result = confirm("确认预订并清空购物车？");
 	if (result == false)

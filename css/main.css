@@ -1237,17 +1237,37 @@ h1, h2, h3, th  {
 	width: 35px;
 }
 
-.qq  {
+.consult  {
 	z-index: 9999;
-	cursor: pointer;
 	position: fixed;
+}
+
+.consult h1  {
+	font-size: 110%;
+	line-height: 40px;
+	height: 40px;
+	color: #eb6e1e;
+	margin: 0;
+	background-color: #000000;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+}
+
+.qq  {
+	cursor: pointer;
 	bottom: -90px;
-	right: 12%;
+	right: 10%;
 	width: 90px;
 	transition: all 0.3s ease-in-out 0s;
 	-moz-transition: all 0.3s ease-in-out 0s;
 	-webkit-transition: all 0.3s ease-in-out 0s;
 	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+.qq img  {
+	display: block;
+	width: 90px;
+	margin: 0;
 }
 
 .qq:hover  {
@@ -1256,6 +1276,65 @@ h1, h2, h3, th  {
 	-moz-transition: all 0.3s ease-in-out 0s;
 	-webkit-transition: all 0.3s ease-in-out 0s;
 	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+.message  {
+	right: 10%;
+	margin-right: 110px;
+	bottom: -260px;
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+.message:hover  {
+	bottom: 0px;
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+}
+
+.message form  {
+	color: #ffffff;
+	font-size: 90%;
+	line-height: 150%;
+	background-color: #5f5f5f;
+	opacity: 0.9;
+	filter: Alpha(opacity=90);
+	padding: 1px;
+}
+
+.message .input  {
+	display: block;
+	border: none;
+	margin: 10px 15px;
+	text-align: left;
+	width: 200px;
+	padding: auto 5px !important;
+	line-height: 20px;
+}
+
+#mmail  {
+	height: 20px;
+}
+
+.message .submit  {
+	display: block;
+	width: 70px;
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 90%;
+	height: 30px;
+	line-height: 20px;
+	border: none;
+	margin: 10px auto;
+}
+
+.message .submit:hover  {
+	color: #eb6e1e;
+	cursor: pointer;
 }
 
 

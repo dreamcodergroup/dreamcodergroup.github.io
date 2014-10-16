@@ -1456,14 +1456,14 @@
 	display: block;
 }
 
-#result {
+#result, #msgresult {
 	text-align: center;
 	font-size: 95%;
 	line-height: 200%;
 	display: none;
 }
 
-#result.show  {
+#result.show, #msgresult.show  {
 	display: block;
 }
 
