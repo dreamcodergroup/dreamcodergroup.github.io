@@ -294,6 +294,18 @@
 				<p>Copyright&nbsp;&copy;&nbsp;2014 DreamCoder</p>
 			</div>
 		</footer>
-		<img class="qq" border="0" src="img/online-chat.png" alt="点我咨询" title="点我咨询" onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=308482328&site=qq&menu=yes')">
+		<div class="consult qq" onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=308482328&site=qq&menu=yes')">
+			<h1>在线咨询</h1>
+			<img border="0" src="img/online-chat.png" alt="点我咨询" title="点我咨询">
+		</div>
+		<div class="consult message">
+			<h1>给我留言</h1>
+			<form id="msg" action="http://54.191.115.62/message.php" method="post" onsubmit="return Message()">
+					<textarea id="mmail" class="input" name="mmail" col="50" rows="1" type="text" placeholder="请留下您的邮箱" maxlength="50" required="required" ></textarea>
+					<textarea id="message" class="input" name="message" col="50" rows="8" placeholder="请留下您所需的帮助或者对我们的建议，我们会尽快回复您" wrap="soft" required="required"></textarea>
+				<div id="msgresult">发送中，请稍候</div>
+				<input id="msgsubmit" type="submit" class="submit" value="提交"/>
+			</form>
+		</div>
 	</body>
 </html>
