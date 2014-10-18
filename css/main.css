@@ -1244,9 +1244,11 @@ h1, h2, h3, th  {
 
 .consult h1  {
 	font-size: 110%;
+	letter-spacing: 1px;
+	font-weight: bold;
 	line-height: 40px;
 	height: 40px;
-	color: #eb6e1e;
+	color: #ED7C34;
 	margin: 0;
 	background-color: #000000;
 	opacity: 0.8;
