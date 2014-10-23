@@ -310,7 +310,16 @@ function sub()
 		return false;
 	}
 
-	var result = confirm("确认预订并清空购物车？");
+	var forminfo = document.getElementById('form').childNodes;
+	var service = "邮箱: " + document.getElementById('mail').value + "\n服务：";
+	for (var i = forminfo.length - 1; i >= 0; i--) {
+		service += forminfo[i].value;
+		service += "\n          ";
+	};
+	service += "\n";
+
+
+	var result = confirm(service + "确认预订并清空购物车？");
 	if (result == false)
 		return false;
 
