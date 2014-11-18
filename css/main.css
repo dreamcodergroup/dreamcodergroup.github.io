@@ -1054,8 +1054,8 @@ h1, h2, h3, th  {
 }
 
 #footer .regist .back  {
-    opacity: 0.5;
-    filter: Alpha(opacity=50);
+    opacity: 0.7;
+    filter: Alpha(opacity=70);
 }
 
 #footer .regist p  {
@@ -1347,6 +1347,41 @@ h1, h2, h3, th  {
     cursor: pointer;
 }
 
+#msg  {
+    border: none;
+    height: 258px;
+}
+
+.friend  {
+    position: relative;
+    width: 70%;
+    text-align: left;
+    font-size: 100%;
+    line-height: 50px;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.friend .tit  {
+    font-weight: bolder;
+    font-size: 180%;
+    margin: 20px 40px 5px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.friend a  {
+    text-decoration: none;
+    margin: 20px 30px 5px 0 !important;
+    line-height: 50px !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.friend a:hover  {
+    color: #eb6e1e;
+}
 
 
 
