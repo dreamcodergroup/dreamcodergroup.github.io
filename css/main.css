@@ -1371,18 +1371,43 @@ h1, h2, h3, th  {
     vertical-align: middle;
 }
 
-.friend a  {
+.friend .link, .friend a  {
     text-decoration: none;
-    margin: 20px 30px 5px 0 !important;
     line-height: 50px !important;
     display: inline-block;
     vertical-align: middle;
 }
 
-.friend a:hover  {
+.friend .link  { 
+    position: relative;  
+    margin: 20px 30px 5px 0 !important;
+}
+
+.friend .link:hover a  {
     color: #eb6e1e;
 }
 
+.friend .box  {
+    position: absolute;
+    padding: 5px 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 40px;
+    width: 85%;
+    font-size: 100%;
+    line-height: 120%;
+    color: #ffffff;
+    background-color: #000000;
+    opacity: 0.6;
+    filter: Alpha(opacity=60);
+    display: none;
+}
+
+
+.friend .link:hover .box  {
+    display: block;
+}
 
 
 
