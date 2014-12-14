@@ -1,5 +1,5 @@
 /*********************************************************/
-/* Created by Jingru Nie */
+/* Created by Jingru Nie                                 */
 /* Copyright (c) 2014年 DreamCoder. All rights reserved. */
 /*********************************************************/
 

@@ -98,7 +98,44 @@ function scrollAnim()
     scrollNav();
 }
 
-var interval = null;
+var scroll = function () {
+    var interval = null;
+    return function (id, delta, speed) {
+        if(interval)
+        {
+            clearTimeout(interval);
+            interval = null;
+        }
+        if (id)
+        {
+            var dest = document.getElementById(id).offsetTop - delta;
+        }
+        else
+        {
+            var dest = document.documentElement.offsetTop;
+        }
+            var cur = document.documentElement.scrollTop || document.body.scrollTop;
+            if (document.body.scrollHeight - cur <= document.body.clientHeight)
+                return;
+            speed = speed || 200;
+            if (speed < 10)
+                speed = 10;
+            dest = (dest - cur) / speed;
+            if (dest > 0)
+                dest = Math.ceil(dest);
+            else
+                dest = Math.floor(dest);
+            if (dest)
+            {
+                scrollBy(0, dest);
+                speed -= 15;
+                interval = setTimeout("scroll('" + id + "'," + delta + "," + speed + ")", 10);
+            }
+        
+    };
+}();
+
+/*var interval = null;
 
 function clearTime()
 {
@@ -151,7 +188,7 @@ function scrollOn(x, speed)
         interval = window.setTimeout(invokeFunction, 10);
     }
     return;
-}
+}*/
 
 function Message()
 {
@@ -178,6 +215,63 @@ function Message()
     });
     return false;
 }
+
+function showImage(id)
+{
+    if (document.getElementById(id))
+    {
+        document.getElementById(id).className="imagebox fixed";
+        document.body.style.overflow="hidden";
+    };
+}
+
+function hideImage(id)
+{
+    if (document.getElementById(id))
+    {
+        document.getElementById(id).className="imagebox";
+        document.body.style.overflow="auto";
+    };
+}
+
+/*var keys = [37, 38, 39, 40];
+
+function preventDefault(e, id) {
+    if (e && e != document.getElementById(id).event)
+    {
+        if (e.preventDefault)
+          e.preventDefault();
+        e.returnValue = false;
+    }
+}
+
+function disable_scroll(id) {
+    var wheel = function (e) {
+        return preventDefault(e, id);
+    }();
+    if (window.addEventListener) {
+        window.addEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = wheel;
+    var keydown = function (e) {
+        for (var i = keys.length; i--;) {
+            if (e.keyCode === keys[i]) {
+                return preventDefault(e, id);
+            }
+        }
+    }();
+    document.onkeydown = keydown;
+}
+
+function enable_scroll(id) {
+    var wheel = function (e) {
+        return preventDefault(e, id);
+    }();
+    if (window.removeEventListener) {
+        window.removeEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+}*/
 
 
 

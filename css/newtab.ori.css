@@ -1485,6 +1485,50 @@ hr  {
     border-top: 1px solid #777777;
 }
 
+.imagebox  {
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.imagebox.fixed  {
+    z-index: 99999;
+    display: block;
+}
+
+.imagebox .cover  {
+    background-color: #000000 !important;
+    transition:none;
+    -webkit-transition:none;
+    -moz-transition:none;
+    -o-transition:none;
+}
+
+.imagebox .case  {
+    margin: auto;
+    margin-top: 80px;
+    width: 80%;
+    height: 70%;
+    overflow: auto;
+    position: relative;
+}
+
+.imagebox .case .inner  {
+    overflow: auto;
+}
+
+.imagebox img  {
+    width: 100%;
+}
+
+.web .pic  {
+    cursor: pointer;
+}
+
 
 
 

@@ -515,10 +515,16 @@
             <div class="wrapper">
                 <div class="template web" onmouseover="HoverIn(this);" onmouseout="HoverOut(this);">
                     <div class="box">
-                        <img class="pic" src="webpage/template-0.jpg">
+                        <img onclick="showImage('image0')" class="pic" src="webpage/template-0.jpg">
                     </div>
                     <div class="index">
-                        <a href="webpage/webtemplate-0.jpg" target="_blank">网页模板-0</a>
+                        <p>网页模板-0</p>
+                    </div>
+                    <div id="image0" class="imagebox" onclick="hideImage('image0')">
+                        <div class="cover"></div>
+                        <div class="case">
+                            <img src="webpage/webtemplate-0.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -605,7 +611,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper">
+            <!-- <div class="wrapper">
                 <div class="back" style="opacity: 0.4"></div>
                 <div class="friend">
                     <div class="tit">友情链接</div>
@@ -614,7 +620,7 @@
                         <a href="http://www.lexuedao.cn" target="_blank">乐学岛——留学一站到底</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="regist">
                 <div class="back"></div>
                 <p>Copyright&nbsp;&copy;&nbsp;2014 DreamCoder</p>
